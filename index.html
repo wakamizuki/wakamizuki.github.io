@@ -7,67 +7,21 @@
     <title>Explore Japan's Countryside</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK963WN8R8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NK963WN8R8');
+    </script>
+
     <style>
         /* ヘッダーのスタイル */
         .container{
             color: #0e430f;
             font-weight: bold;
         }
-        .custom-header {
-            background: linear-gradient(to bottom, #df295c, #fce8e3);
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* 下方向にシャドウを追加 */
-            position: fixed; /* ヘッダーを固定 */
-            width:100%;
-            top: 0; /* 上部に固定 */
-            left: 0; /* 左端に固定 */
-            z-index: 1000; /* 他のコンテンツの上に表示 */
-            }
-
-        .custom-header .navbar {
-            display: flex;
-            align-items: center; /* 縦方向の中央揃え */
-        }
-
-        .custom-header .navbar-brand {
-            display: flex;
-            align-items: center;
-            margin: 0; /* ナビゲーションバー内のマージンをリセット */
-            width: 100%; /* 全幅を占めるように設定 */
-            
-        }
-
-        .custom-header .logo-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px; /* ロゴとテキストの間にスペースを追加 */
-        }
-
-        .custom-header .site-name {
-            font-size: 36px; /* フォントサイズを調整 */
-            font-weight: bold; /* 太字に設定 */
-            color: white;
-            margin: 0; /* 上下のマージンをリセット */
-            white-space: normal
-        }
-
-        .custom-header .navbar-nav .nav-link {
-            color: white;
-        }
         
-        .custom-header .navbar-toggler {
-            position: absolute; /* 絶対位置で右上に配置 */
-            top: 15px;
-            right: 15px;
-        }
-
-        .custom-header .navbar-toggler-icon {
-            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/></svg>');
-        }
-
         /* セクションのスタイル */
         .highlight-section {
             background: #f8f9fa; /* 背景色を設定 */
@@ -164,15 +118,6 @@
         }
         /* 画面が小さい時にロゴとタイトルのサイズを調整 */
         @media (max-width: 670px) {
-            .custom-header .logo-img {
-                height: 30px;
-                width: 30px;
-            }
-
-            .custom-header .site-name {
-                font-size: 1.2rem; /* フォントサイズを修正 */
-            }
-
             .btn-primary{
                 font-size: 10px;
             }
@@ -191,7 +136,7 @@
             }
             .card .card-body .card-title{
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 16px;
             }
 
             .highlight-section h1{
@@ -210,33 +155,7 @@
 </head>
 
 <body>
-    <header class="custom-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.jpg" alt="Logo" class="logo-img">
-                <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div id="header-container"> </div>
     <div class="gradient-wrapper">
         <section class="highlight-section">
             <h1>Discover Japan's Hidden Gems</h1>
@@ -261,7 +180,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Sagami Lake<br> MORI MORI</h4>
                             <p class="card-text"> Sagami Lake MORI MORI offers a variety of outdoor activities surrounded by beautiful nature. Enjoy exciting high-rope courses, ziplining through the trees, and camping in scenic spots. It's a perfect destination for those seeking adventure and family-friendly fun.</p>
-                            <a href="/src/actitvities/examples.html" class="btn btn-primary">See more</a>
+                            <a href="/src/actitvities/MORI_MORI.html" class="btn btn-primary">See more</a>
                         </div>
                     </div>
                 </div>
@@ -271,7 +190,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Fuji-Q Highland</h4>
                             <p class="card-text">Fuji-Q Highland is renowned for its thrilling attractions set against the stunning backdrop of Mount Fuji. It features world-famous roller coasters like "FUJIYAMA," "Do-Dodonpa," and "Takabisha," making it a must-visit for thrill-seekers. The park also offers family-friendly rides and character shows, catering to visitors of all ages.</p>
-                            <a href="#" class="btn btn-primary">See more</a>
+                            <a href="/src/actitvities/Fujikyu.html" class="btn btn-primary">See more</a>
                         </div>
                     </div>
                 </div>
@@ -281,7 +200,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Hitachi Seaside Park</h4>
                             <p class="card-text">Hitachi Seaside Park is a vast national park located in Hitachinaka City, Ibaraki Prefecture. It is renowned for its stunning landscapes, with vibrant flowers blooming throughout the seasons. The park is especially famous for its <strong>blue nemophila flowers</strong> in spring and the red kochia bushes in autumn. Inside the park, you'll find cycling paths, an amusement park, and various attractions, making it a popular destination for families, couples, and tourists alike. Additionally, the park hosts a variety of events throughout the year, drawing visitors from all over to enjoy its expansive grounds.</p>
-                            <a href="#" class="btn btn-primary">See more</a>
+                            <a href="/src/actitvities/Hitachi_Seaside_Park.html" class="btn btn-primary">See more</a>
                         </div>
                     </div>
                 </div>
@@ -291,7 +210,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Forest Adventure</h4>
                             <p class="card-text">Forest Adventure is a network of outdoor adventure parks across Japan, inspired by a concept that originated in France. These parks feature tree-top courses where participants wear harnesses to navigate through various obstacles such as climbing nets, rope bridges, and zip lines. The parks offer a thrilling experience set in natural surroundings, combining physical activity with fun. Suitable for families and groups of friends, Forest Adventure provides a unique way to enjoy nature and challenge oneself, with each location designed to integrate with its local environment.</p>
-                            <a href="#" class="btn btn-primary">See more</a>
+                            <a href="/src/actitvities/Forest_Adventure" class="btn btn-primary">See more</a>
                         </div>
                     </div>
                 </div>
@@ -303,12 +222,18 @@
         </div>
     </footer>
 
-
-
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+    <script>
+        fetch('/src/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
 
 </html>

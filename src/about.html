@@ -5,36 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <style>
-        .site-name {
-            font-size: 5vw; /* 画面幅に応じてサイズを変更 */
+/* ヘッダーのスタイル */
+        .container{
+            color: #0e430f;
             font-weight: bold;
-            white-space: nowrap;
-            color: #333;
+        }
+        .fixed-iframe {
+            position: fixed;
+            top: 0; /* 画面の上部に固定 */
+            left: 0; /* 画面の左側に固定 */
+            width: 100%; /* 画面の幅いっぱいに広げる */
+            border: none; /* ボーダーを削除 */
+            z-index: 1000; /* 他のコンテンツよりも上に表示 */
         }
 
-        /* メディアクエリを使用してサイズを調整 */
-        @media (max-width: 1200px) {
-            .site-name {
-                font-size: 2.5rem;
-            }
+
+
+        /* セクションのスタイル */
+        .highlight-section {
+            background: #f8f9fa; /* 背景色を設定 */
+            padding: 20px 0; /* 上下の余白を追加 */
+            text-align: center; /* テキストを中央揃え */
+            width: 95% ;
+            margin: 10px auto; /* 中央揃え */
         }
 
-        @media (max-width: 992px) {
-            .site-name {
-                font-size: 2rem;
-            }
+        .highlight-section h1 {
+            font-size: 2.5rem; /* 見出しのフォントサイズを調整 */
+            font-weight: bold; /* 見出しを太字に */
+            margin-bottom: 20px; /* 見出しと段落の間に余白を追加 */
+            color:  #0e430f; /* テキストの色をダークグレーに */
         }
 
-        @media (max-width: 768px) {
-            .site-name {
-                font-size: 1.5rem;
-            }
+        .highlight-section p {
+            font-size: 1.2rem; /* 段落のフォントサイズを少し大きく */
+            margin-bottom: 40px; /* 段落とボタンの間に余白を追加 */
+            color: #678d6c;/* テキストの色を中間色に */
         }
 
-        @media (max-width: 576px) {
-            .site-name {
-                font-size: 1.2rem;
+        .highlight-section .btn-primary {
+            padding: 10px 20px; /* ボタンの余白を調整 */
+            font-size: 1.1rem; /* ボタンのフォントサイズを調整 */
+        }
+        .btn {
+            padding: 10px 16px;
+            font-size: 15px;
+            color: #fff;
+            background-color: #0e430f;
+            text-decoration: none; /* 下線を削除 */
+            border-radius: 5px; /* 角を丸くする */
+            box-shadow: 0 4px 4px rgba(2, 12, 1, 0.2); /* ボタンにシャドウを追加 */
+            border: none; /* ボーダーを削除 */
+            display: inline-block; /* インラインブロック要素として表示 */
+        }
+        .btn:hover {
+            background-color: #000400; /* ホバー時の背景色 */
+        }
+        .gradient-wrapper {
+            background-color: #f4cfcf; /* 両端にグラデーション */
+            padding-top: 150px;
+        }
+
+
+        /* コンテナの背景色を透明に */
+        .gradient-wrapper .container {
+            width: 95%;
+            max-width: 100%; /* 最大幅を100%にして、親要素の幅に合わせる */
+            margin: 0 auto; /* 中央揃え */
+            padding: 0;
+        }
+        .gradient-wrapper .container .row{
+            width: 95%;
+            max-width: 100%; /* 最大幅を100%にして、親要素の幅に合わせる */
+            margin: 0 0; /* 中央揃え */
+        }
+
+        .footer {
+            background-color: #083709; /* 背景色を設定 */
+            color: #fff; /* テキストの色を白に設定 */
+            padding: 20px 0; /* 上下の余白を追加 */
+            width: 100%; /* 幅を全体に設定 */
+            position: relative; /* 相対位置に設定 */
+            bottom: 0; /* 下端に固定 */
+        }
+        .card-img-top {
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #083709;
+        } 
+        .custom-card {
+            box-shadow: 0 4px 4px rgba(2, 12, 1, 0.2);
+            color: #0d580e;
+            font-weight: bold;
+            border: 3px solid #0d580e; /* 枠線の色と幅 */
+            border-radius: 5px; /* 角の丸み */
+            height: 500px; /* 高さを指定 */
+            overflow: hidden; /* 内容がはみ出す場合に隠す */
+        }
+        .custom-card h4 {
+            font-weight: bold;
+        }
+
+        .custom-card img {
+            height: 250px; /* 画像の高さを指定 */
+            object-fit: cover; /* 画像のサイズを調整 */
+        }
+
+        .custom-card .card-body {
+            height: calc(100% - 150px); /* カードの高さから画像の高さを引いた部分を占める */
+            overflow: auto; /* 内容がはみ出す場合にスクロール */
+        }
+        /* 画面が小さい時にロゴとタイトルのサイズを調整 */
+        @media (max-width: 670px) {
+            .custom-header .logo-img {
+                height: 30px;
+                width: 30px;
             }
+
+            .custom-header .site-name {
+                font-size: 1.2rem; /* フォントサイズを修正 */
+            }
+
+            .btn-primary{
+                font-size: 10px;
+            }
+            .custom-card {
+                height: 320px; /* 高さを指定 */
+            }
+            .custom-card img {
+                height: 150px;
+            }
+            .card .card-body {
+                padding: 5px;
+            }
+            .card .card-body .card-text{
+                font-weight: bold;
+                font-size: 12px;
+            }
+            .card .card-body .card-title{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .highlight-section h1{
+                font-size: 1.8rem;
+            }
+            .highlight-section p{
+                font-size:0.8rem;
+            }
+            .container h1{
+                font-size: 1.8rem;
+            }
+
         }
     </style>
 </head>
