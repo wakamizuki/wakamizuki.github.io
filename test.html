@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* ヘッダーのスタイル */
+        .container{
+            color: #0e430f;
+            font-weight: bold;
+        }
+        .custom-header {
+            background: linear-gradient(to bottom, #df295c, #fce8e3);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* 下方向にシャドウを追加 */
+            position: fixed; /* ヘッダーを固定 */
+            width:100%;
+            top: 0; /* 上部に固定 */
+            left: 0; /* 左端に固定 */
+            z-index: 1000; /* 他のコンテンツの上に表示 */
+            }
+
+        .custom-header .navbar {
+            display: flex;
+            align-items: center; /* 縦方向の中央揃え */
+        }
+
+        .custom-header .navbar-brand {
+            display: flex;
+            align-items: center;
+            margin: 0; /* ナビゲーションバー内のマージンをリセット */
+            width: 100%; /* 全幅を占めるように設定 */
+            
+        }
+
+        .custom-header .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px; /* ロゴとテキストの間にスペースを追加 */
+        }
+
+        .custom-header .site-name {
+            font-size: 36px; /* フォントサイズを調整 */
+            font-weight: bold; /* 太字に設定 */
+            color: white;
+            margin: 0; /* 上下のマージンをリセット */
+            white-space: normal
+        }
+
+        .custom-header .navbar-nav .nav-link {
+            color: white;
+        }
+        
+        .custom-header .navbar-toggler {
+            position: absolute; /* 絶対位置で右上に配置 */
+            top: 15px;
+            right: 15px;
+        }
+
+        .custom-header .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/></svg>');
+        }
+
+        /* セクションのスタイル */
+        .highlight-section {
+            background: #f8f9fa; /* 背景色を設定 */
+            padding: 20px 0; /* 上下の余白を追加 */
+            text-align: center; /* テキストを中央揃え */
+            width: 95% ;
+            margin: 10px auto; /* 中央揃え */
+        }
+
+        .highlight-section h1 {
+            font-size: 2.5rem; /* 見出しのフォントサイズを調整 */
+            font-weight: bold; /* 見出しを太字に */
+            margin-bottom: 20px; /* 見出しと段落の間に余白を追加 */
+            color:  #0e430f; /* テキストの色をダークグレーに */
+        }
+
+        .highlight-section p {
+            font-size: 1.2rem; /* 段落のフォントサイズを少し大きく */
+            margin-bottom: 40px; /* 段落とボタンの間に余白を追加 */
+            color: #678d6c;/* テキストの色を中間色に */
+        }
+
+        .highlight-section .btn-primary {
+            padding: 10px 20px; /* ボタンの余白を調整 */
+            font-size: 1.1rem; /* ボタンのフォントサイズを調整 */
+        }
+        .btn {
+            padding: 10px 16px;
+            font-size: 15px;
+            color: #fff;
+            background-color: #0e430f;
+            text-decoration: none; /* 下線を削除 */
+            border-radius: 5px; /* 角を丸くする */
+            box-shadow: 0 4px 4px rgba(2, 12, 1, 0.2); /* ボタンにシャドウを追加 */
+            border: none; /* ボーダーを削除 */
+            display: inline-block; /* インラインブロック要素として表示 */
+        }
+        .btn:hover {
+            background-color: #000400; /* ホバー時の背景色 */
+        }
+        .gradient-wrapper {
+            background-color: #f4cfcf; /* 両端にグラデーション */
+            padding-top: 150px;
+        }
+
+
+        /* コンテナの背景色を透明に */
+        .gradient-wrapper .container {
+            width: 95%;
+            max-width: 100%; /* 最大幅を100%にして、親要素の幅に合わせる */
+            margin: 0 auto; /* 中央揃え */
+            padding: 0;
+        }
+        .gradient-wrapper .container .row{
+            width: 95%;
+            max-width: 100%; /* 最大幅を100%にして、親要素の幅に合わせる */
+            margin: 0 0; /* 中央揃え */
+        }
+
+        .footer {
+            background-color: #083709; /* 背景色を設定 */
+            color: #fff; /* テキストの色を白に設定 */
+            padding: 20px 0; /* 上下の余白を追加 */
+            width: 100%; /* 幅を全体に設定 */
+            position: relative; /* 相対位置に設定 */
+            bottom: 0; /* 下端に固定 */
+        }
+        .card-img-top {
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #083709;
+        } 
+        .custom-card {
+            box-shadow: 0 4px 4px rgba(2, 12, 1, 0.2);
+            color: #0d580e;
+            font-weight: bold;
+            border: 3px solid #0d580e; /* 枠線の色と幅 */
+            border-radius: 5px; /* 角の丸み */
+            height: 500px; /* 高さを指定 */
+            overflow: hidden; /* 内容がはみ出す場合に隠す */
+        }
+        .custom-card h4 {
+            font-weight: bold;
+        }
+
+        .custom-card img {
+            height: 250px; /* 画像の高さを指定 */
+            object-fit: cover; /* 画像のサイズを調整 */
+        }
+
+        .custom-card .card-body {
+            height: calc(100% - 150px); /* カードの高さから画像の高さを引いた部分を占める */
+            overflow: auto; /* 内容がはみ出す場合にスクロール */
+        }
+        /* 画面が小さい時にロゴとタイトルのサイズを調整 */
+        @media (max-width: 670px) {
+            .custom-header .logo-img {
+                height: 30px;
+                width: 30px;
+            }
+
+            .custom-header .site-name {
+                font-size: 1.2rem; /* フォントサイズを修正 */
+            }
+
+            .btn-primary{
+                font-size: 10px;
+            }
+            .custom-card {
+                height: 320px; /* 高さを指定 */
+            }
+            .custom-card img {
+                height: 150px;
+            }
+            .card .card-body {
+                padding: 5px;
+            }
+            .card .card-body .card-text{
+                font-weight: bold;
+                font-size: 12px;
+            }
+            .card .card-body .card-title{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .highlight-section h1{
+                font-size: 1.8rem;
+            }
+            .highlight-section p{
+                font-size:0.8rem;
+            }
+            .container h1{
+                font-size: 1.8rem;
+            }
+
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.jpg" alt="Logo" class="logo-img">
+                <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="gradient-wrapper">
+        <section class="highlight-section">
+            <h1>Discover Japan's Hidden Gems</h1>
+            <p>Japan's rural regions are brimming with natural beauty and unique activities that offer a refreshing escape from the bustling cities.</p>
+            <div class="button-container">
+                <a href="#activities" class="btn btn-primary">Explore Activities</a>
+            </div>
+        </section>
+        <section class="highlight-section">
+            <h1>Escape the Crowds</h1>
+            <p> While vibrant, large cities like Tokyo and Osaka are vibrant and full of attractions, they can often be crowded with tourists. Exploring Japan’s countryside not only provides a chance to experience stunning landscapes and serene environments but also allows you to engage in authentic local activities away from the crowds.</p>
+            <div class="button-container">
+                <a href="#activities" class="btn btn-primary">Explore Activities</a>
+            </div>
+        </section>
+        <div class="container mt-4 mb-4" id="activities">
+            <h1 >Activities</h1>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card custom-card ">
+                        <img src="./assets/images/MORI_MORI_fixed.png" class="card-img-top" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h4 class="card-title">Sagami Lake<br> MORI MORI</h4>
+                            <p class="card-text"> Sagami Lake MORI MORI offers a variety of outdoor activities surrounded by beautiful nature. Enjoy exciting high-rope courses, ziplining through the trees, and camping in scenic spots. It's a perfect destination for those seeking adventure and family-friendly fun.</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <img src="./assets/images/Fujikyu_fixed.png" class="card-img-top" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h4 class="card-title">Fuji-Q Highland</h4>
+                            <p class="card-text">Fuji-Q Highland is renowned for its thrilling attractions set against the stunning backdrop of Mount Fuji. It features world-famous roller coasters like "FUJIYAMA," "Do-Dodonpa," and "Takabisha," making it a must-visit for thrill-seekers. The park also offers family-friendly rides and character shows, catering to visitors of all ages.</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <img src="./assets/images/Hitachi_fixed.png" class="card-img-top" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h4 class="card-title">Hitachi Seaside Park</h4>
+                            <p class="card-text">Hitachi Seaside Park is a vast national park located in Hitachinaka City, Ibaraki Prefecture. It is renowned for its stunning landscapes, with vibrant flowers blooming throughout the seasons. The park is especially famous for its <strong>blue nemophila flowers</strong> in spring and the red kochia bushes in autumn. Inside the park, you'll find cycling paths, an amusement park, and various attractions, making it a popular destination for families, couples, and tourists alike. Additionally, the park hosts a variety of events throughout the year, drawing visitors from all over to enjoy its expansive grounds.</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <img src="./assets/images/Forest_Adventure_fixed.png" class="card-img-top" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h4 class="card-title">Forest Adventure</h4>
+                            <p class="card-text">Forest Adventure is a network of outdoor adventure parks across Japan, inspired by a concept that originated in France. These parks feature tree-top courses where participants wear harnesses to navigate through various obstacles such as climbing nets, rope bridges, and zip lines. The parks offer a thrilling experience set in natural surroundings, combining physical activity with fun. Suitable for families and groups of friends, Forest Adventure provides a unique way to enjoy nature and challenge oneself, with each location designed to integrate with its local environment.</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class=" text-center">
+            <p>&copy; 2024 Explore Japan's Countryside.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

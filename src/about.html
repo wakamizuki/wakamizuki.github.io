@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .site-name {
+            font-size: 5vw; /* 画面幅に応じてサイズを変更 */
+            font-weight: bold;
+            white-space: nowrap;
+            color: #333;
+        }
+
+        /* メディアクエリを使用してサイズを調整 */
+        @media (max-width: 1200px) {
+            .site-name {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .site-name {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .site-name {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .site-name {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="site-name">Explore Japan's Countryside</span>
+    </header>
+</body>
+</html>

@@ -1,0 +1,312 @@
+/* ベースのスタイル */
+body {
+    min-height: 500px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    background-color: #f4cfcf;
+    color: #333;
+    font-weight: bold;
+}
+
+/* コンテナ */
+.container-header {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.container-main {
+    min-height: 900px;
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    /* background-color: #FFC1CC;
+    color: #fff; */
+
+    background: linear-gradient(to bottom, #df295c, #fce8e3);
+    /* 上から下へのグラデーションで淡いピンクから白に変わる背景 */
+    color: #ffffff; /* テキストの色をダークグレーに */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .highlight {
+    font-size: clamp(12px, 5vw, 32px);
+    min-width: 250px;
+}
+header  #branding {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 40px; /* ロゴの幅 */
+    height: 40px; /* ロゴの高さ */
+    border-radius: 50%; /* 丸くするためのスタイル */
+    overflow: hidden; /* 丸い部分外の画像を隠す */
+    margin-top: 10px;
+    margin-right: 10px; /*タイトルとの間隔 */
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.logo img {
+    width: 100%; /* コンテナの幅に合わせて画像の幅を調整 */
+    height: 100%; /* コンテナの高さに合わせて画像の高さを調整 */
+    object-fit: cover; /* 画像のアスペクト比を維持しつつ、コンテナに収める */
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+    transform: translateY(-2px);
+}
+
+/* メニュー部分*/
+.menu-btn {
+    margin-right: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #2C5F2D;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check {
+    display: none;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #bb3535;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background: linear-gradient(to bottom, #026b03, #8b9e8b);
+    /* background-color: #2C5F2D; */
+    transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 70%;/*メニューを画面内へ*/
+}
+
+/* Footer styles */
+footer {
+    background-color: #2C5F2D;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+} */
+
+/* ヘッダー */
+/*
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #0779e4;
+    font-weight: bold;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* フッター
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: #0779e4 3px solid;
+} */
+
+footer p {
+    margin: 0;
+    color:#333
+} */
+
+
+/* ボタンコンテナのスタイル */
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center; /* ボタンを中央に配置 */
+}
+
+/* ボタンのスタイル */
+
+/* リンク */
+a {
+    color: #0779e4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
