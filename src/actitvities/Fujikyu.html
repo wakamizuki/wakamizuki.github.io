@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Japan's Countryside</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css"> 
+    <link rel="stylesheet" href="/assets/css/style-activities.css"> 
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Fuji-Q Highland</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Fuji-Q Highland is renowned for its thrilling attractions set against the stunning backdrop of Mount Fuji. It features world-famous roller coasters like "FUJIYAMA," "Do-Dodonpa," and "Takabisha," making it a must-visit for thrill-seekers. The park also offers family-friendly rides and character shows, catering to visitors of all ages.</p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Fujikyu_fixed.png" alt="アクティビティの画像1">
+                        <img src="/assets/images/Fujikyu_2.jpg" alt="アクティビティの画像2">
+                        <img src="/assets/images/Fujikyu_3.jpg" alt="アクティビティの画像3">
+                        <img src="/assets/images/Fujikyu_1.jpg" alt="アクティビティの画像4">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Fujiyoshida, Yamanashi Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:00 AM to 5:00 PM (Hours may vary by season)</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and Autumn for pleasant weather and to avoid peak summer crowds.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Check the official website for current opening hours and ride maintenance schedules. Some attractions may be closed due to weather or maintenance.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥6,000 to ¥9,000 per person for admission, with additional costs for food, merchandise, and special attractions.</li>
+                            </ul>                            
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit our official website.</p>
+                            <a href="https://www.fujiq.jp/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+    
+</script>
+
+</html>

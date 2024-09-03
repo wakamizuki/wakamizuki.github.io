@@ -1,0 +1,105 @@
+<!-- header.html -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore Japan's Countryside</title>
+        <!-- Bootstrap CSS -->
+        
+        <style>
+        /* ヘッダーのスタイル */
+
+        .custom-header {
+            background: linear-gradient(to bottom, #df295c, #fce8e3);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* 下方向にシャドウを追加 */
+            position: fixed; /* ヘッダーを固定 */
+            width:100%;
+            top: 0; /* 上部に固定 */
+            left: 0; /* 左端に固定 */
+            z-index: 1000; /* 他のコンテンツの上に表示 */
+            }
+
+        .custom-header .navbar {
+            display: flex;
+            align-items: center; /* 縦方向の中央揃え */
+        }
+
+        .custom-header .navbar-brand {
+            display: flex;
+            align-items: center;
+            margin: 0; /* ナビゲーションバー内のマージンをリセット */
+            width: 100%; /* 全幅を占めるように設定 */
+            
+        }
+
+        .custom-header .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px; /* ロゴとテキストの間にスペースを追加 */
+        }
+
+        .custom-header .site-name {
+            font-size: 36px; /* フォントサイズを調整 */
+            font-weight: bold; /* 太字に設定 */
+            color: white;
+            margin: 0; /* 上下のマージンをリセット */
+            white-space: normal
+        }
+
+        .custom-header .navbar-nav .nav-link {
+            color: white;
+        }
+        
+        .custom-header .navbar-toggler {
+            position: absolute; /* 絶対位置で右上に配置 */
+            top: 15px;
+            right: 15px;
+        }
+
+        .custom-header .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/></svg>');
+        }
+
+        
+        @media (max-width: 550px) {
+            .custom-header .logo-img {
+                height: 30px;
+                width: 30px;
+            }
+            .custom-header .site-name {
+                font-size: 1.2rem; /* フォントサイズを修正 */
+            }
+        }
+        </style>
+    </head>
+<header class="custom-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/assets/images/logo.jpg" alt="Logo" class="logo-img">
+            <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transportation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+</html>

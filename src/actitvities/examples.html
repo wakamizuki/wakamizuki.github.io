@@ -1,326 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Japan's Countryside</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* ヘッダーのスタイル */
-        .container{
-            color: #0e430f;
-            font-weight: bold;
-        }
-        .custom-header {
-            background: linear-gradient(to bottom, #df295c, #fce8e3);
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* 下方向にシャドウを追加 */
-            position: fixed; /* ヘッダーを固定 */
-            width:100%;
-            top: 0; /* 上部に固定 */
-            left: 0; /* 左端に固定 */
-            z-index: 1000; /* 他のコンテンツの上に表示 */
-            }
-
-        .custom-header .navbar {
-            display: flex;
-            align-items: center; /* 縦方向の中央揃え */
-        }
-
-        .custom-header .navbar-brand {
-            display: flex;
-            align-items: center;
-            margin: 0; /* ナビゲーションバー内のマージンをリセット */
-            width: 100%; /* 全幅を占めるように設定 */
-            
-        }
-
-        .custom-header .logo-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px; /* ロゴとテキストの間にスペースを追加 */
-        }
-
-        .custom-header .site-name {
-            font-size: 36px; /* フォントサイズを調整 */
-            font-weight: bold; /* 太字に設定 */
-            color: white;
-            margin: 0; /* 上下のマージンをリセット */
-            white-space: normal
-        }
-
-        .custom-header .navbar-nav .nav-link {
-            color: white;
-        }
-        
-        .custom-header .navbar-toggler {
-            position: absolute; /* 絶対位置で右上に配置 */
-            top: 15px;
-            right: 15px;
-        }
-
-        .custom-header .navbar-toggler-icon {
-            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/></svg>');
-        }
-
-        /* セクションのスタイル */
-        .highlight-section {
-            background: #f8f9fa; /* 背景色を設定 */
-            padding: 20px 0; /* 上下の余白を追加 */
-            text-align: center; /* テキストを中央揃え */
-            width: 95% ;
-            margin: 10px auto; /* 中央揃え */
-        }
-
-        .highlight-section h1 {
-            font-size: 2.5rem; /* 見出しのフォントサイズを調整 */
-            font-weight: bold; /* 見出しを太字に */
-            margin-bottom: 20px; /* 見出しと段落の間に余白を追加 */
-            color:  #0e430f; /* テキストの色をダークグレーに */
-        }
-
-        .highlight-section p {
-            font-size: 1.2rem; /* 段落のフォントサイズを少し大きく */
-            margin-bottom: 40px; /* 段落とボタンの間に余白を追加 */
-            color: #678d6c;/* テキストの色を中間色に */
-        }
-
-        .highlight-section .btn-primary {
-            padding: 10px 20px; /* ボタンの余白を調整 */
-            font-size: 1.1rem; /* ボタンのフォントサイズを調整 */
-        }
-        .btn {
-            padding: 10px 16px;
-            font-size: 15px;
-            color: #fff;
-            background-color: #0e430f;
-            text-decoration: none; /* 下線を削除 */
-            border-radius: 5px; /* 角を丸くする */
-            box-shadow: 0 4px 4px rgba(2, 12, 1, 0.2); /* ボタンにシャドウを追加 */
-            border: none; /* ボーダーを削除 */
-            display: inline-block; /* インラインブロック要素として表示 */
-        }
-        .btn:hover {
-            background-color: #000400; /* ホバー時の背景色 */
-        }
-        .gradient-wrapper {
-            background-color: #f4cfcf; /* 両端にグラデーション */
-            padding-top: 150px;
-        }
-
-
-        /* コンテナの背景色を透明に */
-        .gradient-wrapper .container {
-            width: 95%;
-            max-width: 100%; /* 最大幅を100%にして、親要素の幅に合わせる */
-            margin: 0 auto; /* 中央揃え */
-            padding: 0;
-        }
-        .gradient-wrapper .container .row{
-            width: 95%;
-            max-width: 100%; /* 最大幅を100%にして、親要素の幅に合わせる */
-            margin: 0 0; /* 中央揃え */
-        }
-
-        .footer {
-            background-color: #083709; /* 背景色を設定 */
-            color: #fff; /* テキストの色を白に設定 */
-            padding: 20px 0; /* 上下の余白を追加 */
-            width: 100%; /* 幅を全体に設定 */
-            position: relative; /* 相対位置に設定 */
-            bottom: 0; /* 下端に固定 */
-        }
-        .card-img-top {
-            padding: 0;
-            margin: 0;
-            border-bottom: 2px solid #083709;
-        } 
-        .custom-card {
-            box-shadow: 0 4px 4px rgba(2, 12, 1, 0.2);
-            color: #0d580e;
-            font-weight: bold;
-            border: 3px solid #0d580e; /* 枠線の色と幅 */
-            border-radius: 5px; /* 角の丸み */
-            height: 500px; /* 高さを指定 */
-            overflow: hidden; /* 内容がはみ出す場合に隠す */
-        }
-        .custom-card h4 {
-            font-weight: bold;
-        }
-
-        .custom-card img {
-            height: 250px; /* 画像の高さを指定 */
-            object-fit: cover; /* 画像のサイズを調整 */
-        }
-
-        .custom-card .card-body {
-            height: calc(100% - 150px); /* カードの高さから画像の高さを引いた部分を占める */
-            overflow: auto; /* 内容がはみ出す場合にスクロール */
-        }
-        .image-gallery {
-            border: 3px black solid;
-            height: 350px;
-            display: flex;
-            overflow-x: auto;
-            gap: 10px; /* 画像間のスペース */
-            padding: 3px;
-            border-radius: 8px;
-        }
-        .image-gallery img {
-            border: 2px #0d580e solid;
-            height: 95%;
-            max-width: 85%;
-            height: auto;
-            flex-shrink: 0;
-            border-radius: 8px; /* 画像に角の丸みを追加 */
-            box-shadow: 5px 5px 5px  #333;
-            margin-bottom: 15px
-        }
-        
-        .image-gallery::-webkit-scrollbar {
-            height: 16px;
-            padding-bottom: 20px;
-        } 
-        .image-gallery::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0.5); /* スクロールバーのつまみ部分の色 */
-            border-radius: 8px; /* つまみ部分の角を丸くする */
-        }
-        .image-gallery::-webkit-scrollbar-track {
-            background: #f0f0f0; /* スクロールバーのトラック部分の色 */
-            border-radius: 8px; /* トラック部分の角を丸くする */
-        }
-        /* 画面が小さい時にロゴとタイトルのサイズを調整 */
-        @media (max-width: 670px) {
-            .custom-header .logo-img {
-                height: 30px;
-                width: 30px;
-            }
-
-            .custom-header .site-name {
-                font-size: 1.2rem; /* フォントサイズを修正 */
-            }
-
-            .btn-primary{
-                font-size: 10px;
-            }
-            .custom-card {
-                height: 320px; /* 高さを指定 */
-            }
-            .custom-card img {
-                height: 150px;
-            }
-            .card .card-body {
-                padding: 5px;
-            }
-            .card .card-body .card-text{
-                font-weight: bold;
-                font-size: 12px;
-            }
-            .card .card-body .card-title{
-                font-weight: bold;
-                font-size: 14px;
-            }
-
-            .highlight-section h1{
-                font-size: 1.8rem;
-            }
-            .highlight-section p{
-                font-size:0.8rem;
-            }
-            .container h1{
-                font-size: 1.8rem;
-            }
-
-        }
-    </style>
-    
+    <link rel="stylesheet" href="/assets/css/style.css"> 
+    <link rel="stylesheet" href="/assets/css/style-activities.css"> 
 </head>
 
 <body>
-    <header class="custom-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="/assets/images/logo.jpg" alt="Logo" class="logo-img">
-                <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div id="header-container"> </div>
     <div class="gradient-wrapper">
         <div class="container mt-4 mb-4" id="activities">
             <div class="row">
                 <div class="col-lg-8">
-                    <h1 class="mb-4">[アクティビティ名]</h1>
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Sagami Lake MORI MORI</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Sagami Lake MORI MORI offers a variety of outdoor activities surrounded by beautiful nature. Enjoy exciting high-rope courses, ziplining through the trees, and camping in scenic spots. It's a perfect destination for those seeking adventure and family-friendly fun.</p>
+                        </div>
+                    </div>
                     <div class="image-gallery mb-4 mp-2">
                         <img src="/assets/images/logo.jpg" alt="アクティビティの画像1">
                         <img src="/assets/images/Hitachi_fixed.png" alt="アクティビティの画像2">
                         <img src="/assets/images/MORI_MORI_fixed.png" alt="アクティビティの画像3">
                     </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">施設概要</h3>
-                            <p>[アクティビティの概要説明がここに入ります]</p>
-                        </div>
-                    </div>                   
                 </div>
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title">アクティビティ情報</h3>
+                            <h3 class="card-title">Activity Information</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><strong>場所:</strong> [場所情報]</li>
-                                <li class="list-group-item"><strong>時間:</strong> [時間情報]</li>
-                                <li class="list-group-item"><strong>推奨季節:</strong> [季節情報]</li>
-                                <li class="list-group-item"><strong>注意点:</strong> [注意点]</li>
+                                <li class="list-group-item"><strong>Location:</strong> Sagamiko, Kanagawa Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:00 AM to 5:00 PM (on weekends)</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and Autumn for the best weather and beautiful natural scenery.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Be sure to check the weather forecast before visiting. Some activities may be affected by weather conditions. </li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥6,000 to ¥9,000 per person</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card mb-3">
                         <div class="card-body">
                             <h3 class="card-title">Official Website</h3>
-                            <p>For more details, please visit our official website.</p>
+                            <p class="card-text">For more details, please visit our official website.</p>
                             <a href="https://www.sagamiko-resort.jp/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class=" text-center">
-            <p>&copy; 2024 Explore Japan's Countryside.</p>
-        </div>
-    </footer>
-
-
-
+    <div id="footer-container"> </div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+    
+</script>
 
 </html>
