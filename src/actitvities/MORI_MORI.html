@@ -164,7 +164,7 @@
         }
         .image-gallery {
             border: 3px black solid;
-            height: 350px;
+            height: 430px;
             display: flex;
             overflow-x: auto;
             gap: 10px; /* 画像間のスペース */
@@ -235,6 +235,9 @@
             .container h1{
                 font-size: 1.8rem;
             }
+            .image-gallery {
+            height: 250px;
+            }
 
         }
     </style>
@@ -273,38 +276,41 @@
         <div class="container mt-4 mb-4" id="activities">
             <div class="row">
                 <div class="col-lg-8">
-                    <h1 class="mb-4">[アクティビティ名]</h1>
+                    <h1 class="mb-4">[Activity Name]</h1>
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Facility Overview</h3>
+                            <p>Sagami Lake MORI MORI offers a variety of outdoor activities surrounded by beautiful nature. Enjoy exciting high-rope courses, ziplining through the trees, and camping in scenic spots. It's a perfect destination for those seeking adventure and family-friendly fun.</p>
+                        </div>
+                    </div>
                     <div class="image-gallery mb-4 mp-2">
                         <img src="/assets/images/logo.jpg" alt="アクティビティの画像1">
                         <img src="/assets/images/Hitachi_fixed.png" alt="アクティビティの画像2">
                         <img src="/assets/images/MORI_MORI_fixed.png" alt="アクティビティの画像3">
                     </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">施設概要</h3>
-                            <p>[アクティビティの概要説明がここに入ります]</p>
-                        </div>
-                    </div>                   
+                    
                 </div>
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title">アクティビティ情報</h3>
+                            <h3 class="card-title">Activity Information</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><strong>場所:</strong> [場所情報]</li>
-                                <li class="list-group-item"><strong>時間:</strong> [時間情報]</li>
-                                <li class="list-group-item"><strong>推奨季節:</strong> [季節情報]</li>
-                                <li class="list-group-item"><strong>注意点:</strong> [注意点]</li>
+                                <li class="list-group-item"><strong>Location:</strong> Sagamiko, Kanagawa Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:00 AM to 5:00 PM</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and Autumn for the best weather and beautiful natural scenery.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Be sure to check the weather forecast before visiting. Some activities may be affected by weather conditions. Reservations may be required for certain attractions.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥6,000 to ¥9,000 per person</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card mb-3">
                         <div class="card-body">
                             <h3 class="card-title">Official Website</h3>
-                            <p>For more details, please visit our official website.</p>
+                            <p class="card-text">For more details, please visit our official website.</p>
                             <a href="https://www.sagamiko-resort.jp/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
