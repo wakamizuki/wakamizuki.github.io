@@ -19,6 +19,13 @@
     color:  #0e430f; /* テキストの色をダークグレーに */
 }
 
+.highlight-section h2 {
+    font-size: 2.5rem; /* 見出しのフォントサイズを調整 */
+    font-weight: bold; /* 見出しを太字に */
+    margin-bottom: 20px; /* 見出しと段落の間に余白を追加 */
+    color:  #0e430f; /* テキストの色をダークグレーに */
+}
+
 .highlight-section p {
     font-size: 1.2rem; /* 段落のフォントサイズを少し大きく */
     margin-bottom: 40px; /* 段落とボタンの間に余白を追加 */

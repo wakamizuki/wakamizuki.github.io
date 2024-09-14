@@ -1,0 +1,36 @@
+.explaination{
+    text-align: left;
+}
+
+.image{
+    text-align: center;
+}
+
+.flow{
+    text-align: left;
+    scroll-margin-top: 140px;
+}
+
+.transportation-main{
+    margin-right: 10px ;
+    margin-left: 10px;
+}
+
+.index{
+    position: sticky;
+    top: 140px; /* スクロール時に何ピクセル下に固定するかを指定 */
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;    
+}
+
+.transportation_image{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.detail_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
