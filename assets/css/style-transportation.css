@@ -37,6 +37,7 @@
 
 .card-body a:visited{
     color: #011802;
+    font-weight: bold;
 }   
 
 .card-body li a{
