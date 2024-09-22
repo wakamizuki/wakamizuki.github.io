@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Activities in the Japanese Countryside: Inokashira Park</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Inokashira Park</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Inokashira Park is a popular park located in Tokyo's Musashino and Mitaka areas. It's famous for its tranquil pond where visitors can enjoy boat rides, and its cherry blossoms in spring. The park also houses the Inokashira Zoo and is near the Ghibli Museum, making it a great spot for families and nature lovers alike.</p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Inokashira_Park_1.png" alt="Inokashira-Cherry-Blossoms-and-Lake">
+                        <img src="/assets/images/Inokashira_Park_2.png" alt="Inokashira-Cherry-Blossoms">
+                        <img src="/assets/images/Inokashira_Park_3.png" alt="Inokashira-Cherry-Blossoms-and-Boat">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.kensetsu.metro.tokyo.lg.jp/jimusho/seibuk/inokashira/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Musashino and Mitaka, Tokyo, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:30 AM to 5:00 PM (year-round)</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring for cherry blossoms and Autumn for beautiful foliage.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Visit the Inokashira Zoo or take a boat ride on the pond. Check the official website for event updates.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Entrance is free, but boat rides are ¥700 per 30 minutes. Additional expenses for zoo admission or souvenirs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+</script>
+
+</html>
