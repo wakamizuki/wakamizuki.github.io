@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Activities in the Japanese Countryside: Zoorasia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Zoorasia</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Zoorasia is one of Japan's largest zoos, opened in 1999. The zoo is divided into zones that replicate natural environments from around the world, such as the "African Tropical Rainforest" and "Japanese Countryside." Animals are displayed in settings that closely mimic their natural habitats. Zoorasia is especially famous for its rare okapis and endangered Sumatran tigers, and it actively supports animal welfare and conservation efforts. The zoo also offers nature trails, children's activities, and seasonal events, making it a popular destination for families.</p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Zoorasia_2.png" alt="Giraffe and Zebra">
+                        <img src="/assets/images/Zoorasia_0.png" alt="Okapi">
+                        <img src="/assets/images/Zoorasia_1.png" alt="Penguin">
+                        <img src="/assets/images/Zoorasia_3.png" alt="Meerkat">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit our official website.</p>
+                            <a href="https://www.hama-midorinokyokai.or.jp/zoo/zoorasia/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Yokohama, Kanagawa Prefecture</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:30 AM to 4:30 PM (Closed on Tuesdays)</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and Autumn for pleasant weather and active animals.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Check the official website for updates on events and any potential closures.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥800 for adults, ¥200 for children. If you plan to buy souvenirs or have lunch, budget around ¥3,000 per person.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+</script>
+
+</html>

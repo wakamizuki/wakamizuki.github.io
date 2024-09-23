@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Activities in the Japanese Countryside: Oshino Shinobi no Sato (Ninja Park)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Oshino Shinobi no Sato</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Oshino Shinobi no Sato is a <strong>ninja-themed </strong>park located at the base of Mt. Fuji, especially popular with families and visitors interested in ninja culture. This unique park offers a variety of activities where you can experience and enjoy the traditional lifestyle and skills of Japan’s ninjas, making it a must-visit destination for ninja enthusiasts.</p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Oshino_Ninja_3.png" alt="Oshino-Shinobi-no-Sato">
+                        <img src="/assets/images/Oshino_Ninja_2.jpg" alt="Ninja-tools-and-weapons(shuriken)">
+                        <img src="/assets/images/Oshino_Ninja_1.png" alt="Ninja-image">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit our official website.</p>
+                            <a href="https://www.oshinoninja.com/en/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Oshino Village, Yamanashi Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:00 AM to 5:00 PM</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and Autumn for the best weather and clear views of Mt. Fuji.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Be sure to check the weather forecast before visiting. Some outdoor activities may be affected by weather conditions.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥1,500 to ¥2,000 per person (excluding optional experiences like ninja shows or costume rental).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+</script>
+
+</html>

@@ -4,9 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Explore Japan's Countryside</title>
+        <!-- <title>Explore Japan's Countryside</title>
+        <link rel="icon" href="/assets/images/logo.png" type="image/png">
+        <link rel="shortcut icon" href="/assets/images/logo.png" type="image/png"> -->
         <!-- Bootstrap CSS -->
-        
+
         <style>
         /* ヘッダーのスタイル */
 
@@ -32,7 +34,7 @@
             align-items: center;
             margin: 0; /* ナビゲーションバー内のマージンをリセット */
             width: 100%; /* 全幅を占めるように設定 */
-            
+
         }
 
         .custom-header .logo-img {
@@ -54,7 +56,7 @@
         .custom-header .navbar-nav .nav-link {
             color: white;
         }
-        
+
         .custom-header .navbar-toggler {
             position: absolute; /* 絶対位置で右上に配置 */
             top: 15px;
@@ -65,7 +67,7 @@
             background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/></svg>');
         }
 
-        
+
         @media (max-width: 550px) {
             .custom-header .logo-img {
                 height: 30px;
@@ -80,7 +82,7 @@
 <header class="custom-header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/index.html">
-            <img src="/assets/images/logo.jpg" alt="Logo" class="logo-img">
+            <img src="/assets/images/logo.png" alt="Logo" class="logo-img">
             <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,11 +90,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="/index.html#local-activities-and-sightseeing">Activities</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/src/transportations/train.html">Transportation</a>
