@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Activities in the Japanese Countryside: アドベンチャー名</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Sagami Lake MORI MORI</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Sagami Lake MORI MORI offers a variety of outdoor activities surrounded by beautiful nature. Enjoy exciting high-rope courses, ziplining through the trees, and camping in scenic spots. It's a perfect destination for those seeking adventure and family-friendly fun.</p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/logo_1.png" alt="#############">
+                        <img src="/assets/images/logo_2.png" alt="#############">
+                        <img src="/assets/images/logo_3.png" alt="#############">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.sagamiko-resort.jp/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Sagamiko, Kanagawa Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:00 AM to 5:00 PM (on weekends)</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and Autumn for the best weather and beautiful natural scenery.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Be sure to check the weather forecast before visiting. Some activities may be affected by weather conditions. </li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥6,000 to ¥9,000 per person</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+</script>
+
+</html>
