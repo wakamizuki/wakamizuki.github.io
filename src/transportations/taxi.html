@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Get Trains</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css"> 
+    <link rel="stylesheet" href="/assets/css/style-transportation.css">  
+</head>
+<body>
+    <div id="header-container"></div> 
+    <div class="gradient-wrapper">
+        <section class="highlight-section">
+            <div class = "row m-0">
+                <div class = "menu col-lg-12 col-md-12 col-sm-12">
+                    <a class = "menuoption" href="./train.html">Train</a>
+                    <a class = "menuoption" href="./taxi.html">Taxi</a>                         
+                </div>
+                <div class = "col-lg-9 col-md-9 col-sm-9 p-0">
+                    <div class = "transportation-main card mb-2">
+                        <div class ="card-body row">
+                            
+                            <div class="container">
+                                <h1>How to Ride a Taxi</h1>
+                            </div>
+                            <div class = "explanation col-lg-6">
+                                <div>
+                                    <h2 class = "flow" id = "flow1">1. Finding a Taxi</h2>
+                                    <p> <b>Hailing on the street:</b><br /> 
+                                        In major cities in Japan, taxis are easy to find near stations or busy areas. If a taxi is available, you will see a red "Vacant" sign lit up in the front window. Simply raise your hand to stop the taxi.<br /> 
+                                        <b>Using taxi stands:</b><br /> 
+                                        At stations and airports, there are taxi stands where you can wait in line for your turn to board.<br /> 
+                                        <b>Using smartphone apps</b><br />
+                                        You can also use taxi-hailing apps like JapanTaxi or Uber to call a taxi. When using the app, it's convenient to input your destination in advance.<br />
+                                    </p>                                        
+                                </div>                               
+                                <div>
+                                    <h2 class = "flow" id = "flow2">2. Points to Note When Boarding</h2>
+                                    <p>
+                                        <b>Automatic doors:</b><br>
+                                        In Japan, taxi doors open and close automatically by the driver, so you don't need to operate the door yourself.<br />
+                                        <b>How to communicate your destination:</b><br>
+                                        ・ Even if you don't speak Japanese, that's okay. It's a good idea to have your destination written in Japanese on paper or shown on your smartphone to show to the driver. For well-known tourist spots, simple English might also work.
+                                        <br>
+                                        ・ If you're going to a well-known hotel or station, telling the driver that will also help ensure smooth communication.<br />
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2 class = "flow" id = "flow3">3. Payment Methods</h2>
+                                    <p>
+                                        <b>Cash:</b><br> 
+                                        Cash is commonly used in Japan, but most taxis also accept credit cards and IC cards like Suica or PASMO. When paying, you can choose between cash or card, so if necessary, simply say, "Please use a card."<br>
+                                        <b>Taxi meter:</b><br>
+                                        Taxi fares are based on a meter system. When you board, the starting fare will be displayed, and it will increase according to the distance and time. There may also be additional charges for things like late-night fees or highway tolls, so it's helpful to confirm these in advance.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2 class="flow" id="flow4">4. No Need for Tips</h2>
+                                    <p>
+                                        In Japan, there is no tipping culture for taxi drivers. If you have change, it will be returned to you exactly.<br />
+                                    </p>                                    
+                                </div>
+                                <div>
+                                    <h2 class="flow" id="flow5">5. Exiting the Taxi</h2>
+                                    <p>
+                                        When you reach your destination, pay the fare. The driver will open the door for you, so you can simply exit without worrying about the door.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class = "image col-lg-6">
+                                <div class = "transportation_image">
+                                    <img src="/assets/images/vacantmark.jpeg" alt="taxi_vacantmark" class = "detail_image">
+                                    <p>This is a vacantmark</p>
+                                </div>
+                                <div class = "transportation_image">
+                                    <img src="/assets/images/taxistand.jpeg" alt="taxi_stand" class = "detail_image">       
+                                    <p>This is a taxi stans</p>                         
+                                </div>                        
+                            </div>                    
+                        </div>
+                    </div>            
+                </div>
+                <div class = "index/parents col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class = "index card mb-2">
+                        <div class="index-container">
+                            <div class ="card-body">
+                                <ol type = "1" >
+                                    <div>
+                                        <li><a href="#flow1">Finding a Taxi</a></li>                                    
+                                        <li><a href="#flow2">Points to Note When Boarding</a></li>                                    
+                                        <li><a href="#flow3">Payment Methods</a><br></li>                            
+                                        <li><a href="#flow4">No Need for Tips</a><br></li>                                   
+                                        <li><a href="#flow5">Exiting the Taxi</a><br></li>                                                                                                   
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    
+    
+
+    <div id="footer-container"> </div>
+
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+    <script>
+        fetch('/common/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        fetch('/common/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+</html>
