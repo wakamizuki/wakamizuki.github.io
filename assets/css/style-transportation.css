@@ -1,3 +1,24 @@
+.menu{
+    height: 50px;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content:space-around;
+}
+
+.menuoption{
+    font-size: 30px;
+    color: #678d6c; 
+}
+
+.menuoption:hover{
+    color: #678d6c;
+}
+
+.menuoption:visited{
+    color: #011802;
+    font-weight: bold;
+}   
+
 .explanation{
     text-align: left;
 }
