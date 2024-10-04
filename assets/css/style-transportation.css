@@ -1,23 +1,38 @@
 .menu{
-    height: 50px;
-    margin: 0 0 10px 0;
+    height: 40px;
+    margin: 0 0 25px 0;
+    list-style-type: none;    
+}
+
+.menu li {
+    border: solid 1px;
+    border-radius:6px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.menuoption{
+.menu li button{
+    width: 100%;
+    cursor: pointer;
+    border: solid 1px;
     font-size: 30px;
-    color: #678d6c; 
-}
-
-.menuoption:hover{
     color: #678d6c;
 }
 
-.menuoption:visited{
-    color: #011802;
-    font-weight: bold;
-}   
+.menu li button:hover{
+    color: white;
+    background-color: #678d6c;
+}
+
+.menuoption1{
+    border: solid;
+    border-radius: 5px 0 0 5px;
+}
+
+.menuoption2{
+    border: solid;
+    border-radius: 0 5px 5px 0;
+}
 
 .explanation{
     text-align: left;
@@ -66,6 +81,16 @@
 }
 
 @media (max-width: 670px) {
+
+    .menu li {
+        height:42px
+    }
+
+    .menu li button {
+        height: 40px;
+        text-align: center;
+    }
+    
     .explanation h2{
         font-size: 1.2rem;
     }
