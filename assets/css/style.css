@@ -109,8 +109,8 @@
 }
 
 .card-img-top:hover {
-    filter: brightness(1.2) saturate(0.7);
-    opacity: 0.4;
+    filter: brightness(1.1) saturate(0.7);
+    opacity: 0.8;
     transform: scale(1.02);
     /* お好みで拡大などの効果も追加可能 */
 }
