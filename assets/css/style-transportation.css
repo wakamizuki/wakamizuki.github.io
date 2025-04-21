@@ -1,3 +1,39 @@
+.menu{
+    height: 40px;
+    margin: 0 0 25px 0;
+    list-style-type: none;    
+}
+
+.menu li {
+    border: solid 1px;
+    border-radius:6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li button{
+    width: 100%;
+    cursor: pointer;
+    border: solid 1px;
+    font-size: 30px;
+    color: #678d6c;
+}
+
+.menu li button:hover{
+    color: white;
+    background-color: #678d6c;
+}
+
+.menuoption1{
+    border: solid;
+    border-radius: 5px 0 0 5px;
+}
+
+.menuoption3{
+    border: solid;
+    border-radius: 0 5px 5px 0;
+}
+
 .explanation{
     text-align: left;
 }
@@ -45,6 +81,16 @@
 }
 
 @media (max-width: 670px) {
+
+    .menu li {
+        height:42px
+    }
+
+    .menu li button {
+        height: 40px;
+        text-align: center;
+    }
+    
     .explanation h2{
         font-size: 1.2rem;
     }
