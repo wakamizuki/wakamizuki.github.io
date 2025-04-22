@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Activities in the Japanese Countryside: Odawara Castle</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Odawara Castle</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>Odawara Castle is a beautifully restored Japanese castle located in Odawara City,
+                                Kanagawa Prefecture. Once a major stronghold during the Sengoku period, it now stands as
+                                a symbol of history and culture. Visitors can explore the castle tower, samurai museum,
+                                and surrounding park filled with seasonal flowers. The site offers panoramic views of
+                                the city and Sagami Bay, making it a great spot for sightseeing and historical learning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Odawara_Castle_2.jpg" alt="Odawara Castle gate">
+                        <img src="/assets/images/Odawara_Castle_3.jpg" alt="Odawara Castle cherry blossoms">
+                        <img src="/assets/images/Odawara_Castle_1.jpg" alt="Odawara Castle main view">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more information, please visit the official site of Odawara Castle.
+                            </p>
+                            <a href="https://odawaracastle.com/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Odawara, Kanagawa Prefecture</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open from 9:00 AM to 5:00 PM (Last
+                                    admission: 4:30 PM)</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring (cherry
+                                    blossoms) and Autumn (mild weather)</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Closed on December 31st and January
+                                    1st. Some parts of the castle may be closed during rainy weather.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Approximately ¥500 per person for
+                                    entry. Discounts available for children and groups.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"> </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
