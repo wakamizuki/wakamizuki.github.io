@@ -78,7 +78,7 @@
 }
 
 .gradient-wrapper {
-
+    min-height: 100vh;
     background-color: #f4cfcf;
     /* 両端にグラデーション */
     padding-top: 150px;

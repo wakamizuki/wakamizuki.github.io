@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover activities in Japan based on your personal interests – from culture and cuisine to nature and festivals.">
+    <title>Castles & Fortresses</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style_animation.css" />
+    <link rel="icon" href="/assets/images/logo.png" type="image/png" />
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4">
+            <h1>Explore Castles of Japan</h1>
+            <p class="mb-4">Discover stunning castles across Japan — where history meets breathtaking scenery and
+                immersive samurai
+                experiences await.</p>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <a href="/src/activities/Odawara_Castle.html">
+                            <img src="/assets/images/Odawara_Castle_1.jpg" class="card-img-top"
+                                alt="odawara-castle-and-history">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Odawara Castle</h4>
+                            <p class="card-text">Odawara Castle offers a glimpse into Japan’s samurai past with its
+                                well-preserved
+                                architecture and scenic views.</p>
+                            <a href="/src/activities/Odawara_Castle.html" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <a href="/src/activities/Matsumoto_Castle.html">
+                            <img src="/assets/images/Matsumoto_Castle_1.jpg" class="card-img-top"
+                                alt="local-activities-and-sightseeing">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Matsumoto Castle</h4>
+                            <p class="card-text">Matsumoto Castle, also known as the "Crow Castle" due to its black
+                                exterior, is one of Japan’s most
+                                beautiful and historic castles. Surrounded by mountains and a serene moat, it offers a
+                                glimpse into Japan's feudal
+                                past.</p>
+                            <a href="/src/activities/Matsumoto_Castle.html" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <a href="/src/activities/Himeji_Castle.html">
+                            <img src="/assets/images/Himeji_Castle_1.jpg" class="card-img-top"
+                                alt="Himeji Castle Image">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Himeji Castle</h4>
+                            <p class="card-text">Known as the "White Heron Castle," Himeji Castle is a UNESCO World
+                                Heritage Site and
+                                Japan's most famous historic castle.</p>
+                            <a href="/src/activities/Himeji_Castle.html" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <a href="/src/activities/Hikone_Castle.html">
+                            <img src="/assets/images/Hikone_Castle_1.jpg" class="card-img-top"
+                                alt="Hikone Castle Image">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Hikone Castle</h4>
+                            <p class="card-text">A designated National Treasure, Hikone Castle is one of the few
+                                original castles
+                                in Japan and offers scenic views of Lake Biwa.</p>
+                            <a href="/src/activities/Hikone_Castle.html" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

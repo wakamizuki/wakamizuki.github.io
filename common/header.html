@@ -1,39 +1,48 @@
 <!-- header.html -->
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <title>Explore Japan's Countryside</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Explore Japan's Countryside</title>
         <link rel="icon" href="/assets/images/logo.png" type="image/png">
         <link rel="shortcut icon" href="/assets/images/logo.png" type="image/png"> -->
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
 
-        <style>
+    <style>
         /* ヘッダーのスタイル */
 
         .custom-header {
             background: linear-gradient(to bottom, #df295c, #fce8e3);
             color: white;
             padding: 20px 0;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* 下方向にシャドウを追加 */
-            position: fixed; /* ヘッダーを固定 */
-            width:100%;
-            top: 0; /* 上部に固定 */
-            left: 0; /* 左端に固定 */
-            z-index: 1000; /* 他のコンテンツの上に表示 */
-            }
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            /* 下方向にシャドウを追加 */
+            position: fixed;
+            /* ヘッダーを固定 */
+            width: 100%;
+            top: 0;
+            /* 上部に固定 */
+            left: 0;
+            /* 左端に固定 */
+            z-index: 1000;
+            /* 他のコンテンツの上に表示 */
+        }
 
         .custom-header .navbar {
             display: flex;
-            align-items: center; /* 縦方向の中央揃え */
+            align-items: center;
+            /* 縦方向の中央揃え */
         }
 
         .custom-header .navbar-brand {
             display: flex;
             align-items: center;
-            margin: 0; /* ナビゲーションバー内のマージンをリセット */
-            width: 100%; /* 全幅を占めるように設定 */
+            margin: 0;
+            /* ナビゲーションバー内のマージンをリセット */
+            width: 100%;
+            /* 全幅を占めるように設定 */
 
         }
 
@@ -42,14 +51,18 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
-            margin-right: 15px; /* ロゴとテキストの間にスペースを追加 */
+            margin-right: 15px;
+            /* ロゴとテキストの間にスペースを追加 */
         }
 
         .custom-header .site-name {
-            font-size: 36px; /* フォントサイズを調整 */
-            font-weight: bold; /* 太字に設定 */
+            font-size: 36px;
+            /* フォントサイズを調整 */
+            font-weight: bold;
+            /* 太字に設定 */
             color: white;
-            margin: 0; /* 上下のマージンをリセット */
+            margin: 0;
+            /* 上下のマージンをリセット */
             white-space: normal
         }
 
@@ -58,7 +71,8 @@
         }
 
         .custom-header .navbar-toggler {
-            position: absolute; /* 絶対位置で右上に配置 */
+            position: absolute;
+            /* 絶対位置で右上に配置 */
             top: 15px;
             right: 15px;
         }
@@ -73,19 +87,22 @@
                 height: 30px;
                 width: 30px;
             }
+
             .custom-header .site-name {
-                font-size: 1.2rem; /* フォントサイズを修正 */
+                font-size: 1.2rem;
+                /* フォントサイズを修正 */
             }
         }
-        </style>
-    </head>
+    </style>
+</head>
 <header class="custom-header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/index.html">
             <img src="/assets/images/logo.png" alt="Logo" class="logo-img">
             <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -99,6 +116,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/src/transportations/train.html">Transportation</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/interests/index.html">Interests</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/src/Regions/index.html">Regions</a>
+                </li> -->
             </ul>
         </div>
     </nav>
