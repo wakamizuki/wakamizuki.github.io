@@ -122,8 +122,8 @@ const activities = [
     {
         title: "Rakuten Mobile Park Miyagi",
         description: "Rakuten Mobile Park Miyagi is the home stadium of the Tohoku Rakuten Golden Eagles, offering a fantastic experience for fans with modern amenities and a great atmosphere.",
-        image: "/assets/images/Rakuten_Mobile_Park_Miyagi_1.jpg",
-        link: "/src/activities/Rakuten_Mobile_Park_Miyagi.html"
+        image: "/assets/images/rakuten_mobile_park_miyagi_1.jpg",
+        link: "/src/activities/rakuten_mobile_park_miyagi.html"
     },
 
     // Add more activities as needed
