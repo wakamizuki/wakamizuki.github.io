@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Rakuten Mobile Park Miyagi, a popular tourist attraction in Miyagi, Japan. Learn about its facilities, events, and how to make the most of your visit.">
+    <title>Discover Rakuten Mobile Park Miyagi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Rakuten Mobile Park Miyagi</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Rakuten Mobile Park Miyagi, located in Miyagi, Japan, is a renowned tourist destination
+                                offering a variety of activities and events. The park boasts modern facilities,
+                                beautiful landscapes, and a vibrant atmosphere that attracts visitors from near and far.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/rakuten_mobile_park_miyagi_1.jpg" alt="Rakuten Mobile Park Miyagi">
+                        <img src="/assets/images/rakuten_mobile_park_miyagi_2.jpg" alt="Sendai's famous beef tonguei">
+                        <img src="/assets/images/rakuten_mobile_park_miyagi_3.png"
+                            alt="Tohoku Rakuten Golden Eagles Image">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.rakuteneagles.jp/stadium/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Park Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Miyagi, Japan</li>
+                                <li class="list-group-item"><strong>Activities:</strong> Various events, sports, and
+                                    recreational facilities</li>
+                                <li class="list-group-item"><strong>Highlights:</strong> Stunning views, family-friendly
+                                    environment, and cultural experiences</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Check the park's calendar for
+                                    upcoming events and ticket information</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Admission fees may vary based on
+                                    activities and events</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
