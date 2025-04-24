@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore Japan through different vibes and moods - from relaxing escapes to exciting adventures.">
+    <title>Explore Japan by Vibes & Mood</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style_animation.css" />
+    <link rel="icon" href="/assets/images/logo.png" type="image/png" />
+</head>
+
+<body class="vibes-mood-page">
+    <div id="header-container"></div>
+    <div id="splash" class="splash-screen">
+        <h1>Welcome to the <strong>Vibes</strong> & <strong>Mood</strong> Page!</h1>
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <!-- Categories: Relaxing, Peaceful, Exciting, etc. -->
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4  activity-image-wrapper">
+                    <img src="/assets/images/vibes_mood/peaceful.png" alt="Activity 2" class="activity-image img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4  activity-image-wrapper">
+                    <img src="/assets/images/vibes_mood/adventurous.png" alt="fujiyama"
+                        class="activity-image img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4  activity-image-wrapper">
+                    <img src="/assets/images/vibes_mood/chill_relaxed.png" alt="Activity 4"
+                        class="activity-image img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gradient-wrapper" class="gradient-wrapper">
+        <div class="container mt-4 mb-4">
+            <h1>Explore by <strong>Vibes</strong> & <strong>Mood</strong></h1>
+            <p class="mb-4">
+                Discover your perfect Japanese countryside experience based on your mood – whether it's relaxing,
+                exciting, or peaceful.
+                Let your feelings guide your journey: wander through misty mountains when you seek calm, try local
+                festivals when you crave energy, or unwind in hot springs when serenity is what you need. Your next
+                adventure begins with how you feel.
+            </p>
+            <div class="row">
+                <!-- Links to detailed Vibe Pages -->
+                <div class="col-6 col-md-6 col-lg-4 mb-4 p-0 pl-2 pb-1">
+                    <div class="card custom-card">
+                        <a href="/src/vibes_and_mood/chill_and_relaxed.html">
+                            <img src="/assets/images/vibes_mood/chill_relaxed.png" class="card-img-top"
+                                alt="Chill and Relaxed" />
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Chill</strong> & Relaxed</h4>
+                            <p class="card-text">
+                                Escape the noise and embrace serenity in Japan’s peaceful countryside.
+                                Whether it’s strolling through quiet forests, soaking in a hidden hot spring, or sipping
+                                tea in a rustic village,
+                                these moments are made for slowing down.
+                                Ideal for travelers seeking calm, balance, and a breath of fresh air.
+                            </p>
+                            <a href="/src/vibes_and_mood/chill_and_relaxed.html" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/splash.js"></script>
+</body>
+
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
