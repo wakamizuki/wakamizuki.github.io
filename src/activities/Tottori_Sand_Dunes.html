@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Tottori Sand Dunes, a unique natural attraction in Tottori, Japan. Learn about its sandy landscapes, activities, and visiting tips.">
+    <title>Tottori Sand Dunes: Natural Wonder in Tottori, Japan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Tottori Sand Dunes</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                The Tottori Sand Dunes, located in Tottori, Japan, are a unique natural wonder
+                                stretching along the coast of the Sea of Japan. These expansive sandy landscapes offer
+                                visitors a mesmerizing experience of desert-like terrain in a coastal setting.
+                                The dunes are a popular tourist attraction, attracting visitors with their picturesque
+                                views, recreational activities, and opportunities for sandboarding and camel rides.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Tottori_Sand_Dunes_1.jpg" alt="View of Tottori Sand Dunes">
+                        <img src="/assets/images/Tottori_Sand_Dunes_2.jpg" alt="Scenic beauty at Tottori Sand Dunes">
+                        <img src="/assets/images/Tottori_Sand_Dunes_3.jpg" alt="Activities at Tottori Sand Dunes">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.sakyu-vc.com/en/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Tottori, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open throughout the year; best
+                                    visited during the day for optimal views</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn are
+                                    ideal for comfortable weather</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Bring sunscreen, water, and
+                                    comfortable footwear for exploring the dunes</li>
+                                <li class="list-group-item"><strong>Entry Fee:</strong> Admission fee applies; varies
+                                    for different activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
