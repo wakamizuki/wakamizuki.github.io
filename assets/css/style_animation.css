@@ -44,6 +44,18 @@
     }
 }
 
+.vibes-mood-page {
+    .splash-screen {
+        background: linear-gradient(135deg, #5c6bc0, #9575cd, #ba68c8, #7986cb, #4fc3f7);
+        background-size: 400% 400%;
+        animation: gradientAnimation 2s ease infinite;
+    }
+
+    .activity-image {
+        border: 6px solid #D81B60;
+    }
+}
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;

@@ -134,7 +134,7 @@
 }
 
 .custom-card img {
-    height: 250px;
+    height: 300px;
     /* 画像の高さを指定 */
     object-fit: cover;
     /* 画像のサイズを調整 */
