@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Gora Park, a beautiful botanical garden located in Hakone, Japan. Discover its serene landscapes, stunning floral displays, and relaxing atmosphere.">
+    <title>Discover Gora Park in Hakone, Japan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Gora Park</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Gora Park is a stunning botanical garden situated in the scenic town of Hakone, Japan.
+                                This picturesque park features lush greenery, colorful floral displays, and peaceful walking
+                                paths, making it a perfect retreat for nature lovers and those seeking tranquility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Gora_Park_1.jpg" alt="scenic view of Gora Park">
+                        <img src="/assets/images/Gora_Park_2.jpg" alt="flower garden in Gora Park">
+                        <img src="/assets/images/Gora_Park_3.jpg" alt="pond in Gora Park">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.hakonenavi.jp/gorapark/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Park Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Kanagawa, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> 9:00 AM - 5:00 PM (may vary
+                                    seasonally)</li>
+                                <li class="list-group-item"><strong>Best Time to Visit:</strong> Spring for cherry
+                                    blossoms, and autumn for colorful foliage</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Admission fee required. Cafe and
+                                    souvenir shop available on-site.</li>
+                                <li class="list-group-item"><strong>Entry Fee:</strong> ¥550 for adults, ¥250 for children
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

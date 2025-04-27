@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Hakone Glass Forest Museum, a unique glass art museum in Hakone, Japan. Discover exquisite glass sculptures, beautiful gardens, and more.">
+    <title>Discover the Beauty of Glass at Hakone Glass Forest Museum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Hakone Glass Forest Museum</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                The Hakone Glass Forest Museum is a captivating glass art museum located in the picturesque
+                                town of Hakone, Japan. This museum showcases a stunning collection of glass sculptures
+                                and artworks, set amidst beautifully manicured gardens and tranquil surroundings. Visitors
+                                can immerse themselves in the world of glass art and witness the intricate craftsmanship
+                                behind each masterpiece.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Hakone_Glass_Forest_Museum_1.jpg" alt="glass sculpture at Hakone Glass Forest Museum">
+                        <img src="/assets/images/Hakone_Glass_Forest_Museum_2.jpg" alt="beautiful garden at Hakone Glass Forest Museum">
+                        <img src="/assets/images/Hakone_Glass_Forest_Museum_3.jpg" alt="interior view of Hakone Glass Forest Museum">
+                        <!-- Update image URL and description -->
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.hakone-garasunomori.jp/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Museum Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Kanagawa, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> 9:00 AM - 5:00 PM (Closed on
+                                    Tuesdays)</li>
+                                <li class="list-group-item"><strong>Admission:</strong> ¥1,500 for adults, ¥700 for
+                                    children</li>
+                                <li class="list-group-item"><strong>Special Exhibitions:</strong> Check the website for
+                                    current and upcoming exhibitions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
