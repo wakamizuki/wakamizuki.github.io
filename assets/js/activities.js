@@ -214,7 +214,21 @@ const activities = [
         description: "Experience the beauty and history of Japan as you walk along the ancient Old Hakone Road, lined with traditional tea houses and stunning views of Mount Fuji.",
         image: "/assets/images/Old_Hakone_Road_1.jpg",
         link: "/src/activities/Old_Hakone_Road.html"
+    },
+    {
+        title: "Hakone Checkpoint - Gateway to Edo",
+        description: "Step back in time at Hakone Checkpoint, a historic checkpoint on the old Tokaido Highway, offering a glimpse into Japan's feudal past.",
+        image: "/assets/images/Hakone_Checkpoint_1.jpg",
+        link: "/src/activities/Hakone_Checkpoint.html"
+    },
+    {
+        title: "Lake Ashi Cruise",
+        description: "Enjoy a scenic boat ride on Lake Ashi with stunning views of Mt. Fuji and Hakone's natural beauty.",
+        image: "/assets/images/Ashinoko_Cruise_1.jpg",
+        link: "/src/activities/Ashinoko_Cruise.html"
     }
+
+
 
 ];
 module.exports = activities;
