@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Owakudani Valley, a volcanic valley in Hakone, Japan. Discover its unique sulfuric hot springs, black eggs, and stunning views of Mount Fuji.">
+    <title>Exploring Owakudani Valley in Hakone, Japan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Owakudani Valley</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Owakudani Valley, located in Hakone, Japan, is a volcanic valley known for its sulfuric hot
+                                springs, unique black eggs cooked in the hot springs, and breathtaking views of Mount Fuji.
+                                Visitors can take a ropeway ride to reach the valley and enjoy the dramatic landscape
+                                created by volcanic activity.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Owakudani_Valley_1.jpg" alt="view of Owakudani Valley">
+                        <img src="/assets/images/Owakudani_Valley_2.jpg" alt="sulfuric hot springs in Owakudani">
+                        <img src="/assets/images/Owakudani_Valley_3.jpg" alt="black eggs cooking in hot springs">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.hakonenavi.jp/spot/1362" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> Daily, hours may vary</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn offer
+                                    pleasant weather for exploring the valley.</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Be prepared for strong sulfuric odors
+                                    and fluctuating weather conditions. The black eggs are said to add seven years to your
+                                    life.</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Ropeway ticket prices vary; budget
+                                    around ¥1,000 to ¥2,000 per person for the experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

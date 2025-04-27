@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Old Hakone Road, a historic trail in Hakone, Japan, known for its scenic beauty and cultural significance.">
+    <title>Exploring Old Hakone Road</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Old Hakone Road</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Old Hakone Road, also known as Kyu-Kaido, is a historic trail in Hakone, Japan, famous for
+                                its picturesque landscapes and cultural heritage. This ancient road has been traveled by
+                                pilgrims, samurais, and travelers for centuries, offering a glimpse into Japan's rich
+                                history.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Old_Hakone_Road_1.jpg" alt="Old Hakone Road">
+                        <img src="/assets/images/Old_Hakone_Road_2.jpg" alt="Scenic view along Old Hakone Road">
+                        <img src="/assets/images/Old_Hakone_Road_3.jpg" alt="Historic markers on Old Hakone Road">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://kodo.jac1.or.jp/kodo120_detail/60_hakone/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Japan</li>
+                                <li class="list-group-item"><strong>Best Time to Visit:</strong> Spring and Autumn for
+                                    pleasant weather</li>
+                                <li class="list-group-item"><strong>Highlights:</strong> Ancient cedar trees, stone
+                                    markers, hot springs along the trail</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Wear comfortable shoes, carry water and
+                                    snacks for the hike</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

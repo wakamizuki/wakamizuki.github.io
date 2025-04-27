@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Pola Museum of Art, a renowned art museum located in Hakone, Japan. Discover its impressive collection and stunning architecture.">
+    <title>Discover Art at Pola Museum of Art</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Pola Museum of Art</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                The Pola Museum of Art is a prestigious art museum nestled in the picturesque town of Hakone, Japan. Housing a remarkable collection of modern and contemporary art, the museum is known for its serene setting and stunning architecture.
+                                Visitors can marvel at works by renowned artists such as Monet, Picasso, and Warhol while enjoying the natural beauty that surrounds the museum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Pola_Museum_of_Art_1.jpg" alt="Exterior of Pola Museum of Art">
+                        <img src="/assets/images/Pola_Museum_of_Art_2.jpg" alt="Interior of Pola Museum of Art">
+                        <img src="/assets/images/Pola_Museum_of_Art_3.jpg" alt="Artwork at Pola Museum of Art">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.polamuseum.or.jp/english/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Museum Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> 9:00 AM - 5:00 PM (Closed on
+                                    Mondays)</li>
+                                <li class="list-group-item"><strong>Admission:</strong> ¥1,800 for adults, discounts
+                                    available for students and seniors.</li>
+                                <li class="list-group-item"><strong>Special Exhibitions:</strong> The museum hosts
+                                    rotating exhibitions, check the website for current shows.</li>
+                                <li class="list-group-item"><strong>Guided Tours:</strong> Guided tours are available in
+                                    Japanese and English.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

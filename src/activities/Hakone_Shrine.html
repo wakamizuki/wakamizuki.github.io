@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Hakone Shrine, a beautiful Shinto shrine located in Hakone, Japan. Learn about its history, significance, and stunning surroundings.">
+    <title>Exploring Hakone Shrine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Hakone Shrine</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Hakone Shrine, located in Hakone, Japan, is a picturesque Shinto shrine surrounded by
+                                lush greenery and overlooking Lake Ashi. It has a long history and is known for its
+                                iconic red torii gate at the edge of the lake.
+                                Visitors can explore the peaceful grounds, take in the serene atmosphere, and enjoy
+                                stunning views of Mount Fuji on clear days.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Hakone_Shrine_1.jpg" alt="view of Hakone Shrine">
+                        <img src="/assets/images/Hakone_Shrine_2.jpg" alt="surroundings of Hakone Shrine">
+                        <img src="/assets/images/Hakone_Shrine_3.jpg" alt="red torii gate at Hakone Shrine">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="official_website_url_here" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Visit Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> Open daily from [insert opening hours]</li>
+                                <li class="list-group-item"><strong>Best Time to Visit:</strong> [insert best time to visit]</li>
+                                <li class="list-group-item"><strong>Tips:</strong> [insert any tips for visitors]</li>
+                                <li class="list-group-item"><strong>Admission:</strong> [insert admission fee information]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Hakone Ropeway, a popular tourist attraction in Hakone, Japan. Enjoy breathtaking views of Mount Fuji and Lake Ashi while riding in a cable car.">
+    <title>Explore Hakone Ropeway - Tourist Attraction in Hakone, Japan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Hakone Ropeway</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Hakone Ropeway is a must-visit tourist attraction in Hakone, Japan. It offers a scenic
+                                aerial ride that provides breathtaking views of Mount Fuji, Lake Ashi, and the surrounding
+                                Hakone National Park. The cable car journey is a memorable experience for visitors of all
+                                ages, combining natural beauty with a sense of adventure.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Hakone_Ropeway_1.jpg" alt="Aerial view of Hakone Ropeway">
+                        <img src="/assets/images/Hakone_Ropeway_2.jpg" alt="Mount Fuji view from Hakone Ropeway">
+                        <img src="/assets/images/Hakone_Ropeway_3.jpg" alt="Lake Ashi view during Hakone Ropeway ride">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.hakonenavi.jp/hakone-ropeway/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Japan</li>
+                                <li class="list-group-item"><strong>Operating Hours:</strong> Varies by season</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn offer
+                                    clear views, but winter provides a snow-capped landscape.</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Be prepared for crowds during peak
+                                    seasons. Consider purchasing a Hakone Free Pass for convenient transportation around
+                                    the area.</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Ticket prices range from ¥1,000 to
+                                    ¥2,000 per person for a round trip.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
