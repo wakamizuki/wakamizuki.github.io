@@ -226,7 +226,26 @@ const activities = [
         description: "Enjoy a scenic boat ride on Lake Ashi with stunning views of Mt. Fuji and Hakone's natural beauty.",
         image: "/assets/images/Ashinoko_Cruise_1.jpg",
         link: "/src/activities/Ashinoko_Cruise.html"
+    },
+    {
+        title: "Sagamihara Prefectural Park - A Nature Lover's Paradise",
+        description: "Sagamihara Prefectural Park offers lush greenery, beautiful gardens, and tranquil walking paths for visitors to enjoy.",
+        image: "/assets/images/Sagamihara_Prefectural_Park_1.jpg",
+        link: "/src/activities/Sagamihara_Prefectural_Park.html"
+    },
+    {
+        title: "Atsugi Nanasawa Forest Park",
+        description: "Experience the beauty of nature at Atsugi Nanasawa Forest Park, with lush greenery and peaceful surroundings.",
+        image: "/assets/images/Atsugi_Nanasawa_Forest_Park_1.jpg",
+        link: "/src/activities/Atsugi_Nanasawa_Forest_Park.html"
+    },
+    {
+        title: "Sagamihara Asamizo Park",
+        description: "Sagamihara Asamizo Park is a beautiful park with lush greenery, flower gardens, and walking trails, perfect for a relaxing day out in nature.",
+        image: "/assets/images/Sagamihara_Asamizo_Park_1.jpg",
+        link: "/src/activities/Sagamihara_Asamizo_Park.html"
     }
+
 
 
 
