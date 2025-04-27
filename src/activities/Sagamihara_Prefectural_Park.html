@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Sagamihara Prefectural Park, a beautiful park in Sagamihara, Japan. Discover its lush greenery, serene atmosphere, and recreational activities.">
+    <title>Local Activities in the Japanese Countryside: Sagamihara Prefectural Park</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Sagamihara Prefectural Park</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Sagamihara Prefectural Park is a tranquil park located in Sagamihara, Japan, known for its
+                                lush greenery, serene atmosphere, and various recreational activities. It provides a
+                                peaceful escape from the bustling city life and offers a perfect setting for relaxation
+                                and outdoor enjoyment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Sagamihara_Prefectural_Park_1.jpg" alt="view of Sagamihara Prefectural Park">
+                        <img src="/assets/images/Sagamihara_Prefectural_Park_2.jpg" alt="walking path in Sagamihara Prefectural Park">
+                        <img src="/assets/images/Sagamihara_Prefectural_Park_3.jpg" alt="pond in Sagamihara Prefectural Park">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.kanagawa-park.or.jp/sagamihara/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Sagamihara, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> Park hours vary; check the
+                                    website for details</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn are
+                                    ideal for enjoying the park's beauty and activities.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> The park offers walking trails, picnic
+                                    areas, and seasonal events. Admission is typically free.</li>
+                                <li class="list-group-item"><strong>Facilities:</strong> Restrooms, benches, and
+                                    information center available on-site.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

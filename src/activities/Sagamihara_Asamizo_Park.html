@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Sagamihara Asamizo Park, a beautiful park in Sagamihara City, Japan. Learn about its lush greenery, recreational activities, and serene atmosphere.">
+    <title>Local Activities in the Japanese Countryside: Sagamihara Asamizo Park</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Sagamihara Asamizo Park</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Sagamihara Asamizo Park is a picturesque park located in Sagamihara City, Japan,
+                                offering visitors a serene escape surrounded by lush greenery and various recreational
+                                activities. Whether you enjoy a leisurely stroll, a picnic with family or friends, or
+                                simply soaking in the tranquil atmosphere, this park provides a perfect setting for
+                                relaxation and enjoyment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Sagamihara_Asamizo_Park_1.jpg" alt="view of Sagamihara Asamizo Park">
+                        <img src="/assets/images/Sagamihara_Asamizo_Park_2.jpg" alt="lush greenery in the park">
+                        <img src="/assets/images/Sagamihara_Asamizo_Park_3.jpg" alt="recreational activities in the park">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.kanagawaparks.com/asamizo/" class="btn btn-primary"
+                                target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Sagamihara City, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> Park hours vary by season,
+                                    generally from early morning to early evening</li>
+                                <li class="list-group-item"><strong>Recommended Activities:</strong> Picnicking, walking,
+                                    cycling, birdwatching, and enjoying nature</li>
+                                <li class="list-group-item"><strong>Notes:</strong> The park may have specific rules and
+                                    regulations for certain activities. Please check the official website for details.</li>
+                                <li class="list-group-item"><strong>Admission:</strong> Free entry for visitors of all
+                                    ages</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
