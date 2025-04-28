@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Komachi Street, a famous shopping street in Kamakura, Japan. Discover traditional shops, local crafts, and delicious street food.">
+    <title>Local Activities in the Japanese Countryside: Komachi Street</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Komachi Street</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Komachi Street is a famous shopping street located in Kamakura, Japan. It is known for its traditional shops, local crafts, and delicious street food. The street offers a blend of historical charm and modern shopping experiences, making it a must-visit destination for tourists.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Komachi_Street_1.jpg" alt="view of Komachi Street shops">
+                        <img src="/assets/images/Komachi_Street_2.jpg" alt="traditional crafts on Komachi Street">
+                        <img src="/assets/images/Komachi_Street_3.jpg" alt="street food stalls on Komachi Street">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.trip-kamakura.com/place/175.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Kamakura, Japan</li>
+                                <li class="list-group-item"><strong>Operating Hours:</strong> Shops and stalls have varying hours; recommended to visit during the day and early evening.</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> All year round, with each season offering its unique charm.</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Explore the side streets for hidden gems and be prepared for crowds during weekends and holidays.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Prices vary based on purchases; budget-friendly options available.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Hase Temple, a historic Buddhist temple in Kamakura, Japan. Learn about its serene atmosphere, beautiful architecture, and cultural significance.">
+    <title>Local Activities in the Japanese Countryside: Hase Temple</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Hase Temple</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Hase Temple, also known as Hasedera, is a historic Buddhist temple located in Kamakura, Japan.
+                                Renowned for its serene atmosphere, beautiful gardens, and stunning architecture, Hase Temple
+                                is a must-visit for those seeking cultural and spiritual experiences.
+                                Visitors can explore various halls, pagodas, and statues, including the iconic Kannon statue
+                                with eleven faces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Hase_Temple_1.jpg" alt="close view of Hase Temple">
+                        <img src="/assets/images/Hase_Temple_2.jpg" alt="view of Hase Temple">
+                        <img src="/assets/images/Hase_Temple_3.jpg" alt="Main entrance to Hase Temple">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="http://www.hasedera.jp/en/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Kamakura, Kanagawa, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> 8:00 AM to 5:00 PM daily</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn offer
+                                    pleasant weather for exploring the temple and its surroundings.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Wear comfortable shoes as there are
+                                    stairs on the temple grounds. Don't miss the panoramic view of Kamakura from the
+                                    observation deck.</li>
+                                <li class="list-group-item"><strong>Entrance Fee:</strong> ¥300 for adults, ¥100 for
+                                    children</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
