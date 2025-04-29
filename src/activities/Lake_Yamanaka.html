@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Lake Yamanaka, one of the scenic five lakes of Mount Fuji. Discover its tranquil waters, picturesque surroundings, and recreational activities.">
+    <title>Local Activities in the Japanese Countryside: Lake Yamanaka</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Lake Yamanaka</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Lake Yamanaka, located at the foot of Mount Fuji, is the largest of the Fuji Five Lakes. Known
+                                for its serene beauty and clear waters, it offers a peaceful retreat for visitors seeking
+                                nature and relaxation.
+                                The lake is popular for fishing, boating, and camping, with picturesque views of Mount Fuji
+                                reflecting in its waters.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Lake_Yamanaka_1.jpg" alt="aerial view of Lake Yamanaka">
+                        <img src="/assets/images/Lake_Yamanaka_2.jpg" alt="view of Lake Yamanaka with Mount Fuji">
+                        <img src="/assets/images/Lake_Yamanaka_3.jpg" alt="scenic view of Lake Yamanaka">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://lake-yamanakako.com/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Yamanakako, Yamanashi, Japan</li>
+                                <li class="list-group-item"><strong>Activities:</strong> Fishing, boating, camping,
+                                    cycling</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring to Autumn for
+                                    pleasant weather and clear views</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Rent a paddleboat for a unique view of
+                                    Mount Fuji from the lake. Sunset views are particularly stunning.</li>
+                                <li class="list-group-item"><strong>Accessibility:</strong> Easily reachable by car or bus
+                                    from Tokyo in about 2-3 hours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

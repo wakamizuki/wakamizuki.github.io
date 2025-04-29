@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Fugaku Wind Cave, a natural wonder located in the Japanese countryside. Learn about its unique geological formations, cool temperatures, and visitor information.">
+    <title>Local Activities in the Japanese Countryside: Fugaku Wind Cave</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Fugaku Wind Cave</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Fugaku Wind Cave, located in the Japanese countryside, is a natural cave known for its
+                                cool temperatures and unique geological formations. Visitors can explore the cave's
+                                winding tunnels and experience the natural breeze that gives the cave its name.
+                                The cave offers a refreshing escape from the summer heat and a fascinating look into
+                                Japan's natural wonders.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Fugaku_Wind_Cave_1.jpg" alt="inside Fugaku Wind Cave">
+                        <img src="/assets/images/Fugaku_Wind_Cave_2.jpg" alt="rock formations in Fugaku Wind Cave">
+                        <img src="/assets/images/Fugaku_Wind_Cave_3.jpg" alt="entrance to Fugaku Wind Cave">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.mtfuji-cave.com/en/wind_cave/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Japanese Countryside</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> 9:00 AM - 5:00 PM</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> All year round, but
+                                    especially refreshing in summer</li>
+                                <li class="list-group-item"><strong>Notes:</strong> The cave can be chilly, so bring a
+                                    light jacket. Guided tours are available for a more informative experience.</li>
+                                <li class="list-group-item"><strong>Entry Fee:</strong> ¥800 per person</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

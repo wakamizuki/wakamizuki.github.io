@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Mt. Fuji Panoramic Ropeway, a stunning attraction offering breathtaking views of Mt. Fuji and its surroundings. Learn about the ropeway experience, visiting tips, and the beauty of the iconic mountain.">
+    <title>Local Activities in the Japanese Countryside: Mt. Fuji Panoramic Ropeway</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Mt. Fuji Panoramic Ropeway</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Mt. Fuji Panoramic Ropeway offers visitors an unforgettable experience with panoramic views
+                                of the majestic Mt. Fuji and its picturesque surroundings. The ropeway ride provides a
+                                unique perspective of the iconic mountain and is a must-do activity for nature lovers and
+                                adventure seekers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Mt_Fuji_Paranoramic_Ropeway_1.jpg" alt="close view of Mt. Fuji Panoramic Ropeway">
+                        <img src="/assets/images/Mt_Fuji_Paranoramic_Ropeway_2.jpg" alt="view of Mt. Fuji from the ropeway">
+                        <img src="/assets/images/Mt_Fuji_Paranoramic_Ropeway_3.jpg" alt="Ropeway station near Mt. Fuji">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details and ticket information, please visit the official website.</p>
+                            <a href="https://www.mtfujiropeway.jp/en/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Yamanashi Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Operating Hours:</strong> Varies depending on the
+                                    season</li>
+                                <li class="list-group-item"><strong>Best Time to Visit:</strong> Clear days for optimal
+                                    views of Mt. Fuji</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Dress warmly as it can get chilly at
+                                    higher altitudes. Check for any closures or maintenance schedules before your visit.</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Prices range from ¥1,000 to ¥3,000 per
+                                    person for a round trip</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

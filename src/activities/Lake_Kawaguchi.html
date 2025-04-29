@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Lake Kawaguchi, one of the scenic Five Lakes of Mount Fuji. Discover its tranquil waters, stunning views of Mount Fuji, and recreational activities.">
+    <title>Local Activities in the Japanese Countryside: Lake Kawaguchi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Lake Kawaguchi</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Lake Kawaguchi is one of the iconic Five Lakes of Mount Fuji, offering breathtaking views
+                                of the majestic mountain and serene waters. Visitors can enjoy various recreational
+                                activities such as boat cruises, lakeside walks, and hot spring baths in the area.
+                                It is a popular spot for both locals and tourists seeking tranquility and natural beauty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Lake_Kawaguchi_1.jpg" alt="Aerial view of Lake Kawaguchi">
+                        <img src="/assets/images/Lake_Kawaguchi_2.jpg" alt="View of Mount Fuji from Lake Kawaguchi">
+                        <img src="/assets/images/Lake_Kawaguchi_3.jpg" alt="Boat cruise on Lake Kawaguchi">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details and activities, please visit the official website.</p>
+                            <a href="https://fujisan.ne.jp/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Yamanashi Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Activities:</strong> Boat cruises, lakeside walks,
+                                    hot spring baths</li>
+                                <li class="list-group-item"><strong>Recommended Time:</strong> All year round, with cherry
+                                    blossoms in spring and autumn foliage as highlights</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Early mornings offer stunning views
+                                    of Mount Fuji. Check for boat cruise schedules and availability in advance.</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Prices vary based on activities and
+                                    packages</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
