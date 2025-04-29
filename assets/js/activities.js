@@ -364,6 +364,20 @@ const activities = [
         description: "Experience the beauty of crystal clear springs surrounded by traditional thatched-roof houses in Oshino Hakkai.",
         image: "/assets/images/Oshino_Hakkai_Springs_1.jpg",
         link: "/src/activities/Oshino_Hakkai_Springs.html"
+    },
+    {
+        title: "Fujisan World Heritage Center",
+        description: "Experience the history and beauty of Mount Fuji at the Fujisan World Heritage Center, showcasing the significance of this iconic mountain.",
+        image: "/assets/images/Fujisan_World_Heritage_Center_1.jpg",
+        link: "/src/activities/Fujisan_World_Heritage_Center.html"
+    },
+    {
+        title: "Shin-Nashogawa Riverside Promenade",
+        description: "Enjoy a leisurely stroll along the picturesque Shin-Nashogawa Riverside Promenade, offering stunning views of the river and surrounding nature.",
+        image: "/assets/images/Shin-Nashogawa_Riverside_Promenade_1.jpg",
+        link: "/src/activities/Shin-Nashogawa_Riverside_Promenade.html"
     }
+
+
 ];
 module.exports = activities;

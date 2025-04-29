@@ -72,6 +72,16 @@
     /* インラインブロック要素として表示 */
 }
 
+.btn.btn-vibe{
+    background-color: #590459;
+}
+.btn.btn-interest{
+    background-color: #cc5500;
+}
+.btn.btn-article{
+    background-color: hsl(211, 86%, 36%);
+}
+
 .btn:hover {
     background-color: #000400;
     /* ホバー時の背景色 */
@@ -123,10 +133,30 @@
     /* 枠線の色と幅 */
     border-radius: 5px;
     /* 角の丸み */
-    height: 500px;
+    height: 450px;
     /* 高さを指定 */
     overflow: hidden;
     /* 内容がはみ出す場合に隠す */
+}
+/* --- 種類ごとのカスタマイズ --- */
+.card-spot {
+    border-color: #0d580e; /* 緑系 */
+    color: #0d580e;
+}
+
+.card-article {
+    border: 5px solid #0d59aa; /* 青系 */
+    color: #004085;
+}
+
+.card-vibe {
+    border: 5px solid #940b94; /* 紫系 */
+    color: #590459;
+}
+
+.card-interest {
+    border: 5px solid #894a02;
+    color: #cc5500;
 }
 
 .custom-card h4 {
@@ -134,11 +164,12 @@
 }
 
 .custom-card img {
-    height: 300px;
+    height: 270px;
     /* 画像の高さを指定 */
     object-fit: cover;
     /* 画像のサイズを調整 */
 }
+
 
 .custom-card .card-body {
     height: calc(100% - 150px);
@@ -147,13 +178,17 @@
     /* 内容がはみ出す場合にスクロール */
 }
 
+
+
 /* 画面が小さい時にロゴとタイトルのサイズを調整 */
 @media (max-width: 670px) {
     .custom-header .logo-img {
         height: 30px;
         width: 30px;
     }
-
+    .custom-card{
+        height: 230px;
+    }
     .custom-header .site-name {
         font-size: 1.2rem;
         /* フォントサイズを修正 */
