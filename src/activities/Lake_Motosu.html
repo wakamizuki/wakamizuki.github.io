@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Lake Motosu, one of the pristine lakes in the Japanese countryside. Discover its crystal-clear waters, surrounding nature, and recreational activities.">
+    <title>Local Activities in the Japanese Countryside: Lake Motosu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Lake Motosu</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Lake Motosu is a picturesque lake located in Yamanashi Prefecture, Japan, known for its
+                                crystal-clear waters and stunning natural surroundings. It offers a serene retreat for
+                                nature lovers and outdoor enthusiasts.
+                                Visitors can enjoy various activities such as boating, fishing, and camping while
+                                immersing themselves in the tranquility of the lake.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Lake_Motosu_1.jpg" alt="scenic view of Lake Motosu">
+                        <img src="/assets/images/Lake_Motosu_2.jpg" alt="peaceful atmosphere at Lake Motosu">
+                        <img src="/assets/images/Lake_Motosu_3.jpg" alt="camping site near Lake Motosu">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.yamanashi-kankou.jp/kankou/spot/p1_4614.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Yamanashi Prefecture, Japan</li>
+                                <li class="list-group-item"><strong>Best Time to Visit:</strong> Spring or Autumn for
+                                    pleasant weather and beautiful scenery</li>
+                                <li class="list-group-item"><strong>Activities:</strong> Boating, fishing, camping,
+                                    hiking</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Bring sunscreen, insect repellent,
+                                    and camping gear if staying overnight</li>
+                                <li class="list-group-item"><strong>Accessibility:</strong> Easily reachable by car or
+                                    public transportation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
