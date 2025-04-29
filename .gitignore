@@ -9,10 +9,11 @@ my-auto-generator
 
 node_modules
 
-
+src/preserve
 
 
 generateSitemap.js
+tmp
 
 
 

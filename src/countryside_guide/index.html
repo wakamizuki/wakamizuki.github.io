@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover the hidden countryside gems of Japan, from serene villages to breathtaking natural escapes.">
+    <title>Japan Countryside Guide</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style_animation.css" />
+    <link rel="icon" href="/assets/images/logo.png" type="image/png" />
+</head>
+
+<body class="interests-page">
+    <div id="header-container"></div>
+
+    <div id="gradient-wrapper" class="gradient-wrapper">
+        <div class="container mt-4 mb-4">
+            <h1>Explore the Countryside</h1>
+            <p class="mb-4">
+                Escape the city and immerse yourself in Japan’s stunning rural regions. From traditional hot spring towns
+                to hidden valleys and coastal gems, the countryside offers unforgettable cultural and natural
+                experiences. Use this guide to discover regions that match your interests and travel style.
+            </p>
+
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-4 mb-4 p-0 pl-2 pb-1">
+                    <div class="card custom-card card-article">
+                        <a href="/src/articles/hakone_countryside.html">
+                            <img src="/assets/images/article/Hakone_Surroudings.jpg" class="card-img-top" alt="Hakone">
+                        </a>
+                        <div class="card-body ">
+                            <h4 class="card-title">Hakone & Surroundings</h4>
+                            <p class="card-text">
+                                A classic getaway near Tokyo, Hakone offers the perfect mix of nature, culture, and relaxation. Cruise across the scenic Lake Ashi with Mount Fuji in the distance, visit the historic Hakone Shrine with its iconic torii gate on the water, and explore the volcanic landscapes of Owakudani, where steam rises from the earth. Art lovers will enjoy the open-air exhibits at the Hakone Open-Air Museum, while countless hot springs (onsen) provide a soothing retreat after a day of sightseeing.
+                            </p>
+                            <a href="/src/articles/hakone_countryside.html" class="btn btn-article">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 mb-4 p-0 pl-2 pb-1">
+                    <div class="card custom-card card-article">
+                        <a href="/src/articles/oshino_hidden_village.html">
+                            <img src="/assets/images/article/oshino_hidden_village.jpg" class="card-img-top" alt="Oshino Village">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Oshino Hidden Village</h4>
+                            <p class="card-text">
+                                Step into a peaceful village near Mt. Fuji, famous for its crystal-clear spring water and traditional thatched-roof houses. This area, known as Oshino Hakkai, features eight sacred ponds fed by snowmelt from Mt. Fuji, offering stunning reflections of the mountain on a clear day.
+Explore the tranquil walking paths lined with local snack stalls, souvenir shops, and picturesque footbridges. You can also visit the Oshino Ninja Village, a fun and family-friendly spot where you can learn about ninja history and try hands-on activities.
+For those interested in culture and history, the Hannoki Bayashi Shiryokan (Heritage Center) displays traditional tools and daily life artifacts from old Japan. Whether you're after nature, culture, or just a quiet escape with great photo ops, Oshino Hidden Village offers a rich and relaxing experience.
+                            </p>
+                            <a href="/src/articles/oshino_hidden_village.html" class="btn btn-article">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            <h1 class="mt-4">We'll continue to bring more beautiful destinations and countryside guides — stay tuned!
+            </h1>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/splash.js"></script>
+
+    <script>
+        fetch('/common/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        fetch('/common/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+
+</html>

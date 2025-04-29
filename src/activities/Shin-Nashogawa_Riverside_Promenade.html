@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Shin-Nashogawa Riverside Promenade, a scenic walkway along the Nashogawa River in Saitama, Japan. Enjoy the peaceful atmosphere and beautiful views of the river and surrounding nature.">
+    <title>Local Activities in the Japanese Countryside: Shin-Nashogawa Riverside Promenade</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Shin-Nashogawa Riverside Promenade</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                The Shin-Nashogawa Riverside Promenade offers a tranquil walking path along the Nashogawa River in Saitama, Japan. Visitors can enjoy the serene atmosphere and picturesque views of the river and surrounding greenery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Shin-Nashogawa_Riverside_Promenade_1.jpg" alt="view of Shin-Nashogawa Riverside Promenade">
+                        <img src="/assets/images/Shin-Nashogawa_Riverside_Promenade_2.jpg" alt="scenic view along the river">
+                        <img src="/assets/images/Shin-Nashogawa_Riverside_Promenade_3.jpg" alt="relaxing spot by the water">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://atmoph.com/en/views/pages/snowy_shinnasho_river_and_mt__fuji" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Saitama, Japan</li>
+                                <li class="list-group-item"><strong>Recommended Time:</strong> Any time of the year for a peaceful walk</li>
+                                <li class="list-group-item"><strong>Notes:</strong> The promenade is perfect for relaxation and enjoying nature. Bring a camera for capturing the scenic views.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
