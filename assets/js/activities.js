@@ -116,7 +116,7 @@ const activities = [
     {
         title: "Sagami Lake MORI MORI",
         description: "Sagami Lake MORI MORI offers a variety of outdoor activities surrounded by beautiful nature.",
-        image: "/assets/images/MORI_MORI_fixed.png",
+        image: "/assets/images/sagami_lake_mori_mori_3.png",
         link: "/src/activities/MORI_MORI.html"
     },
     {
