@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Kinomiya Shrine, a historic shrine located in Atami, Shizuoka, Japan, known for its sacred camphor tree, traditional ceremonies, and serene atmosphere.">
+    <title>Local Activities in the Japanese Countryside: Kinomiya Shrine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Kinomiya Shrine</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Kinomiya Shrine, located in Atami, Shizuoka, Japan, is a historic shrine known for its
+                                sacred camphor tree that is over 2,000 years old. The shrine hosts traditional ceremonies
+                                and provides a serene atmosphere for visitors to experience Japanese spirituality.
+                                Visitors can explore the shrine grounds, make offerings, and participate in rituals to
+                                seek blessings and good fortune.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Kinomiya_Shrine_1.jpg" alt="view of Kinomiya Shrine">
+                        <img src="/assets/images/Kinomiya_Shrine_2.jpg" alt="interior of Kinomiya Shrine">
+                        <img src="/assets/images/Kinomiya_Shrine_3.jpg" alt="sacred camphor tree at Kinomiya Shrine">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.kinomiya.or.jp/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Atami, Shizuoka, Japan</li>
+                                <li class="list-group-item"><strong>Visiting Hours:</strong> Shrine is open from morning
+                                    until evening; specific ceremony times may vary</li>
+                                <li class="list-group-item"><strong>Recommended Time:</strong> Early morning or late
+                                    afternoon for a peaceful experience</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Respectful attire is recommended.
+                                    Photography may be restricted in certain areas. Check for any ongoing events or
+                                    festivals.</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Admission to the shrine is free; donations
+                                    are welcome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

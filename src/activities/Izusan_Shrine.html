@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Izusan Shrine, a historic Shinto shrine located in Atami, Shizuoka, Japan. Learn about its cultural significance, architecture, and serene surroundings.">
+    <title>Local Activities in the Japanese Countryside: Izusan Shrine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Izusan Shrine</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Izusan Shrine is a historic Shinto shrine located in Atami, Shizuoka, Japan. It holds
+                                cultural significance and features traditional Japanese architecture in a serene
+                                natural setting.
+                                Visitors can explore the shrine grounds, learn about its history, and experience the
+                                peaceful atmosphere that the shrine offers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Izusan_Shrine_1.jpg" alt="main gate of Izusan Shrine">
+                        <img src="/assets/images/Izusan_Shrine_2.jpg" alt="view of Izusan Shrine">
+                        <img src="/assets/images/Izusan_Shrine_3.jpg" alt="surroundings of Izusan Shrine">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.ataminews.gr.jp/spot/110" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Atami, Shizuoka, Japan</li>
+                                <li class="list-group-item"><strong>Visiting Hours:</strong> Open daily from morning to
+                                    evening</li>
+                                <li class="list-group-item"><strong>Recommended Time to Visit:</strong> Spring for cherry
+                                    blossoms, autumn for fall foliage</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Respect the shrine's customs and
+                                    etiquette. Photography may be restricted in certain areas.</li>
+                                <li class="list-group-item"><strong>Admission:</strong> Free entry; donations
+                                    appreciated</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

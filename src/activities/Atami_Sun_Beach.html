@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Atami Sun Beach, a beautiful seaside attraction in Atami, Japan. Enjoy the sun, sand, and sea at this popular beach destination.">
+    <title>Local Activities in the Japanese Countryside: Atami Sun Beach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Atami Sun Beach</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Atami Sun Beach is a picturesque seaside destination located in Atami, Japan. This beautiful beach offers visitors a chance to relax under the sun, enjoy the sandy shores, and swim in the refreshing sea waters.
+                                Whether you're looking to sunbathe, take a dip in the ocean, or simply unwind by the shore, Atami Sun Beach provides the perfect setting for a day of leisure and enjoyment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Atami_Sun_Beach_1.jpg" alt="close view of Atami Sun Beach">
+                        <img src="/assets/images/Atami_Sun_Beach_2.jpg" alt="view of Atami Sun Beach">
+                        <img src="/assets/images/Atami_Sun_Beach_3.jpg" alt="Sunset at Atami Sun Beach">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.ataminews.gr.jp/spot/119/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Atami, Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open daily from morning to evening</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Summer is the best time to visit for beach activities and water sports.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Weekends and holidays can be crowded. Bring sunscreen, towels, and beach essentials. Various water sports and beach facilities are available.</li>
+                                <li class="list-group-item"><strong>Budget:</strong> Free entry to the beach, additional costs for rentals and activities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

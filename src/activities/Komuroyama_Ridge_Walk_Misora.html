@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the scenic Komuroyama Ridge Walk Misora in Japan, offering breathtaking views and a serene hiking experience.">
+    <title>Local Activities in the Japanese Countryside: Komuroyama Ridge Walk Misora</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Komuroyama Ridge Walk Misora</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Komuroyama Ridge Walk Misora offers a picturesque hiking trail with stunning views of
+                                the surrounding countryside in Japan. The peaceful ambiance and natural beauty make it a
+                                perfect escape for nature lovers and hikers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Komuroyama_Ridge_Walk_Misora_1.jpg" alt="view of Komuroyama Ridge Walk Misora">
+                        <img src="/assets/images/Komuroyama_Ridge_Walk_Misora_2.jpg" alt="scenic trail at Komuroyama Ridge">
+                        <img src="/assets/images/Komuroyama_Ridge_Walk_Misora_3.jpg" alt="panoramic view from Komuroyama Ridge">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details and trail information, visit the official website.</p>
+                            <a href="https://itospa.com/spot/detail_54327.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Japan</li>
+                                <li class="list-group-item"><strong>Time:</strong> Open year-round, best during clear
+                                    weather</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn for
+                                    comfortable hiking temperatures</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Wear comfortable hiking shoes and
+                                    carry water. The trail may have some steep sections.</li>
+                                <li class="list-group-item"><strong>Cost:</strong> Free to access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

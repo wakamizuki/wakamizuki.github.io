@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Mt. Omuro, a volcanic cone in Ito City, Shizuoka Prefecture, Japan. Learn about its unique crater, panoramic views, and hiking opportunities.">
+    <title>Local Activities in the Japanese Countryside: Mt. Omuro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Mt. Omuro</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Mt. Omuro is a volcanic cone located in Ito City, Shizuoka Prefecture, Japan. This natural
+                                landmark offers visitors a unique opportunity to explore its crater, enjoy panoramic
+                                views of the surrounding area, and engage in hiking activities.
+                                The scenic beauty and geological significance of Mt. Omuro make it a must-visit destination
+                                for nature enthusiasts and adventure seekers alike.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Mt_Omuro_1.jpg" alt="view of Mt. Omuro crater">
+                        <img src="/assets/images/Mt_Omuro_2.jpg" alt="panoramic view from Mt. Omuro">
+                        <img src="/assets/images/Mt_Omuro_3.jpg" alt="hiking trail at Mt. Omuro">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://omuroyama.com/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Ito City, Shizuoka Prefecture,
+                                    Japan</li>
+                                <li class="list-group-item"><strong>Hiking Trails:</strong> Various trails suitable for
+                                    different skill levels</li>
+                                <li class="list-group-item"><strong>Recommended Season:</strong> Spring and autumn offer
+                                    pleasant weather for hiking and enjoying the views.</li>
+                                <li class="list-group-item"><strong>Notes:</strong> Check weather conditions before
+                                    visiting. Bring water and snacks for the hike. The crater area provides a unique
+                                    experience.</li>
+                                <li class="list-group-item"><strong>Accessibility:</strong> Cable car available for
+                                    visitors to reach the summit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
