@@ -44,7 +44,7 @@
     /* 段落のフォントサイズを少し大きく */
     margin-bottom: 40px;
     /* 段落とボタンの間に余白を追加 */
-    color: #678d6c;
+    color: #0c7b1b;
     /* テキストの色を中間色に */
 }
 
@@ -159,7 +159,8 @@
     color: #cc5500;
 }
 
-.custom-card h4 {
+.custom-card h2 {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -211,7 +212,7 @@
         padding: 5px;
     }
 
-    .custom-card .card-body h4 {
+    .custom-card .card-body h2 {
         font-weight: bold;
         font-size: 16px;
     }

@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     {
         title: "Hitachi Seaside Park",
         description: "Hitachi Seaside Park is a vast national park located in Hitachinaka City, Ibaraki Prefecture.",
@@ -43,6 +43,6 @@ const activities = [
     },
 ];
 
-module.exports = activities;
+
 
 

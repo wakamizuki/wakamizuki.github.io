@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     {
         title: "Hakone Shrine: A Serene Oasis",
         description: "Hakone Shrine is a peaceful Shinto shrine located by Lake Ashi, surrounded by lush greenery and offering stunning views of Mount Fuji.",
@@ -70,4 +70,3 @@ const activities = [
 
 
 ];
-module.exports = activities;

@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     
     {
         title: "Ashinoko Lake",
@@ -75,6 +75,6 @@ const activities = [
 
 ];
 
-module.exports = activities;
+
 
 

@@ -25,7 +25,6 @@
 }
 
 
-
 .explanation{
     text-align: left;
 }
@@ -62,7 +61,7 @@
     height: 250px;
 }
 
-.custom-card-small h4{
+.custom-card-small h2{
     font-size: 1.1rem;
 }
 .custom-card-small p{

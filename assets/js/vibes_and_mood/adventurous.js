@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     
     {
         title: "Forest Adventure",
@@ -99,6 +99,6 @@ const activities = [
 
 ];
 
-module.exports = activities;
+
 
 

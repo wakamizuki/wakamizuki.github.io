@@ -1,6 +1,5 @@
 // splash.js
 window.addEventListener('DOMContentLoaded', () => {
-
     const container = document.querySelector("#local-activities-and-sightseeing .row");
     // 安全に activities が存在しているかチェックも可
     if (typeof activities !== 'undefined' && Array.isArray(activities)) {
@@ -14,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         <img src="${activity.image}" class="card-img-top" alt="${activity.title}">
                     </a>
                     <div class="card-body p-0">
-                        <h4 class="card-title">${activity.title}</h4>
+                        <h2 class="card-title">${activity.title}</h2>
                         <p class="card-text">${activity.description}</p>
                     </div>
                 </div>
@@ -32,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
                                             alt="odawara-castle-and-history">
                                     </a>
                                     <div class="card-body p-0">
-                                        <h4 class="card-title">Odawara Castle</h4>
+                                        <h2 class="card-title">Odawara Castle</h2>
                                         <p class="card-text">Odawara Castle offers a glimpse into Japan’s samurai past with its
                                             well-preserved
                                             architecture and scenic views.</p>
