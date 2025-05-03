@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     {
         title: "Lake Sai: The Hidden Gem of Japan",
         description: "Lake Sai is a picturesque lake located in the heart of Japan, surrounded by lush greenery and offering a serene escape for nature lovers.",
@@ -79,4 +79,3 @@ const activities = [
     },
 ]
 
-module.exports = activities;

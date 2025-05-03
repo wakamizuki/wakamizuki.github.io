@@ -1,4 +1,5 @@
 // splash.js
+
 window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.getElementById('splash').style.display = 'none';
@@ -18,9 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
                             <img src="${activity.image}" class="card-img-top" alt="${activity.title}">
                         </a>
                         <div class="card-body p-1">
-                            <h4 class="card-title">${activity.title}</h4>
+                            <h2 class="card-title">${activity.title}</h2>
                             <p class="card-text">${activity.description}</p>
-                            <a href="${activity.link}" class="btn btn-primary">See more</a>
+                            
                         </div>
                     </div>
                 `;
@@ -29,3 +30,4 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }, 2000);
 });
+//<a href="${activity.link}" class="btn btn-primary">See more</a>

@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     {
         title: "Mount Fuji (Mt. Fuji)",
         description: "Climbing Mt. Fuji is a popular activity among international tourists, and it typically takes two days and one night.",
@@ -64,4 +64,3 @@ const activities = [
 
 
 ];
-module.exports = activities;

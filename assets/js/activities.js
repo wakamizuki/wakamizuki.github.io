@@ -1,4 +1,4 @@
-const activities = [
+window.activities = [
     {
         title: "Fuji-Q Highland",
         description: "Fuji-Q Highland is renowned for its thrilling attractions set against the stunning backdrop of Mount Fuji.",
@@ -456,6 +456,7 @@ const activities = [
     link: "/src/activities/Hakone_Mototsumiya_Shrine.html"
 }
 
-
 ];
-module.exports = activities;
+
+
+
