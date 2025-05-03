@@ -448,8 +448,14 @@ const activities = [
     description: "Atami Castle is a historic Japanese castle located in Atami, Shizuoka Prefecture, offering beautiful views of the city and the ocean.",
     image: "/assets/images/Atami_Castle_1.jpg",
     link: "/src/activities/Atami_Castle.html"
+},
+{
+    title: "Hakone Mototsumiya Shrine",
+    description: "Experience the serene beauty and historical significance of Hakone Mototsumiya Shrine, nestled in the lush greenery of Hakone, Japan.",
+    image: "/assets/images/Hakone_Mototsumiya_Shrine_1.jpg",
+    link: "/src/activities/Hakone_Mototsumiya_Shrine.html"
 }
 
-];
 
+];
 module.exports = activities;

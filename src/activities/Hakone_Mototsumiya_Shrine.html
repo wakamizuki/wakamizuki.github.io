@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Hakone Mototsumiya Shrine, a historic Shinto shrine located in Hakone, Japan. Learn about its cultural significance, scenic surroundings, and visiting tips.">
+    <title>Local Activities in the Japanese Countryside: Hakone Mototsumiya Shrine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-activities.css">
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div class="gradient-wrapper">
+        <div class="container mt-4 mb-4" id="activities">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h1 class="mb-4">Hakone Mototsumiya Shrine</h1>
+                            <h3 class="card-title">Overview</h3>
+                            <p>
+                                Hakone Mototsumiya Shrine is a historic Shinto shrine nestled in the picturesque Hakone region of Japan. It holds great cultural significance and offers a serene retreat for visitors seeking spiritual experiences amidst natural beauty.
+                                The shrine's architecture, surrounded by lush greenery and overlooking Lake Ashi, creates a tranquil atmosphere for contemplation and exploration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-gallery mb-4 mp-2">
+                        <img src="/assets/images/Hakone_Mototsumiya_Shrine_1.jpg" alt="scenic view of Hakone Mototsumiya Shrine">
+                        <img src="/assets/images/Hakone_Mototsumiya_Shrine_2.jpg" alt="traditional architecture of Hakone Mototsumiya Shrine">
+                        <img src="/assets/images/Hakone_Mototsumiya_Shrine_3.jpg" alt="surroundings of Hakone Mototsumiya Shrine">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Official Website</h3>
+                            <p class="card-text">For more details, please visit the official website.</p>
+                            <a href="https://www.hakoneshrine.com/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Visit Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Activity Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Location:</strong> Hakone, Kanagawa, Japan</li>
+                                <li class="list-group-item"><strong>Opening Hours:</strong> Daily from 9:00 AM to 5:00 PM</li>
+                                <li class="list-group-item"><strong>Best Time to Visit:</strong> Spring for cherry blossoms, Autumn for fall foliage</li>
+                                <li class="list-group-item"><strong>Tips:</strong> Wear comfortable shoes for walking around the shrine grounds and bring a camera to capture the stunning views.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"> </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
