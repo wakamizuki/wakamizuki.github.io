@@ -28,7 +28,7 @@ function loadNextActivities() {
         loadedCount += nextBatch.length;
 
         if (loadedCount >= activities.length) {
-            document.getElementById("load-more-wrapper").style.display = "none";
+            document.getElementById("load-more-btn").style.display = "none";
         }
 
         loadCount++;
