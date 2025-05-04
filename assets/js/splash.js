@@ -1,5 +1,3 @@
-// splash.js
-
 window.addEventListener('DOMContentLoaded', () => {
     console.log("DOM fully loaded"); // ← これを追加
     const sakuraContainer = document.querySelector('.sakura-container');
@@ -38,7 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
                         <div class="card-body p-1">
                             <h2 class="card-title">${activity.title}</h2>
                             <p class="card-text">${activity.description}</p>
-                            
                         </div>
                     </div>
                 `;
