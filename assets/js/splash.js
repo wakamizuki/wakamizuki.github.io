@@ -53,8 +53,9 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log("DOM fully loaded"); // ← これを追加
     const sakuraContainer = document.querySelector('.sakura-container');
     if (sakuraContainer) {
-        
-        for (let i = 0; i < 100; i++) {
+        const isMobile = window.innerWidth <= 768; // モバイルの幅を768pxに設定
+        const numberOfSakura = isMobile ? 35 : 100; // モバイルの場合は50、それ以外は100
+        for (let i = 0; i < numberOfSakura; i++) {
             const sakura = document.createElement('div');
             if (Math.random() < 0.5) {
                 sakura.classList.add('dark'); // 50%で濃い色を適用
