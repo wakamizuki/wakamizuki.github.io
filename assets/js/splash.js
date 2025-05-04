@@ -1,3 +1,52 @@
+let loadedCount = 0;
+const itemsPerClick = 12;
+let loadCount = 0;
+
+function loadNextActivities() {
+    const container = document.querySelector("#local-activities-and-sightseeing .row");
+    const nextBatch = activities.slice(loadedCount, loadedCount + itemsPerClick);
+    const spinner = document.getElementById("spinner");
+
+    const render = () => {
+        nextBatch.forEach(activity => {
+            const cardElement = document.createElement("div");
+            cardElement.classList.add("col-6", "col-md-4", "col-lg-2", "p-0", "pl-2", "pb-1");
+            cardElement.innerHTML = `
+                <div class="card custom-card">
+                    <a href="${activity.link}">
+                        <img src="${activity.image}" class="card-img-top" alt="${activity.title}" loading="lazy">
+                    </a>
+                    <div class="card-body p-1">
+                        <h2 class="card-title">${activity.title}</h2>
+                        <p class="card-text">${activity.description}</p>
+                    </div>
+                </div>
+            `;
+            container.appendChild(cardElement);
+        });
+
+        loadedCount += nextBatch.length;
+
+        if (loadedCount >= activities.length) {
+            document.getElementById("load-more-wrapper").style.display = "none";
+        }
+
+        loadCount++;
+
+        // スピナー非表示
+        if (spinner) spinner.style.display = "none";
+    };
+
+    if (loadCount === 0) {
+        render();
+    } else {
+        if (spinner) spinner.style.display = "block"; // スピナー表示
+        const delay = 1400;
+        setTimeout(render, delay);
+    }
+}
+
+
 window.addEventListener('DOMContentLoaded', () => {
     console.log("DOM fully loaded"); // ← これを追加
     const sakuraContainer = document.querySelector('.sakura-container');
@@ -19,29 +68,10 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.getElementById('splash').style.display = 'none';
         document.getElementById('gradient-wrapper').style.display = 'block';
-
-        const container = document.querySelector("#local-activities-and-sightseeing .row");
-
-        // 安全に activities が存在しているかチェックも可
-        if (typeof activities !== 'undefined' && Array.isArray(activities)) {
-            activities.forEach(activity => {
-                const cardElement = document.createElement("div");
-                cardElement.classList.add("col-6", "col-md-4", "col-lg-2", "p-0", "pl-2", "pb-1");
-
-                cardElement.innerHTML = `
-                    <div class="card custom-card">
-                        <a href="${activity.link}">
-                            <img src="${activity.image}" class="card-img-top" alt="${activity.title}">
-                        </a>
-                        <div class="card-body p-1">
-                            <h2 class="card-title">${activity.title}</h2>
-                            <p class="card-text">${activity.description}</p>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(cardElement);
-            });
-        }
-    }, 2000);
+        loadNextActivities();
+        const loadMoreButton = document.getElementById("load-more-btn");
+        loadMoreButton.addEventListener("click", () => {
+            loadNextActivities();
+        });
+    }, 2300);
 });
-//<a href="${activity.link}" class="btn btn-primary">See more</a>

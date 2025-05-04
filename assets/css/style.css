@@ -179,7 +179,29 @@
     /* 内容がはみ出す場合にスクロール */
 }
 
+/* スピナーの回転をゆっくりに */
+#spinner .spinner-border {
+    animation: spin 1.2s linear infinite; /* デフォルトは0.75sくらい */
+    width: 3rem;
+    height: 3rem;
+}
 
+/* "Loading..."の文字を大きく */
+#spinner .spinner-border::after {
+    content: "Loading...";
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+    color: #198754; /* Bootstrapの緑色 (text-success) と合わせて */
+    font-weight: bold;
+}
+
+/* カスタムスピンアニメーション */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* 画面が小さい時にロゴとタイトルのサイズを調整 */
 @media (max-width: 670px) {
@@ -200,7 +222,7 @@
     }
 
     .custom-card {
-        height: 320px;
+        height: 260px;
         /* 高さを指定 */
     }
 

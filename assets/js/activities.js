@@ -1,15 +1,21 @@
 window.activities = [
     {
-        title: "Fuji-Q Highland",
-        description: "Fuji-Q Highland is renowned for its thrilling attractions set against the stunning backdrop of Mount Fuji.",
-        image: "/assets/images/Fujikyu_fixed.png",
-        link: "/src/activities/Fujikyu.html"
-    },
-    {
         title: "Odawara Castle",
         description: "Odawara Castle offers a glimpse into Japan’s samurai past with its well-preserved architecture and scenic views.",
         image: "/assets/images/Odawara_Castle_1.jpg",
         link: "/src/activities/Odawara_Castle.html"
+    },
+    {
+        title: "Enoshima Sea Candle",
+        description: "Enoshima Sea Candle is a lighthouse observation deck in Enoshima Island offering stunning views of the surrounding area and Mount Fuji.",
+        image: "/assets/images/Enoshima_Sea_Candle_2.jpg",
+        link: "/src/activities/Enoshima_Sea_Candle.html"
+    },
+    {
+        title: "Kamakura Great Buddha",
+        description: "Visit the iconic bronze statue of Buddha in Kamakura, Japan, standing at 43 feet tall and surrounded by serene gardens.",
+        image: "/assets/images/Kamakura_Great_Buddha_1.jpg",
+        link: "/src/activities/Kamakura_Great_Buddha.html"
     },
     {
         title: "Matsumoto Castle",
@@ -48,40 +54,10 @@ window.activities = [
         link: "/src/activities/Hikone_Castle.html"
     },
     {
-        title: "Zoorasia",
-        description: "Zoorasia is a large zoo in Yokohama known for its naturalistic animal exhibits and rare species like the okapi and Sumatran tiger.",
-        image: "/assets/images/Zoorasia_0.png",
-        link: "/src/activities/Zoorasia.html"
-    },
-    {
-        title: "Mount Fuji (Mt. Fuji)",
-        description: "Climbing Mt. Fuji is a popular activity among international tourists, and it typically takes two days and one night.",
-        image: "/assets/images/Mount_Fuji_1.png",
-        link: "/src/activities/Mount_Fuji.html"
-    },
-    {
-        title: "Oshino Shinobi no Sato",
-        description: "Oshino Shinobi no Sato is a NINJA-themed park located at the base of Mt. Fuji, especially popular with families and visitors interested in ninja culture.",
-        image: "/assets/images/Oshino_Ninja_1.png",
-        link: "/src/activities/Oshino_Ninja.html"
-    },
-    {
         title: "Belluna Dome",
         description: "Belluna Dome, located in Saitama, is the unique home of the Saitama Seibu Lions, known for its retractable roof and natural surroundings.",
         image: "/assets/images/Belluna_Dome_1.jpg",
         link: "/src/activities/Belluna_Dome.html"
-    },
-    {
-        title: "Ghibli Park",
-        description: "Ghibli Park is a theme park centered around the worlds of Studio Ghibli films, offering a unique space to experience the charm of the movies.",
-        image: "/assets/images/Ghibli_Park_3.png",
-        link: "/src/activities/Ghibli_Park.html"
-    },
-    {
-        title: "Ghibli Museum",
-        description: "The Ghibli Museum is a museum themed around the works of Studio Ghibli, offering a unique experience of the film's world.",
-        image: "/assets/images/Ghibli_Museum_2.png",
-        link: "/src/activities/Ghibli_Museum.html"
     },
     {
         title: "Inokashira Park",
@@ -138,6 +114,24 @@ window.activities = [
         link: "/src/activities/Narai_Juku.html"
     },
     {
+        title: "Fuji-Q Highland",
+        description: "Fuji-Q Highland is renowned for its thrilling attractions set against the stunning backdrop of Mount Fuji.",
+        image: "/assets/images/Fujikyu_fixed.png",
+        link: "/src/activities/Fujikyu.html"
+    },
+    {
+        title: "Mount Fuji (Mt. Fuji)",
+        description: "Climbing Mt. Fuji is a popular activity among international tourists, and it typically takes two days and one night.",
+        image: "/assets/images/Mount_Fuji_1.png",
+        link: "/src/activities/Mount_Fuji.html"
+    },
+    {
+        title: "Oshino Shinobi no Sato",
+        description: "Oshino Shinobi no Sato is a NINJA-themed park located at the base of Mt. Fuji, especially popular with families and visitors interested in ninja culture.",
+        image: "/assets/images/Oshino_Ninja_1.png",
+        link: "/src/activities/Oshino_Ninja.html"
+    },
+    {
         title: "Sarugakyo Bungy Jump",
         description: "Experience the thrill of bungee jumping in the beautiful Sarugakyo area surrounded by nature.",
         image: "/assets/images/Sarugakyo_Bungy_1.jpg",
@@ -186,6 +180,18 @@ window.activities = [
         link: "/src/activities/Hakone_Open_Air_Museum.html"
     },
     {
+        title: "Ghibli Park",
+        description: "Ghibli Park is a theme park centered around the worlds of Studio Ghibli films, offering a unique space to experience the charm of the movies.",
+        image: "/assets/images/Ghibli_Park_3.png",
+        link: "/src/activities/Ghibli_Park.html"
+    },
+    {
+        title: "Ghibli Museum",
+        description: "The Ghibli Museum is a museum themed around the works of Studio Ghibli, offering a unique experience of the film's world.",
+        image: "/assets/images/Ghibli_Museum_2.png",
+        link: "/src/activities/Ghibli_Museum.html"
+    },
+    {
         title: "Pola Museum of Art",
         description: "Experience a world-class collection of art in a stunning architectural setting at the Pola Museum of Art.",
         image: "/assets/images/Pola_Museum_of_Art_1.jpg",
@@ -202,6 +208,12 @@ window.activities = [
         description: "Experience the beauty of the vast golden susuki grass fields in Sengokuhara, Japan, offering a serene escape from the bustling city life.",
         image: "/assets/images/Sengokuhara_Susuki_Grassland_1.jpg",
         link: "/src/activities/Sengokuhara_Susuki_Grassland.html"
+    },
+    {
+        title: "Zoorasia",
+        description: "Zoorasia is a large zoo in Yokohama known for its naturalistic animal exhibits and rare species like the okapi and Sumatran tiger.",
+        image: "/assets/images/Zoorasia_0.png",
+        link: "/src/activities/Zoorasia.html"
     },
     {
         title: "Hakone Ropeway Adventure",
@@ -264,12 +276,6 @@ window.activities = [
         link: "/src/activities/Enoshima_Iwaya_Caves.html"
     },
     {
-        title: "Enoshima Sea Candle",
-        description: "Enoshima Sea Candle is a lighthouse observation deck in Enoshima Island offering stunning views of the surrounding area and Mount Fuji.",
-        image: "/assets/images/Enoshima_Sea_Candle_2.jpg",
-        link: "/src/activities/Enoshima_Sea_Candle.html"
-    },
-    {
         title: "Zeniarai Benten Shrine",
         description: "Zeniarai Benten Shrine is a popular Shinto shrine in Kamakura, Japan, known for its unique ritual of washing money for good luck.",
         image: "/assets/images/Zeniarai_Benten_Shrine_1.jpg",
@@ -286,12 +292,6 @@ window.activities = [
         description: "Komachi Street is a bustling pedestrian street in Kamakura known for its traditional shops, cafes, and souvenirs.",
         image: "/assets/images/Komachi_Street_1.jpg",
         link: "/src/activities/Komachi_Street.html"
-    },
-    {
-        title: "Kamakura Great Buddha",
-        description: "Visit the iconic bronze statue of Buddha in Kamakura, Japan, standing at 43 feet tall and surrounded by serene gardens.",
-        image: "/assets/images/Kamakura_Great_Buddha_1.jpg",
-        link: "/src/activities/Kamakura_Great_Buddha.html"
     },
     {
         title: "Hase Temple - A Serene Buddhist Sanctuary",
