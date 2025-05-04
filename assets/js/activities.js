@@ -24,10 +24,10 @@ const activities = [
         link: "/src/activities/Matsumoto_Castle.html"
     },
     {
-        title: "Hitachi Seaside Park",
-        description: "Hitachi Seaside Park is a vast national park located in Hitachinaka City, Ibaraki Prefecture.",
-        image: "/assets/images/Hitachi_fixed.png",
-        link: "/src/activities/Hitachi_Seaside_Park.html"
+        title: "Himeji Castle",
+        description: "Known as the 'White Heron Castle,' Himeji Castle is a UNESCO World Heritage Site and Japan's most famous historic castle.",
+        image: "/assets/images/Himeji_Castle_1.jpg",
+        link: "/src/activities/Himeji_Castle.html"
     },
     {
         title: "Forest Adventure",
@@ -42,11 +42,12 @@ const activities = [
         link: "/src/activities/Snorkeling_in_Kerama.html"
     },
     {
-        title: "Himeji Castle",
-        description: "Known as the 'White Heron Castle,' Himeji Castle is a UNESCO World Heritage Site and Japan's most famous historic castle.",
-        image: "/assets/images/Himeji_Castle_1.jpg",
-        link: "/src/activities/Himeji_Castle.html"
+        title: "Hitachi Seaside Park",
+        description: "Hitachi Seaside Park is a vast national park located in Hitachinaka City, Ibaraki Prefecture.",
+        image: "/assets/images/Hitachi_fixed.png",
+        link: "/src/activities/Hitachi_Seaside_Park.html"
     },
+    
     {
         title: "Hikone Castle",
         description: "A designated National Treasure, Hikone Castle is one of the few original castles in Japan and offers scenic views of Lake Biwa.",

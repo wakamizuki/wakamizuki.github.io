@@ -4,7 +4,9 @@ let loadCount = 0;
 
 function loadNextActivities() {
     const container = document.querySelector("#local-activities-and-sightseeing .row");
-    const nextBatch = activities.slice(loadedCount, loadedCount + itemsPerClick);
+    const nextBatch = loadCount === 0 
+        ? activities.slice(loadedCount, loadedCount + Math.ceil(itemsPerClick / 2)) 
+        : activities.slice(loadedCount, loadedCount + itemsPerClick);
     const spinner = document.getElementById("spinner");
 
     const render = () => {
