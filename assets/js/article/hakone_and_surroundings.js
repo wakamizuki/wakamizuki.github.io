@@ -72,6 +72,12 @@ window.activities = [
         image: "/assets/images/Hakone_Checkpoint_1.jpg",
         link: "/src/activities/Hakone_Checkpoint.html"
     },
+    {
+        title: "Hakone Mototsumiya Shrine",
+        description: "Experience the serene beauty and historical significance of Hakone Mototsumiya Shrine, nestled in the lush greenery of Hakone, Japan.",
+        image: "/assets/images/Hakone_Mototsumiya_Shrine_1.jpg",
+        link: "/src/activities/Hakone_Mototsumiya_Shrine.html"
+    }
 
 ];
 

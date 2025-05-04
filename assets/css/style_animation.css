@@ -22,7 +22,7 @@
         #ffe4ec
     );
     background-size: 800% 800%;
-    animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 6s ease infinite;
     z-index: 100;
     opacity: 1;
     transition: opacity 2s ease-in-out;
