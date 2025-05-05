@@ -80,7 +80,7 @@
     color: #678d6c;
 }
 
-@media (max-width: 670px) {
+@media (max-width:768px) {
 
     .menu li {
         height:42px

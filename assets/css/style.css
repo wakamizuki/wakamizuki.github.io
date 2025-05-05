@@ -11,7 +11,7 @@
     /* 上下の余白を追加 */
     text-align: center;
     /* テキストを中央揃え */
-    width: 95%;
+    width: 98%;
     margin: 10px auto;
     /* 中央揃え */
 }
@@ -28,15 +28,12 @@
 }
 
 .highlight-section h2 {
-    text-align: left;
-    font-size: 2.5rem;
-    /* 見出しのフォントサイズを調整 */
-    font-weight: bold;
-    /* 見出しを太字に */
-    margin-bottom: 20px;
-    /* 見出しと段落の間に余白を追加 */
     color: #0e430f;
-    /* テキストの色をダークグレーに */
+    text-align: left;
+}
+.highlight-section h3{
+    color: #0e430f;
+    text-align: left;
 }
 
 .highlight-section p {
@@ -204,7 +201,7 @@
 }
 
 /* 画面が小さい時にロゴとタイトルのサイズを調整 */
-@media (max-width: 670px) {
+@media (max-width:768px) {
     .custom-header .logo-img {
         height: 30px;
         width: 30px;
