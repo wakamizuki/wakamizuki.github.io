@@ -28,6 +28,7 @@
 }
 
 .highlight-section h2 {
+    font-weight: bold;
     color: #0e430f;
     text-align: left;
 }
@@ -39,18 +40,33 @@
 .highlight-section p {
     font-size: 1.2rem;
     /* 段落のフォントサイズを少し大きく */
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     /* 段落とボタンの間に余白を追加 */
     color: #0c7b1b;
     /* テキストの色を中間色に */
 }
 
-.highlight-section .btn-primary {
+.highlight-section .btn-primary{
     padding: 10px 20px;
     /* ボタンの余白を調整 */
     font-size: 1.1rem;
     /* ボタンのフォントサイズを調整 */
 }
+
+.highlight-section .btn-vibe{
+    padding: 10px 20px;
+    /* ボタンの余白を調整 */
+    font-size: 1.1rem;
+    /* ボタンのフォントサイズを調整 */
+}
+
+.highlight-section .btn-article{
+    padding: 10px 20px;
+    /* ボタンの余白を調整 */
+    font-size: 1.1rem;
+    /* ボタンのフォントサイズを調整 */
+}
+
 
 .btn {
     padding: 10px 16px;
@@ -156,7 +172,7 @@
     color: #cc5500;
 }
 
-.custom-card h2 {
+.custom-card h4 {
     font-size: 1.5rem;
     font-weight: bold;
 }
