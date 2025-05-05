@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         <img src="${activity.image}" class="card-img-top" alt="${activity.title}">
                     </a>
                     <div class="card-body p-0">
-                        <h2 class="card-title">${activity.title}</h2>
+                        <h4 class="card-title">${activity.title}</h4>
                         <p class="card-text">${activity.description}</p>
                     </div>
                 </div>
@@ -24,19 +24,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 /*
-                            <div class="col-lg-6 col-md-12 col-sm-4 col-4 p-0 pl-2 pb-1">
-                                <div class="card custom-card custom-card-small">
-                                    <a href="/src/activities/Odawara_Castle.html">
-                                        <img src="/assets/images/Odawara_Castle_1.jpg" class="card-img-top"
-                                            alt="odawara-castle-and-history">
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <h2 class="card-title">Odawara Castle</h2>
-                                        <p class="card-text">Odawara Castle offers a glimpse into Japan’s samurai past with its
-                                            well-preserved
-                                            architecture and scenic views.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
 */

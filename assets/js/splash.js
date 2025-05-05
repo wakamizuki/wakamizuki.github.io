@@ -19,22 +19,18 @@ function loadNextActivities() {
                         <img src="${activity.image}" class="card-img-top" alt="${activity.title}" loading="lazy">
                     </a>
                     <div class="card-body p-1">
-                        <h2 class="card-title">${activity.title}</h2>
+                        <h4 class="card-title">${activity.title}</h4>
                         <p class="card-text">${activity.description}</p>
                     </div>
                 </div>
             `;
             container.appendChild(cardElement);
         });
-
         loadedCount += nextBatch.length;
-
         if (loadedCount >= activities.length) {
             document.getElementById("load-more-btn").style.display = "none";
         }
-
         loadCount++;
-
         // スピナー非表示
         if (spinner) spinner.style.display = "none";
     };
@@ -54,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const sakuraContainer = document.querySelector('.sakura-container');
     if (sakuraContainer) {
         const isMobile = window.innerWidth <= 768; // モバイルの幅を768pxに設定
-        const numberOfSakura = isMobile ? 35 : 100; // モバイルの場合は50、それ以外は100
+        const numberOfSakura = isMobile ? 35 : 60; // モバイルの場合は50、それ以外は100
         for (let i = 0; i < numberOfSakura; i++) {
             const sakura = document.createElement('div');
             if (Math.random() < 0.5) {
