@@ -32,7 +32,8 @@
     color: #0e430f;
     text-align: left;
 }
-.highlight-section h3{
+
+.highlight-section h3 {
     color: #0e430f;
     text-align: left;
 }
@@ -40,27 +41,27 @@
 .highlight-section p {
     font-size: 1.2rem;
     /* 段落のフォントサイズを少し大きく */
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     /* 段落とボタンの間に余白を追加 */
     color: #0c7b1b;
     /* テキストの色を中間色に */
 }
 
-.highlight-section .btn-primary{
+.highlight-section .btn-primary {
     padding: 10px 20px;
     /* ボタンの余白を調整 */
     font-size: 1.1rem;
     /* ボタンのフォントサイズを調整 */
 }
 
-.highlight-section .btn-vibe{
+.highlight-section .btn-vibe {
     padding: 10px 20px;
     /* ボタンの余白を調整 */
     font-size: 1.1rem;
     /* ボタンのフォントサイズを調整 */
 }
 
-.highlight-section .btn-article{
+.highlight-section .btn-article {
     padding: 10px 20px;
     /* ボタンの余白を調整 */
     font-size: 1.1rem;
@@ -85,13 +86,15 @@
     /* インラインブロック要素として表示 */
 }
 
-.btn.btn-vibe{
+.btn.btn-vibe {
     background-color: #590459;
 }
-.btn.btn-interest{
+
+.btn.btn-interest {
     background-color: #cc5500;
 }
-.btn.btn-article{
+
+.btn.btn-article {
     background-color: hsl(211, 86%, 36%);
 }
 
@@ -151,19 +154,23 @@
     overflow: hidden;
     /* 内容がはみ出す場合に隠す */
 }
+
 /* --- 種類ごとのカスタマイズ --- */
 .card-spot {
-    border-color: #0d580e; /* 緑系 */
+    border-color: #0d580e;
+    /* 緑系 */
     color: #0d580e;
 }
 
 .card-article {
-    border: 5px solid #0d59aa; /* 青系 */
+    border: 5px solid #0d59aa;
+    /* 青系 */
     color: #004085;
 }
 
 .card-vibe {
-    border: 5px solid #940b94; /* 紫系 */
+    border: 5px solid #940b94;
+    /* 紫系 */
     color: #590459;
 }
 
@@ -194,7 +201,8 @@
 
 /* スピナーの回転をゆっくりに */
 #spinner .spinner-border {
-    animation: spin 1.2s linear infinite; /* デフォルトは0.75sくらい */
+    animation: spin 1.2s linear infinite;
+    /* デフォルトは0.75sくらい */
     width: 3rem;
     height: 3rem;
 }
@@ -205,7 +213,8 @@
     display: block;
     font-size: 1.2rem;
     margin-top: 0.5em;
-    color: #198754; /* Bootstrapの緑色 (text-success) と合わせて */
+    color: #198754;
+    /* Bootstrapの緑色 (text-success) と合わせて */
     font-weight: bold;
 }
 
@@ -222,9 +231,11 @@
         height: 30px;
         width: 30px;
     }
-    .custom-card{
+
+    .custom-card {
         height: 230px;
     }
+
     .custom-header .site-name {
         font-size: 1.2rem;
         /* フォントサイズを修正 */

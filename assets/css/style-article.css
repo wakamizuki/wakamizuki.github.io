@@ -1,5 +1,6 @@
 section[id] {
-    scroll-margin-top: 210px; /* ← 固定ヘッダーの高さに合わせて調整 */
+    scroll-margin-top: 210px;
+    /* ← 固定ヘッダーの高さに合わせて調整 */
 }
 
 .explanation {
@@ -9,9 +10,11 @@ section[id] {
 .explanation h2 {
     font-size: 1.7rem;
 }
-.explanation h3{
+
+.explanation h3 {
     font-size: 1.3rem;
 }
+
 .explanation p {
     font-size: 1.1rem;
     margin-bottom: 5px;
@@ -29,7 +32,8 @@ section[id] {
     top: 140px;
     margin: 0 5px;
     text-align: left;
-    background-color: #ebebeb; /* Bootstrapで使われる薄いグレー */
+    background-color: #ebebeb;
+    /* Bootstrapで使われる薄いグレー */
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #b4b2b2;
@@ -88,6 +92,15 @@ section[id] {
     font-size: 1.2rem;
 }
 
+#intro-column {
+    background-color: #ebebeb;
+    /* 同じ色 */
+    padding: 4px;
+    border-radius: 8px;
+    /* 目次と違ってボーダーなし or シャドウで差別化 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
     .menu li {
         height: 42px;
@@ -101,9 +114,11 @@ section[id] {
     .explanation h2 {
         font-size: 1.2rem;
     }
-    .explanation h3{
+
+    .explanation h3 {
         font-size: 0.9rem;
     }
+
     .explanation p {
         font-size: 0.6rem;
         margin-bottom: 5px;
