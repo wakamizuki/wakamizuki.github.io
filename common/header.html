@@ -3,6 +3,12 @@
 <html lang="en">
 
 <head>
+    <!-- <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="EJC" /> -->
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Explore Japan's Countryside</title>
@@ -49,7 +55,8 @@
         .custom-header .logo-img {
             width: 50px;
             height: 50px;
-            border-radius: 50%;
+            border-radius: 25%;
+            /* border: 2px solid rgb(99, 100, 99); */
             object-fit: cover;
             margin-right: 15px;
             /* ロゴとテキストの間にスペースを追加 */
@@ -84,8 +91,8 @@
 
         @media (max-width: 550px) {
             .custom-header .logo-img {
-                height: 30px;
-                width: 30px;
+                height: 35px;
+                width: 35px;
             }
 
             .custom-header .site-name {
@@ -98,7 +105,7 @@
 <header class="custom-header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">
-            <img src="/assets/images/logo.png" alt="Logo" class="logo-img">
+            <img src="/assets/images/favicon.svg" alt="Logo" class="logo-img">
             <span class="site-name pr-5 mr-5">Explore Japan's Countryside</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
