@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Matsumoto_Castle.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Hitachi_Seaside_Park.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -104,7 +104,7 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Inokashira_Park.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -152,7 +152,7 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Narai_Juku.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -254,7 +254,7 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Zoorasia.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -495,6 +495,18 @@
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Hakone_Mototsumiya_Shrine.html</loc>
     <lastmod>2025-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Magome-juku.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Tsumago-juku.html</loc>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
