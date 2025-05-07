@@ -47,7 +47,7 @@ const activities = [
         image: "/assets/images/Hitachi_fixed.png",
         link: "/src/activities/Hitachi_Seaside_Park.html"
     },
-    
+
     {
         title: "Hikone Castle",
         description: "A designated National Treasure, Hikone Castle is one of the few original castles in Japan and offers scenic views of Lake Biwa.",
@@ -455,7 +455,21 @@ const activities = [
         description: "Experience the serene beauty and historical significance of Hakone Mototsumiya Shrine, nestled in the lush greenery of Hakone, Japan.",
         image: "/assets/images/Hakone_Mototsumiya_Shrine_1.jpg",
         link: "/src/activities/Hakone_Mototsumiya_Shrine.html"
+    },
+    {
+        title: "Magome-juku: A Quaint Edo-period Post Town",
+        description: "Experience the charm of Magome-juku, a beautifully preserved Edo-period post town nestled in the mountains of Japan.",
+        image: "/assets/images/Magome_juku_1.jpg",
+        link: "/src/activities/Magome-juku.html"
+    },
+    {
+        title: "Tsumago-juku: A Traditional Post Town Experience",
+        description: "Tsumago-juku is a beautifully preserved post town along the Nakasendo Trail, offering visitors a glimpse into Japan's historical past.",
+        image: "/assets/images/Tsumago_juku_1.jpg",
+        link: "/src/activities/Tsumago-juku.html"
     }
+
+
 
 ];
 
@@ -464,12 +478,7 @@ if (typeof window !== "undefined") {
     window.activities = activities;
 }
 
-  // Node.js ではモジュールとしてエクスポート
+// Node.js ではモジュールとしてエクスポート
 if (typeof module !== "undefined" && module.exports) {
     module.exports = activities;
 }
-
-
-
-
-
