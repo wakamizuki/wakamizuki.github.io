@@ -45,6 +45,24 @@
     font-weight: bold;
 }
 
+.custom-card-small {
+    height: 250px;
+}
+
+.custom-card-small h4 {
+    font-size: 1.1rem;
+}
+
+.custom-card-small p {
+    font-size: 0.7rem;
+}
+
+.custom-card-small img {
+    height: 150px;
+    object-fit: cover;
+}
+
+
 @media (max-width:768px) {
     .image-gallery {
         height: 250px;
