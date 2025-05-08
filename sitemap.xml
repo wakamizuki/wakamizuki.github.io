@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://explorejapanscountryside.com</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -100,7 +100,7 @@
     <loc>https://explorejapanscountryside.com/src/activities/Belluna_Dome.html</loc>
     <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Inokashira_Park.html</loc>
@@ -506,6 +506,24 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Tsumago-juku.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Seibu-en_Amusement_Park.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Tokorozawa_Aviation_Memorial_Park.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Japanese_Tea_Experience_Sayama.html</loc>
     <lastmod>2025-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
