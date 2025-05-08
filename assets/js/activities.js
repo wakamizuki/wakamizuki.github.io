@@ -467,12 +467,26 @@ const activities = [
         description: "Tsumago-juku is a beautifully preserved post town along the Nakasendo Trail, offering visitors a glimpse into Japan's historical past.",
         image: "/assets/images/Tsumago_juku_1.jpg",
         link: "/src/activities/Tsumago-juku.html"
+    },
+    {
+        title: "Seibu-en Amusement Park",
+        description: "Experience thrilling rides and attractions at Seibu-en Amusement Park, perfect for a fun day out with family and friends.",
+        image: "/assets/images/Seibu-en_Amusement_Park_1.jpg",
+        link: "/src/activities/Seibu-en_Amusement_Park.html"
+    },
+    {
+        title: "Tokorozawa Aviation Memorial Park",
+        description: "Explore the rich history of aviation in Japan at this unique park featuring vintage aircraft displays and interactive exhibits.",
+        image: "/assets/images/Tokorozawa_Aviation_Memorial_Park_1.jpg",
+        link: "/src/activities/Tokorozawa_Aviation_Memorial_Park.html"
+    },
+    {
+        title: "Japanese Tea Experience in Sayama",
+        description: "Immerse yourself in the traditional art of Japanese tea ceremony in the serene setting of Sayama, where you can learn about the history and culture of tea in Japan.",
+        image: "/assets/images/Japanese_Tea_Experience_Sayama_1.jpg",
+        link: "/src/activities/Japanese_Tea_Experience_Sayama.html"
     }
-
-
-
 ];
-
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
     window.activities = activities;
