@@ -1,5 +1,11 @@
 window.activities = [
     {
+        title: "Oshino Shinobi no Sato",
+        description: "Oshino Shinobi no Sato is a NINJA-themed park located at the base of Mt. Fuji, especially popular with families and visitors interested in ninja culture.",
+        image: "/assets/images/Oshino_Ninja_1.png",
+        link: "/src/activities/Oshino_Ninja.html"
+    },
+    {
         title: "Lake Sai: The Hidden Gem of Japan",
         description: "Lake Sai is a picturesque lake located in the heart of Japan, surrounded by lush greenery and offering a serene escape for nature lovers.",
         image: "/assets/images/Lake_Sai_1.jpg",
@@ -28,12 +34,6 @@ window.activities = [
         description: "Lake Kawaguchi is a stunning freshwater lake located near Mount Fuji, offering breathtaking views and a variety of outdoor activities.",
         image: "/assets/images/Lake_Kawaguchi_1.jpg",
         link: "/src/activities/Lake_Kawaguchi.html"
-    },
-    {
-        title: "Oshino Shinobi no Sato",
-        description: "Oshino Shinobi no Sato is a NINJA-themed park located at the base of Mt. Fuji, especially popular with families and visitors interested in ninja culture.",
-        image: "/assets/images/Oshino_Ninja_1.png",
-        link: "/src/activities/Oshino_Ninja.html"
     },
     {
         title: "Narusawa Ice Cave Adventure",
