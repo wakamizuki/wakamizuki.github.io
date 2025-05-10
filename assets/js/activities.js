@@ -485,7 +485,20 @@ const activities = [
         description: "Immerse yourself in the traditional art of Japanese tea ceremony in the serene setting of Sayama, where you can learn about the history and culture of tea in Japan.",
         image: "/assets/images/Japanese_Tea_Experience_Sayama_1.jpg",
         link: "/src/activities/Japanese_Tea_Experience_Sayama.html"
+    },
+    {
+        title: "Kiga Checkpoint",
+        description: "Experience the history and culture of feudal Japan at Kiga-Sekisho, a well-preserved checkpoint from the Edo period.",
+        image: "/assets/images/Kiga_Sekisho_1.jpg",
+        link: "/src/activities/Kiga_Sekisho.html"
+    },
+    {
+        title: "Arai Checkpoint",
+        description: "Arai-Sekisho is a historic checkpoint along the old Hokkoku Kaido highway in Japan, offering a glimpse into the country's feudal past.",
+        image: "/assets/images/Arai_Sekisho_1.jpg",
+        link: "/src/activities/Arai_Sekisho.html"
     }
+
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {

@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/countryside_guide/index.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -529,6 +529,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Kiga_Sekisho.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Arai_Sekisho.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://explorejapanscountryside.com/src/interests/ballpark_adventures</loc>
     <lastmod>2025-05-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -593,5 +605,11 @@
     <lastmod>2025-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/countryside_guide/articles/what-is-sekisyo-checkpoint</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
