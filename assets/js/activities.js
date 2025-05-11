@@ -271,16 +271,16 @@ const activities = [
         link: "/src/activities/Tsurugaoka_Hachimangu.html"
     },
     {
-        title: "Enoshima Iwaya Caves",
-        description: "Explore ancient caves formed by volcanic activity on Enoshima Island, offering a unique glimpse into Japan's geological history.",
-        image: "/assets/images/Enoshima_Iwaya_Caves_1.jpg",
-        link: "/src/activities/Enoshima_Iwaya_Caves.html"
-    },
-    {
         title: "Zeniarai Benten Shrine",
         description: "Zeniarai Benten Shrine is a popular Shinto shrine in Kamakura, Japan, known for its unique ritual of washing money for good luck.",
         image: "/assets/images/Zeniarai_Benten_Shrine_1.jpg",
         link: "/src/activities/Zeniarai_Benten_Shrine.html"
+    },
+    {
+        title: "Enoshima Iwaya Caves",
+        description: "Explore ancient caves formed by volcanic activity on Enoshima Island, offering a unique glimpse into Japan's geological history.",
+        image: "/assets/images/Enoshima_Iwaya_Caves_1.jpg",
+        link: "/src/activities/Enoshima_Iwaya_Caves.html"
     },
     {
         title: "Enoshima Shrine",
