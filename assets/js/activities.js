@@ -497,8 +497,37 @@ const activities = [
         description: "Arai-Sekisho is a historic checkpoint along the old Hokkoku Kaido highway in Japan, offering a glimpse into the country's feudal past.",
         image: "/assets/images/Arai_Sekisho_1.jpg",
         link: "/src/activities/Arai_Sekisho.html"
+    },
+    {
+        title: "Kiso Fukushima Sekisho",
+        description: "Experience the historic checkpoint that once controlled traffic on the Nakasendo highway during the Edo period in Japan.",
+        image: "/assets/images/Kiso_Fukushima_Sekisho_1.jpg",
+        link: "/src/activities/Kiso_Fukushima_Sekisho.html"
+    },
+    {
+        title: "Nozawa Onsen: Traditional Hot Spring Village",
+        description: "Nozawa Onsen is a charming village known for its traditional hot springs, ski resorts, and cultural experiences.",
+        image: "/assets/images/Nozawa_Onsen_1.jpg",
+        link: "/src/activities/Nozawa_Onsen.html"
+    },
+    {
+        title: "Suwa Lake: A Serene Escape",
+        description: "Suwa Lake, located in the heart of Japan, offers breathtaking views and a peaceful atmosphere perfect for relaxation and recreation.",
+        image: "/assets/images/Suwa_Lake_1.jpg",
+        link: "/src/activities/Suwa_Lake.html"
+    },
+    {
+        title: "Ueda Castle",
+        description: "Ueda Castle is a historic castle located in Nagano Prefecture, Japan, known for its beautiful architecture and scenic views.",
+        image: "/assets/images/Ueda_Castle_1.jpg",
+        link: "/src/activities/Ueda_Castle.html"
+    },
+    {
+        title: "Zenkōji Temple: A Spiritual Haven in Nagano",
+        description: "Zenkōji Temple is a historic Buddhist temple known for its sacred atmosphere and hidden Buddha statue. Visitors can explore the temple grounds and experience traditional rituals.",
+        image: "/assets/images/Zenkōji_Temple_1.jpg",
+        link: "/src/activities/Zenkōji_Temple.html"
     }
-
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
