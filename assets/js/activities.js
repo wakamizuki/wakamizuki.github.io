@@ -1,5 +1,17 @@
 const activities = [
     {
+        title: "Narusawa Ice Cave Adventure",
+        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
+        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
+        link: "/src/activities/Narusawa_Ice_Cave.html"
+    },
+    {
+        title: "Es Con Field Hokkaido",
+        description: "Es Con Field Hokkaido is a modern baseball stadium and the home field for the Hokkaido Nippon-Ham Fighters.",
+        image: "/assets/images/Es_Con_Field1.png",
+        link: "/src/activities/Es_Con_Field.html"
+    },
+    {
         title: "Hokokuji Temple - Bamboo Forest",
         description: "Hokokuji Temple is known for its serene bamboo forest, offering a peaceful escape from the bustling city of Kamakura.",
         image: "/assets/images/Hokokuji_Temple_1.jpg",
@@ -11,12 +23,6 @@ const activities = [
         description: "Enoshima Sea Candle is a lighthouse observation deck in Enoshima Island offering stunning views of the surrounding area and Mount Fuji.",
         image: "/assets/images/Enoshima_Sea_Candle_2.jpg",
         link: "/src/activities/Enoshima_Sea_Candle.html"
-    },
-    {
-        title: "Narusawa Ice Cave Adventure",
-        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
-        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
-        link: "/src/activities/Narusawa_Ice_Cave.html"
     },
     {
         title: "Kamakura Great Buddha",
@@ -84,12 +90,6 @@ const activities = [
         description: "Join us at Fujiyama Adventure Club for an exhilarating rafting experience on the beautiful and dynamic rivers of Japan.",
         image: "/assets/images/FujiyamaAdventurePark_1.jpg",
         link: "/src/activities/Fujiyama_Adventure_Club.html"
-    },
-    {
-        title: "Es Con Field Hokkaido",
-        description: "Es Con Field Hokkaido is a modern baseball stadium and the home field for the Hokkaido Nippon-Ham Fighters.",
-        image: "/assets/images/Es_Con_Field1.png",
-        link: "/src/activities/Es_Con_Field.html"
     },
     {
         title: "Mazda Zoom-Zoom Stadium Hiroshima",
