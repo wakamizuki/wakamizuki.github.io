@@ -1,11 +1,11 @@
 let loadedCount = 0;
-const itemsPerClick = 12;
+const itemsPerClick = 150;
 let loadCount = 0;
 
 function loadNextActivities() {
     const container = document.querySelector("#local-activities-and-sightseeing .row");
-    const nextBatch = loadCount === 0 
-        ? activities.slice(loadedCount, loadedCount + Math.ceil(itemsPerClick / 2)) 
+    const nextBatch = loadCount === 0
+        ? activities.slice(loadedCount, loadedCount + Math.ceil(itemsPerClick / 2))
         : activities.slice(loadedCount, loadedCount + itemsPerClick);
     const spinner = document.getElementById("spinner");
 
@@ -39,7 +39,7 @@ function loadNextActivities() {
         render();
     } else {
         if (spinner) spinner.style.display = "block"; // スピナー表示
-        const delay = 1400;
+        const delay = 100;
         setTimeout(render, delay);
     }
 }
@@ -72,5 +72,5 @@ window.addEventListener('DOMContentLoaded', () => {
         loadMoreButton.addEventListener("click", () => {
             loadNextActivities();
         });
-    }, 2300);
+    }, 300);
 });

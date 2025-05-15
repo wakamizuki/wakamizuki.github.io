@@ -1,15 +1,22 @@
 const activities = [
     {
-        title: "Odawara Castle",
-        description: "Odawara Castle offers a glimpse into Japan’s samurai past with its well-preserved architecture and scenic views.",
-        image: "/assets/images/Odawara_Castle_1.jpg",
-        link: "/src/activities/Odawara_Castle.html"
+        title: "Hokokuji Temple - Bamboo Forest",
+        description: "Hokokuji Temple is known for its serene bamboo forest, offering a peaceful escape from the bustling city of Kamakura.",
+        image: "/assets/images/Hokokuji_Temple_1.jpg",
+        link: "/src/activities/Hokokuji_Temple.html"
     },
+
     {
         title: "Enoshima Sea Candle",
         description: "Enoshima Sea Candle is a lighthouse observation deck in Enoshima Island offering stunning views of the surrounding area and Mount Fuji.",
         image: "/assets/images/Enoshima_Sea_Candle_2.jpg",
         link: "/src/activities/Enoshima_Sea_Candle.html"
+    },
+    {
+        title: "Narusawa Ice Cave Adventure",
+        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
+        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
+        link: "/src/activities/Narusawa_Ice_Cave.html"
     },
     {
         title: "Kamakura Great Buddha",
@@ -131,6 +138,12 @@ const activities = [
         description: "Oshino Shinobi no Sato is a NINJA-themed park located at the base of Mt. Fuji, especially popular with families and visitors interested in ninja culture.",
         image: "/assets/images/Oshino_Ninja_1.png",
         link: "/src/activities/Oshino_Ninja.html"
+    },
+    {
+        title: "Odawara Castle",
+        description: "Odawara Castle offers a glimpse into Japan’s samurai past with its well-preserved architecture and scenic views.",
+        image: "/assets/images/Odawara_Castle_1.jpg",
+        link: "/src/activities/Odawara_Castle.html"
     },
     {
         title: "Sarugakyo Bungy Jump",
@@ -301,12 +314,6 @@ const activities = [
         link: "/src/activities/Hase_Temple.html"
     },
     {
-        title: "Hokokuji Temple - Bamboo Forest",
-        description: "Hokokuji Temple is known for its serene bamboo forest, offering a peaceful escape from the bustling city of Kamakura.",
-        image: "/assets/images/Hokokuji_Temple_1.jpg",
-        link: "/src/activities/Hokokuji_Temple.html"
-    },
-    {
         title: "Lake Sai: The Hidden Gem of Japan",
         description: "Lake Sai is a picturesque lake located in the heart of Japan, surrounded by lush greenery and offering a serene escape for nature lovers.",
         image: "/assets/images/Lake_Sai_1.jpg",
@@ -335,12 +342,6 @@ const activities = [
         description: "Lake Kawaguchi is a stunning freshwater lake located near Mount Fuji, offering breathtaking views and a variety of outdoor activities.",
         image: "/assets/images/Lake_Kawaguchi_1.jpg",
         link: "/src/activities/Lake_Kawaguchi.html"
-    },
-    {
-        title: "Narusawa Ice Cave Adventure",
-        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
-        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
-        link: "/src/activities/Narusawa_Ice_Cave.html"
     },
     {
         title: "Mt. Fuji Panoramic Ropeway",

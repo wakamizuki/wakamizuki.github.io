@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Japan's Countryside</title>
+    <style>
+        canvas {
+            border: 1px solid #333;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chart-section">
+        <h3>Sample Pie Chart (Vivid Colors)</h3>
+        <canvas id="pieChart" width="300" height="300"></canvas>
+    </div>
+    <script>
+        const data = [0.2, 0.1, 0.1, 0.3, 0.4];
+        const colors = ["#FF3B30", "#FF9500", "#FFCC00", "#4CD964", "#007AFF"];
+        const canvas = document.getElementById("pieChart");
+        const ctx = canvas.getContext("2d");
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = Math.min(centerX, centerY) - 10;
+
+        let startAngle = 0;
+
+        data.forEach((value, index) => {
+            const sliceAngle = value * 2 * Math.PI;
+            const endAngle = startAngle + sliceAngle;
+
+            // グラデーションを作成
+            const gradient = ctx.createRadialGradient(centerX, centerY, radius * 0.7, centerX, centerY, radius);
+            gradient.addColorStop(0, colors[index % colors.length]);
+            gradient.addColorStop(1, "#FFFFFF");
+
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+            ctx.closePath();
+
+            ctx.fillStyle = gradient;
+            ctx.fill();
+
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "#000";
+            ctx.stroke();
+
+            startAngle = endAngle;
+        });
+    </script>
+</body>
+
+</html>
