@@ -1,5 +1,5 @@
 let loadedCount = 0;
-const itemsPerClick = 150;
+const itemsPerClick = 6;
 let loadCount = 0;
 
 function loadNextActivities() {
