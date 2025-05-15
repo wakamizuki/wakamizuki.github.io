@@ -39,7 +39,7 @@ function loadNextActivities() {
         render();
     } else {
         if (spinner) spinner.style.display = "block"; // スピナー表示
-        const delay = 100;
+        const delay = 1400;
         setTimeout(render, delay);
     }
 }
@@ -72,5 +72,5 @@ window.addEventListener('DOMContentLoaded', () => {
         loadMoreButton.addEventListener("click", () => {
             loadNextActivities();
         });
-    }, 300);
+    }, 2300);
 });
