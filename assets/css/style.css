@@ -88,6 +88,20 @@
     /* アニメーションを滑らかに */
 }
 
+.pink-link {
+    color: #df0a0a;
+    /* Bootstrapのピンク系カラー */
+    text-decoration: none;
+    transition: color 0.7s ease;
+}
+
+.pink-link:hover {
+    font: bold;
+    color: #080003;
+    /* 濃いピンクに変化 */
+    text-decoration: underline;
+}
+
 .btn-small {
     padding: 7px 11px;
     font-size: 11px;
@@ -235,6 +249,18 @@
     /* 例：ペールグリーン */
 }
 
+
+
+.table td {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+.table th {
+    font-size: 1.0rem;
+    padding: 0.3rem;
+}
+
 /* カスタムスピンアニメーション */
 @keyframes spin {
     100% {
@@ -268,10 +294,16 @@
         padding: 7px 20px;
     }
 
-    .highlight-section .btn-article {
+    .btn-article {
         font-size: 14px;
         margin-bottom: 2px;
         padding: 7px 20px;
+    }
+
+    .highlight-section .btn-article {
+        font-size: 11px;
+        margin-bottom: 2px;
+        padding: 7px 7px;
     }
 
     .custom-card {
@@ -314,6 +346,16 @@
 
     .container h1 {
         font-size: 1.8rem;
+    }
+
+    .table th {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+
+    .table td {
+        font-size: 0.5rem;
+        padding: 0.14rem;
     }
 
 }
