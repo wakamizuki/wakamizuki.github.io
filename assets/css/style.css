@@ -88,6 +88,12 @@
     /* アニメーションを滑らかに */
 }
 
+.btn-small {
+    padding: 7px 11px;
+    font-size: 11px;
+    /* フォントサイズを小さく */
+}
+
 .btn.btn-vibe {
     background-color: #590459;
 }
@@ -303,7 +309,7 @@
     }
 
     .highlight-section p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .container h1 {
