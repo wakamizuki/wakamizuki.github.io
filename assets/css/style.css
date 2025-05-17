@@ -300,7 +300,19 @@
         padding: 7px 20px;
     }
 
+    .btn-vibe {
+        font-size: 14px;
+        margin-bottom: 2px;
+        padding: 7px 20px;
+    }
+
     .highlight-section .btn-article {
+        font-size: 11px;
+        margin-bottom: 2px;
+        padding: 7px 7px;
+    }
+
+    .highlight-section .btn-vibe {
         font-size: 11px;
         margin-bottom: 2px;
         padding: 7px 7px;
