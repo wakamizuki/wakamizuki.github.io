@@ -1,15 +1,27 @@
 const activities = [
     {
-        title: "Narusawa Ice Cave Adventure",
-        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
-        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
-        link: "/src/activities/Narusawa_Ice_Cave.html"
+        title: "Hakone Shrine: A Serene Oasis",
+        description: "Hakone Shrine is a peaceful Shinto shrine located by Lake Ashi, surrounded by lush greenery and offering stunning views of Mount Fuji.",
+        image: "/assets/images/Hakone_Shrine_1.jpg",
+        link: "/src/activities/Hakone_Shrine.html"
     },
     {
-        title: "Es Con Field Hokkaido",
-        description: "Es Con Field Hokkaido is a modern baseball stadium and the home field for the Hokkaido Nippon-Ham Fighters.",
-        image: "/assets/images/Es_Con_Field1.png",
-        link: "/src/activities/Es_Con_Field.html"
+        title: "Belluna Dome",
+        description: "Belluna Dome, located in Saitama, is the unique home of the Saitama Seibu Lions, known for its retractable roof and natural surroundings.",
+        image: "/assets/images/Belluna_Dome_1.jpg",
+        link: "/src/activities/Belluna_Dome.html"
+    },
+    {
+        title: "Matsumoto Castle",
+        description: "Matsumoto Castle, also known as the 'Crow Castle' due to its black exterior, is one of Japan’s most beautiful and historic castles. Surrounded by mountains and a serene moat, it offers a glimpse into Japan's feudal past.",
+        image: "/assets/images/Matsumoto_Castle_1.jpg",
+        link: "/src/activities/Matsumoto_Castle.html"
+    },
+    {
+        title: "Narai Juku: A Traditional Edo Period Post Town",
+        description: "Experience the charm of a well-preserved Edo period post town with traditional wooden buildings and a nostalgic atmosphere.",
+        image: "/assets/images/Narai_Juku_1.jpg",
+        link: "/src/activities/Narai_Juku.html"
     },
     {
         title: "Hokokuji Temple - Bamboo Forest",
@@ -31,10 +43,10 @@ const activities = [
         link: "/src/activities/Kamakura_Great_Buddha.html"
     },
     {
-        title: "Matsumoto Castle",
-        description: "Matsumoto Castle, also known as the 'Crow Castle' due to its black exterior, is one of Japan’s most beautiful and historic castles. Surrounded by mountains and a serene moat, it offers a glimpse into Japan's feudal past.",
-        image: "/assets/images/Matsumoto_Castle_1.jpg",
-        link: "/src/activities/Matsumoto_Castle.html"
+        title: "Narusawa Ice Cave Adventure",
+        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
+        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
+        link: "/src/activities/Narusawa_Ice_Cave.html"
     },
     {
         title: "Himeji Castle",
@@ -86,6 +98,12 @@ const activities = [
         link: "/src/activities/Suzuhiro_Kamaboko_Museum.html"
     },
     {
+        title: "Narusawa Ice Cave Adventure",
+        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
+        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
+        link: "/src/activities/Narusawa_Ice_Cave.html"
+    },
+    {
         title: "Fujiyama Adventure Club",
         description: "Join us at Fujiyama Adventure Club for an exhilarating rafting experience on the beautiful and dynamic rivers of Japan.",
         image: "/assets/images/FujiyamaAdventurePark_1.jpg",
@@ -114,12 +132,6 @@ const activities = [
         description: "Experience the charm of traditional Gassho-style houses in this picturesque village nestled in the Japanese Alps.",
         image: "/assets/images/Shirakawa_Village_1.jpg",
         link: "/src/activities/Shirakawa_Village.html"
-    },
-    {
-        title: "Narai Juku: A Traditional Edo Period Post Town",
-        description: "Experience the charm of a well-preserved Edo period post town with traditional wooden buildings and a nostalgic atmosphere.",
-        image: "/assets/images/Narai_Juku_1.jpg",
-        link: "/src/activities/Narai_Juku.html"
     },
     {
         title: "Fuji-Q Highland",
@@ -174,12 +186,6 @@ const activities = [
         description: "Enjoy stunning views of Mount Fuji while cruising on this beautiful lake located in Hakone, Japan.",
         image: "/assets/images/Ashinoko_Lake_1.jpg",
         link: "/src/activities/Ashinoko_Lake.html"
-    },
-    {
-        title: "Hakone Shrine: A Serene Oasis",
-        description: "Hakone Shrine is a peaceful Shinto shrine located by Lake Ashi, surrounded by lush greenery and offering stunning views of Mount Fuji.",
-        image: "/assets/images/Hakone_Shrine_1.jpg",
-        link: "/src/activities/Hakone_Shrine.html"
     },
     {
         title: "Gora Park: A Nature Lover's Paradise",
@@ -378,6 +384,12 @@ const activities = [
         description: "Enjoy a leisurely stroll along the picturesque Shin-Nashogawa Riverside Promenade, offering stunning views of the river and surrounding nature.",
         image: "/assets/images/Shin-Nashogawa_Riverside_Promenade_1.jpg",
         link: "/src/activities/Shin-Nashogawa_Riverside_Promenade.html"
+    },
+    {
+        title: "Es Con Field Hokkaido",
+        description: "Es Con Field Hokkaido is a modern baseball stadium and the home field for the Hokkaido Nippon-Ham Fighters.",
+        image: "/assets/images/Es_Con_Field1.png",
+        link: "/src/activities/Es_Con_Field.html"
     },
     {
         title: "Izu Granpal Park",
