@@ -11,4 +11,10 @@ window.activities = [
         image: "/assets/images/Kiga_Sekisho_1.jpg",
         link: "/src/activities/Kiga_Sekisho.html"
     },
+    {
+        title: "Kiso Fukushima Sekisho",
+        description: "Experience the historic checkpoint that once controlled traffic on the Nakasendo highway during the Edo period in Japan.",
+        image: "/assets/images/Kiso_Fukushima_Sekisho_1.jpg",
+        link: "/src/activities/Kiso_Fukushima_Sekisho.html"
+    },
 ];
