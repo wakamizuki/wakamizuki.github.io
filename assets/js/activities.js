@@ -85,12 +85,7 @@ const activities = [
         image: "/assets/images/Hikone_Castle_1.jpg",
         link: "/src/activities/Hikone_Castle.html"
     },
-    {
-        title: "Belluna Dome",
-        description: "Belluna Dome, located in Saitama, is the unique home of the Saitama Seibu Lions, known for its retractable roof and natural surroundings.",
-        image: "/assets/images/Belluna_Dome_1.jpg",
-        link: "/src/activities/Belluna_Dome.html"
-    },
+
     {
         title: "Inokashira Park",
         description: "Inokashira Park is a beautiful public park in Tokyo known for its scenic pond, cherry blossoms, and proximity to the Ghibli Museum.",
@@ -102,12 +97,6 @@ const activities = [
         description: "Suzuhiro Kamaboko Museum is a Japanese food museum where visitors can learn about and experience making traditional fish cakes.",
         image: "/assets/images/Suzuhiro_Kamaboko_Museum_1.png",
         link: "/src/activities/Suzuhiro_Kamaboko_Museum.html"
-    },
-    {
-        title: "Narusawa Ice Cave Adventure",
-        description: "Explore the stunning ice formations and natural beauty of Narusawa Ice Cave in Japan.",
-        image: "/assets/images/Narusawa_Ice_Cave_1.jpg",
-        link: "/src/activities/Narusawa_Ice_Cave.html"
     },
     {
         title: "Fujiyama Adventure Club",
