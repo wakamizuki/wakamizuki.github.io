@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     color: #0e430f;
     font-weight: bold;
@@ -259,6 +263,11 @@
 .table th {
     font-size: 1.0rem;
     padding: 0.3rem;
+}
+
+.scroll-target {
+    scroll-margin-top: 150px;
+    /* ヘッダーの高さに合わせて調整 */
 }
 
 /* カスタムスピンアニメーション */
