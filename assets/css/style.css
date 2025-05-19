@@ -231,7 +231,7 @@ html {
 
 /* スピナーの回転をゆっくりに */
 #spinner .spinner-border {
-    animation: spin 1.2s linear infinite;
+    animation: spin 1.0s linear infinite;
     /* デフォルトは0.75sくらい */
     width: 3rem;
     height: 3rem;

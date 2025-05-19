@@ -39,7 +39,7 @@ function loadNextActivities() {
         render();
     } else {
         if (spinner) spinner.style.display = "block"; // スピナー表示
-        const delay = 1400;
+        const delay = 1200;
         setTimeout(render, delay);
     }
 }
