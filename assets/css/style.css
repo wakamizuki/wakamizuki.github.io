@@ -367,6 +367,13 @@ html {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.hover-bright {
+    /* filter: brightness(1.6); */
+    fill: #ffffff !important;
+    transition: fill 0.4s ease !important;
+
+}
+
 /* カスタムスピンアニメーション */
 @keyframes spin {
     100% {

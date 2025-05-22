@@ -25,13 +25,13 @@
             regionGroups[region].forEach(elem => {
                 elem.addEventListener('mouseover', () => {
                     regionGroups[region].forEach(e => {
-                        e.style.filter = 'brightness(1.6) ';
+                        e.classList.add('hover-bright');
                     });
                 });
 
                 elem.addEventListener('mouseleave', () => {
                     regionGroups[region].forEach(e => {
-                        e.style.filter = '';
+                        e.classList.remove('hover-bright');
                     });
                 });
             });
