@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
                             <div class="card-body">
                                 <h4 class="card-title">${activity.title}</h4>
                                 <p class="card-text">${activity.description}</p>
-                                <a href="${activity.link}" class="btn btn-primary">See more</a>
+                            
                             </div>
                         </div>
                     `;

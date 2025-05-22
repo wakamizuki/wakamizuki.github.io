@@ -25,7 +25,7 @@
             regionGroups[region].forEach(elem => {
                 elem.addEventListener('mouseover', () => {
                     regionGroups[region].forEach(e => {
-                        e.style.filter = 'brightness(1.3) saturate(0.5)';
+                        e.style.filter = 'brightness(1.6) ';
                     });
                 });
 
