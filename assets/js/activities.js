@@ -706,6 +706,24 @@ const activities = [
         region: "chubu",
         prefecture: "nagano"
     }
+    ,
+    {
+        title: "Oirase Gorge: A Scenic Nature Walk",
+        description: "Oirase Gorge is a picturesque river valley in Aomori Prefecture, famous for its crystal-clear stream, lush forests, and beautiful waterfalls along a well-maintained walking trail.",
+        image: "/assets/images/Oirase_Gorge_1.jpg",
+        link: "/src/activities/Oirase_Gorge.html",
+        region: "tohoku",
+        prefecture: "aomori"
+    }
+    ,
+    {
+        title: "Risshakuji Temple (Yamadera): A Spiritual Mountain Retreat",
+        description: "Risshakuji Temple, also known as Yamadera, is a historic temple perched on a mountainside in Yamagata Prefecture, offering breathtaking views and a serene atmosphere after climbing its scenic stone steps.",
+        image: "/assets/images/Risshakuji_Temple_1.jpg",
+        link: "/src/activities/Risshakuji_Temple.html",
+        region: "tohoku",
+        prefecture: "yamagata"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
