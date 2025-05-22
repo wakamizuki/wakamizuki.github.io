@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="EJC" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best of the Chugoku countryside – from the mystical sand dunes and historic castles to scenic islands and local cuisine. Your guide to rural Chugoku, Japan.">
+    <title>Chugoku Countryside – Explore Rural Chugoku, Japan: Sand Dunes, Islands & Hidden Gems</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK963WN8R8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-NK963WN8R8');
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style_animation.css">
+
+    <link rel="canonical" href="https://explorejapanscountryside.com/src/regions/chugoku/index.html">
+    <meta property="og:title" content="Chugoku Countryside – Explore Rural Chugoku, Japan">
+    <meta property="og:description"
+        content="Discover the mystical sand dunes, historic castles, scenic islands, and local cuisine in the Chugoku countryside.">
+    <meta property="og:url" content="https://explorejapanscountryside.com/src/regions/chugoku/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://explorejapanscountryside.com/assets/images/article/tsunoshima-bridge.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div id="gradient-wrapper" class="gradient-wrapper pb-3">
+        <section class="highlight-section pl-2 pr-2">
+            <h2>Discover Rural Chugoku: Sand Dunes, Islands, and Local Life</h2>
+            <p>
+                Chugoku is a region of dramatic coastlines, mystical landscapes, and deep history! Explore the famous
+                Tottori Sand Dunes, wander through the ancient streets of Tsuwano, and visit the sacred island of
+                Miyajima. From the iconic floating torii gate to the scenic Shimanami Kaido cycling route, Chugoku’s
+                countryside is full of natural wonders and authentic experiences.
+            </p>
+            <div class="button-container">
+                <a href="#chugoku-highlights" class="btn btn-primary">Explore Chugoku Countryside</a>
+            </div>
+        </section>
+
+        <section id="chugoku-highlights" class="highlight-section pl-2 pr-2">
+            <h2>Chugoku Countryside Highlights</h2>
+            <ul>
+                <li><strong>Miyajima (Hiroshima):</strong> Sacred island with the famous floating torii gate of
+                    Itsukushima Shrine.</li>
+                <li><strong>Tottori Sand Dunes (Tottori):</strong> Japan’s largest sand dunes and unique desert scenery.
+                </li>
+                <li><strong>Tsuwano (Shimane):</strong> Historic castle town known as “Little Kyoto of San’in.”</li>
+                <li><strong>Kurashiki (Okayama):</strong> Beautiful canal district with preserved Edo-era warehouses.
+                </li>
+                <li><strong>Tsunoshima Bridge (Yamaguchi):</strong> Stunning bridge with turquoise waters and island
+                    views.</li>
+                <li><strong>Shimanami Kaido (Hiroshima/Ehime):</strong> Scenic cycling route across islands and bridges.
+                </li>
+            </ul>
+        </section>
+        <div class="container mt-4 mb-0" id="local-activities-and-sightseeing">
+            <h2>Chugoku Local Activities & Sightseeing</h2>
+            <div class="row">
+
+            </div>
+            <div id="spinner" style="display: none; text-align: center; padding: 1em;">
+                <div class="spinner-border text-success" role="status"></div>
+            </div>
+            <div class="button-container text-center">
+                <button id="load-more-btn" class="btn btn-primary mt-4 mb-4"><strong>See More Chugoku
+                        Attractions</strong></button>
+            </div>
+        </div>
+
+        <section class="highlight-section pl-2 pr-2">
+            <h2>Why Visit Chugoku’s Countryside?</h2>
+            <p>
+                Escape the crowds and discover a slower side of Japan. Chugoku’s rural areas offer mystical landscapes,
+                traditional culture, and warm hospitality—perfect for travelers seeking authentic experiences beyond the
+                city.
+            </p>
+        </section>
+        <section class="highlight-section pl-2 pr-2">
+            <h2>Explore by Vibe</h2>
+            <p>
+                Whether you want adventure, relaxation, or cultural immersion, Chugoku’s countryside has something for
+                every mood. Let your vibe guide your journey!
+            </p>
+            <div class="button-container">
+                <a href="/src/vibes_and_mood/index.html" class="btn btn-vibe">Explore by Vibes & Mood</a>
+            </div>
+        </section>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/activities.js"></script>
+    <script src="./display_activities_in_chugoku.js"></script>
+    <!-- <script src="/assets/js/japanMap.js"></script> -->
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
+
+</html>

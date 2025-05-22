@@ -72,6 +72,41 @@ html {
     /* ボタンのフォントサイズを調整 */
 }
 
+/* .highlight-section ul {
+    list-style-type: none;
+    padding-left: 0;
+} */
+.highlight-section ul {
+    padding-left: 5px;
+    ;
+    margin-left: 0;
+    list-style-type: none;
+    /* デフォルトの●マーカーを消す */
+}
+
+.highlight-section ul li {
+    text-align: left;
+    padding-left: 25px;
+    /* 星マークの分の余白 */
+    margin-left: 0;
+    margin-bottom: 0.8em;
+    position: relative;
+}
+
+.highlight-section ul li::before {
+    content: "★";
+    /* 星マーク */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e91e63;
+    /* ピンクカラー */
+    font-weight: bold;
+    font-size: 1.1em;
+    /* サイズ微調整 */
+    line-height: 1;
+}
 
 .btn {
     padding: 10px 16px;
@@ -231,7 +266,7 @@ html {
 
 /* スピナーの回転をゆっくりに */
 #spinner .spinner-border {
-    animation: spin 1.0s linear infinite;
+    animation: spin 0.7s linear infinite;
     /* デフォルトは0.75sくらい */
     width: 3rem;
     height: 3rem;
@@ -270,12 +305,75 @@ html {
     /* ヘッダーの高さに合わせて調整 */
 }
 
+.geolonia-svg-map {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.geolonia-svg-map .prefecture {
+    fill: #eeeeee;
+    stroke: #666;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+/* 地方ごとにコントラストの高い色分け */
+.prefecture.hokkaido {
+    fill: #4dc3ff;
+    /* 明るいスカイブルー */
+}
+
+.prefecture.tohoku {
+    fill: #0088cc;
+    /* 濃いシアンブルー */
+}
+
+.prefecture.kanto {
+    fill: #33cc33;
+    /* 緑：やや明るめ */
+}
+
+.prefecture.chubu {
+    fill: #228b22;
+    /* 濃いフォレストグリーン */
+}
+
+.prefecture.kinki {
+    fill: #ffa500;
+    /* オレンジ */
+}
+
+.prefecture.chugoku {
+    fill: #ff6347;
+    /* トマトレッド */
+}
+
+.prefecture.shikoku {
+    fill: #ff1493;
+    /* 濃いピンク：ディープピンク */
+}
+
+.prefecture.kyusyu-okinawa {
+    fill: #9400d3;
+    /* 濃い紫（ダークバイオレット） */
+}
+
+.map-container {
+    background-color: #fff8e1;
+    /* 淡いクリーム色 */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* カスタムスピンアニメーション */
 @keyframes spin {
     100% {
         transform: rotate(360deg);
     }
 }
+
 
 /* 画面が小さい時にロゴとタイトルのサイズを調整 */
 @media (max-width:768px) {

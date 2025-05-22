@@ -234,7 +234,17 @@
                 <a href="#easy-countryside-from-tokyo" class="btn btn-primary">Explore Japanese Countryside</a>
             </div>
         </section>
-
+        <div class="container map-container">
+            <div class="row">
+                <div id="map" class="col-12 col-md-7 mb-2 mt-2">
+                    <!-- 地図のSVGがここに入る -->
+                </div>
+                <div id="region-info" class="col-12 col-md-5">
+                    <p>Hover over a region on the map to see its description here.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="map"></div> -->
         <section class="highlight-section pl-2 pr-2">
             <h2>Overcrowded Sightseeing? Discover Hidden Gems Off the Beaten Path</h2>
             <p>
@@ -417,6 +427,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/activities.js"></script>
     <script src="/assets/js/splash.js"></script>
+    <script src="/assets/js/japanMap.js"></script> <!-- パスは適宜変更 -->
 </body>
 <script>
     fetch('/common/header.html')

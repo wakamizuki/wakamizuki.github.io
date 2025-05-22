@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="EJC" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best of Hokkaido – from wild nature and hot springs to unique festivals and local cuisine. Your guide to rural Hokkaido, Japan.">
+    <title>Hokkaido Countryside – Explore Rural Hokkaido, Japan: Nature, Culture & Hidden Gems</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK963WN8R8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-NK963WN8R8');
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style_animation.css">
+
+    <link rel="canonical" href="https://explorejapanscountryside.com/src/regions/hokkaido/index.html">
+    <meta property="og:title" content="Hokkaido Countryside – Explore Rural Hokkaido, Japan">
+    <meta property="og:description"
+        content="Discover wild nature, hot springs, unique festivals, and local cuisine in the Hokkaido countryside.">
+    <meta property="og:url" content="https://explorejapanscountryside.com/src/regions/hokkaido/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://explorejapanscountryside.com/assets/images/article/hokkaido-main.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+</head>
+
+<body>
+    <div id="header-container"> </div>
+    <div id="gradient-wrapper" class="gradient-wrapper pb-3">
+        <section class="highlight-section pl-2 pr-2">
+            <h2>Discover Rural Hokkaido: Nature, Culture, and Hot Springs</h2>
+            <p>
+                Hokkaido is Japan’s northern frontier, where vast wilderness meets rich culture! Explore dramatic
+                national parks, soak in soothing hot springs, and experience unique festivals and fresh local cuisine.
+                From the flower fields of Furano to the wild Shiretoko Peninsula, Hokkaido’s countryside is full of
+                adventure and authentic rural life.
+            </p>
+            <div class="button-container">
+                <a href="#hokkaido-highlights" class="btn btn-primary">Explore Hokkaido Countryside</a>
+            </div>
+        </section>
+
+        <section id="hokkaido-highlights" class="highlight-section pl-2 pr-2">
+            <h2>Hokkaido Countryside Highlights</h2>
+            <ul>
+                <li><strong>Furano & Biei:</strong> Rolling hills, colorful flower fields, and scenic landscapes.</li>
+                <li><strong>Shiretoko Peninsula:</strong> UNESCO World Heritage wilderness, wildlife, and waterfalls.
+                </li>
+                <li><strong>Noboribetsu Onsen:</strong> Famous hot spring town with dramatic “Hell Valley.”</li>
+                <li><strong>Lake Toya:</strong> Caldera lake with beautiful views and fireworks in summer.</li>
+                <li><strong>Otaru:</strong> Charming canal town with historic warehouses and fresh seafood.</li>
+                <li><strong>Asahiyama Zoo:</strong> Unique animal exhibits and winter penguin parade.</li>
+                <li><strong>Festivals:</strong> Sapporo Snow Festival, Yosakoi Soran, and more—Hokkaido’s vibrant
+                    celebrations.</li>
+            </ul>
+        </section>
+        <div class="container mt-4 mb-0" id="local-activities-and-sightseeing">
+            <h2>Hokkaido Local Activities & Sightseeing</h2>
+            <div class="row">
+
+            </div>
+            <div id="spinner" style="display: none; text-align: center; padding: 1em;">
+                <div class="spinner-border text-success" role="status"></div>
+            </div>
+            <div class="button-container text-center">
+                <button id="load-more-btn" class="btn btn-primary mt-4 mb-4"><strong>See More Hokkaido
+                        Attractions</strong></button>
+            </div>
+        </div>
+
+        <section class="highlight-section pl-2 pr-2">
+            <h2>Why Visit Hokkaido’s Countryside?</h2>
+            <p>
+                Escape the crowds and discover a different side of Japan. Hokkaido’s rural areas offer breathtaking
+                landscapes, unique traditions, and warm hospitality—perfect for travelers seeking authentic experiences
+                beyond the city.
+            </p>
+        </section>
+        <section class="highlight-section pl-2 pr-2">
+            <h2>Explore by Vibe</h2>
+            <p>
+                Whether you want adventure, relaxation, or cultural immersion, Hokkaido’s countryside has something for
+                every mood. Let your vibe guide your journey!
+            </p>
+            <div class="button-container">
+                <a href="/src/vibes_and_mood/index.html" class="btn btn-vibe">Explore by Vibes & Mood</a>
+            </div>
+        </section>
+    </div>
+    <div id="footer-container"> </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/activities.js"></script>
+    <script src="./display_activities_in_hokkaido.js"></script>
+    <!-- <script src="/assets/js/japanMap.js"></script> -->
+</body>
+<script>
+    fetch('/common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+    fetch('/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
+
+</html>
