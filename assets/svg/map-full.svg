@@ -230,7 +230,7 @@
         <!-- 中部地方 -->
         <text x="530" y="680" text-anchor="middle">Chubu</text>
         <!-- 近畿地方 -->
-        <text x="440" y="720" text-anchor="middle">Kinki</text>
+        <text x="430" y="725" text-anchor="middle">Kinki</text>
         <!-- 中国地方 -->
         <text x="290" y="730" text-anchor="middle">Chugoku</text>
         <!-- 四国地方 -->
