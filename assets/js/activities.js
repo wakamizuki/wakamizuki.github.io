@@ -724,6 +724,24 @@ const activities = [
         region: "tohoku",
         prefecture: "yamagata"
     }
+    ,
+    {
+        title: "Lake Tazawa: Japan's Deepest Mystical Lake",
+        description: "Lake Tazawa, located in Akita Prefecture, is Japan's deepest lake, renowned for its clear blue waters, scenic beauty, and the legendary statue of Tatsuko on its shore.",
+        image: "/assets/images/Lake_Tazawa_1.jpg",
+        link: "/src/activities/Lake_Tazawa.html",
+        region: "tohoku",
+        prefecture: "akita"
+    }
+    ,
+    {
+        title: "Hirosaki Castle: A Symbol of Northern Japan",
+        description: "Hirosaki Castle, located in Aomori Prefecture, is a historic castle renowned for its beautiful cherry blossoms, impressive stone walls, and scenic park grounds, especially stunning during spring.",
+        image: "/assets/images/Hirosaki_Castle_1.jpg",
+        link: "/src/activities/Hirosaki_Castle.html",
+        region: "tohoku",
+        prefecture: "aomori"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
