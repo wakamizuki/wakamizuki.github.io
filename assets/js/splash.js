@@ -1,5 +1,5 @@
 let loadedCount = 0;
-const itemsPerClick = 12;
+const itemsPerClick = 300;
 let loadCount = 0;
 
 function loadNextActivities() {
@@ -39,7 +39,7 @@ function loadNextActivities() {
         render();
     } else {
         if (spinner) spinner.style.display = "block"; // スピナー表示
-        const delay = 1200;
+        const delay = 700;
         setTimeout(render, delay);
     }
 }
@@ -72,5 +72,5 @@ window.addEventListener('DOMContentLoaded', () => {
         loadMoreButton.addEventListener("click", () => {
             loadNextActivities();
         });
-    }, 2300);
+    }, 1800);
 });
