@@ -760,6 +760,33 @@ const activities = [
         region: "kinki",
         prefecture: "kyoto"
     }
+    ,
+    {
+        title: "Shiretoko Five Lakes: Pristine Nature in Hokkaido",
+        description: "Shiretoko Five Lakes is a breathtaking natural area in Hokkaido, featuring five crystal-clear lakes surrounded by untouched forests and offering stunning views of the Shiretoko mountain range. It's a haven for wildlife and a UNESCO World Heritage Site.",
+        image: "/assets/images/Shiretoko_Five_Lakes_1.jpg",
+        link: "/src/activities/Shiretoko_Five_Lakes.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Asahiyama Zoo: Hokkaido's Premier Wildlife Experience",
+        description: "Asahiyama Zoo, located in Asahikawa, Hokkaido, is renowned for its innovative animal enclosures and interactive exhibits, allowing visitors to observe animals up close in naturalistic settings. It's especially famous for its penguin walks and unique viewing tunnels.",
+        image: "/assets/images/Asahiyama_Zoo_1.jpg",
+        link: "/src/activities/Asahiyama_Zoo.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Noboribetsu Onsen Town: Hokkaido's Premier Hot Spring Resort",
+        description: "Noboribetsu Onsen Town is one of Hokkaido's most famous hot spring resorts, renowned for its variety of mineral-rich baths, dramatic Jigokudani (Hell Valley), and vibrant onsen culture. Visitors can enjoy relaxing soaks, scenic walking trails, and unique local cuisine.",
+        image: "/assets/images/Noboribetsu_Onsen_Town_1.jpg",
+        link: "/src/activities/Noboribetsu_Onsen_Town.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
