@@ -787,6 +787,24 @@ const activities = [
         region: "hokkaido",
         prefecture: "hokkaido"
     }
+    ,
+    {
+        title: "Tsunoshima Ohashi Bridge: A Scenic Coastal Drive",
+        description: "Tsunoshima Ohashi Bridge is one of Japan's most beautiful bridges, stretching over crystal-clear blue waters and connecting the mainland of Yamaguchi Prefecture to Tsunoshima Island. It's famous for its breathtaking ocean views and picturesque drives.",
+        image: "/assets/images/Tsunoshima_Ohashi_Bridge_1.jpg",
+        link: "/src/activities/Tsunoshima_Ohashi_Bridge.html",
+        region: "chugoku",
+        prefecture: "yamaguchi"
+    }
+    ,
+    {
+        title: "Taikodani Inari Shrine: A Spiritual Gateway",
+        description: "Taikodani Inari Shrine, located in Tsuwano, Shimane Prefecture, is renowned for its striking red torii gates that wind up the mountainside, offering visitors a mystical and scenic pilgrimage route.",
+        image: "/assets/images/Taikodani_Inari_Shrine_1.jpg",
+        link: "/src/activities/Taikodani_Inari_Shrine.html",
+        region: "chugoku",
+        prefecture: "shimane"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
