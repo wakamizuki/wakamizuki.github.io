@@ -742,6 +742,24 @@ const activities = [
         region: "tohoku",
         prefecture: "aomori"
     }
+    ,
+    {
+        title: "Amanosan Kongōji Temple: A Spiritual Sanctuary in Osaka",
+        description: "Amanosan Kongōji Temple, located in Osaka Prefecture, is a historic Buddhist temple known for its tranquil atmosphere, beautiful gardens, and impressive temple architecture. It is a popular spot for autumn foliage and spiritual reflection.",
+        image: "/assets/images/Amanosan_Kongoji_Temple_1.jpg",
+        link: "/src/activities/Amanosan_Kongoji_Temple.html",
+        region: "kinki",
+        prefecture: "osaka"
+    }
+    ,
+    {
+        title: "Miyama Kayabuki no Sato: Thatched-Roof Village",
+        description: "Miyama Kayabuki no Sato is a picturesque village in Kyoto Prefecture, famous for its traditional thatched-roof farmhouses set amidst scenic countryside. Visitors can experience rural Japanese culture and stunning seasonal landscapes.",
+        image: "/assets/images/Miyama_Kayabukinosato_1.jpg",
+        link: "/src/activities/Miyama_Kayabukinosato.html",
+        region: "kinki",
+        prefecture: "kyoto"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {

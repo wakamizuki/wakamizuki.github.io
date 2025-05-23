@@ -578,7 +578,31 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Risshakuji_Temple.html</loc>
-    <lastmod>2025-05-22</lastmod>
+    <lastmod>2025-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Lake_Tazawa.html</loc>
+    <lastmod>2025-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Hirosaki_Castle.html</loc>
+    <lastmod>2025-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Amanosan_Kongoji_Temple.html</loc>
+    <lastmod>2025-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Miyama_Kayabukinosato.html</loc>
+    <lastmod>2025-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
