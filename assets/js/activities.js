@@ -805,6 +805,42 @@ const activities = [
         region: "chugoku",
         prefecture: "shimane"
     }
+    ,
+    {
+        title: "Mount Tsurugi: The Sacred Peak of Shikoku",
+        description: "Mount Tsurugi, located in Tokushima Prefecture, is one of Japan's 100 famous mountains. Known for its mystical atmosphere, panoramic views, and hiking trails, it attracts nature lovers and pilgrims alike.",
+        image: "/assets/images/Mount_Tsurugi_1.jpg",
+        link: "/src/activities/Mount_Tsurugi.html",
+        region: "shikoku",
+        prefecture: "tokushima"
+    }
+    ,
+    {
+        title: "Uchiko Town: Preserved Edo-Period Streetscape",
+        description: "Uchiko Town in Ehime Prefecture is famous for its beautifully preserved Edo- and Meiji-era buildings, traditional merchant houses, and the historic Uchiko-za Kabuki theater.",
+        image: "/assets/images/Uchiko_Town_1.jpg",
+        link: "/src/activities/Uchiko_Town.html",
+        region: "shikoku",
+        prefecture: "ehime"
+    }
+    ,
+    {
+        title: "Iya Valley: Japan's Remote Natural Wonderland",
+        description: "Iya Valley, nestled in the mountains of Tokushima Prefecture, is renowned for its dramatic gorges, vine bridges, hot springs, and untouched natural beauty.",
+        image: "/assets/images/Iya_Valley_1.jpg",
+        link: "/src/activities/Iya_Valley.html",
+        region: "shikoku",
+        prefecture: "tokushima"
+    }
+    ,
+    {
+        title: "Shimanto River: The Last Clear Stream of Japan",
+        description: "The Shimanto River in Kochi Prefecture is celebrated for its pristine waters, picturesque scenery, and traditional chinkabashi (low water bridges). It's ideal for canoeing, cycling, and riverside relaxation.",
+        image: "/assets/images/Shimanto_River_1.jpg",
+        link: "/src/activities/Shimanto_River.html",
+        region: "shikoku",
+        prefecture: "kochi"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
