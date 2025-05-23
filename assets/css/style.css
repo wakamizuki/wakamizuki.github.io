@@ -307,7 +307,7 @@ html {
 
 .geolonia-svg-map {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -360,11 +360,11 @@ html {
 }
 
 .seosonal-regions-list li {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .other-regions-list li {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .map-container {

@@ -252,11 +252,16 @@
     <line x1="600" y1="900" x2="580" y2="685" 
       stroke="red" stroke-width="3"
       marker-end="url(#arrowhead)" />
+    
+    <line x1="900" y1="600" x2="610" y2="655" 
+      stroke="red" stroke-width="3"
+      marker-end="url(#arrowhead)" />
           
     <!-- ラベル -->
     <text x="810" y="710" font-size="16" font-family="Arial" fill="black">Tokyo</text>
     <text x="510" y="830" font-size="16" font-family="Arial" fill="black">Osaka</text>
     <text x="610" y="910" font-size="16" font-family="Arial" fill="red">Oshino Village</text>
+    <text x="830" y="580" font-size="16" font-family="Arial" fill="red">Tokorozawa & Sayama</text>
   </g>
 </svg>
 
