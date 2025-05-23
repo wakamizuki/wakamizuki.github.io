@@ -230,7 +230,7 @@
         <!-- 中部地方 -->
         <text x="530" y="680" text-anchor="middle">Chubu</text>
         <!-- 近畿地方 -->
-        <text x="440" y="750" text-anchor="middle">Kinki</text>
+        <text x="440" y="720" text-anchor="middle">Kinki</text>
         <!-- 中国地方 -->
         <text x="290" y="730" text-anchor="middle">Chugoku</text>
         <!-- 四国地方 -->
@@ -240,5 +240,25 @@
         <!-- 沖縄地方 -->
         <text x="380" y="200" text-anchor="middle">Okinawa</text>
       </g>
+    <!-- 矢印の線：Tokyoの位置を例に（x1, y1）から（x2, y2） -->
+    <!-- 矢印の線：Tokyoの位置を例に（x1, y1）から（x2, y2） -->
+    <line x1="800" y1="700" x2="630" y2="670" 
+          stroke="black" stroke-width="2"
+          marker-end="url(#arrowhead)" />
+    <line x1="500" y1="820" x2="415" y2="740" 
+          stroke="black" stroke-width="2"
+          marker-end="url(#arrowhead)" />
+
+    <line x1="600" y1="900" x2="580" y2="685" 
+      stroke="red" stroke-width="3"
+      marker-end="url(#arrowhead)" />
+          
+    <!-- ラベル -->
+    <text x="810" y="710" font-size="16" font-family="Arial" fill="black">Tokyo</text>
+    <text x="510" y="830" font-size="16" font-family="Arial" fill="black">Osaka</text>
+    <text x="610" y="910" font-size="16" font-family="Arial" fill="red">Oshino Village</text>
   </g>
 </svg>
+
+
+
