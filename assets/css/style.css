@@ -360,7 +360,12 @@ html {
 }
 
 .seosonal-regions-list li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.chubu-large {
+    font-size: 1.3rem;
+    /* 中部地方の大きさを調整 */
 }
 
 .other-regions-list li {
@@ -494,6 +499,11 @@ html {
     .table td {
         font-size: 0.5rem;
         padding: 0.14rem;
+    }
+
+    .chubu-large {
+        font-size: 1.0rem;
+        /* 中部地方の大きさを調整 */
     }
 
     .seosonal-regions-list li {
