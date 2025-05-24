@@ -263,7 +263,7 @@
       stroke="red" stroke-width="2"
       marker-end="url(#arrowhead)" />
       
-    <line x1="850" y1="340" x2="680" y2="375" 
+    <line x1="550" y1="340" x2="680" y2="375" 
       stroke="red" stroke-width="2"
       marker-end="url(#arrowhead)" />
           
@@ -274,7 +274,7 @@
     <text x="610" y="910" font-size="18" font-family="Arial" fill="red">Oshino Village</text>
     <text x="820" y="580" font-size="18" font-family="Arial" fill="red">Tokorozawa & Sayama</text>
     <text x="830" y="280" font-size="16" font-family="Arial" fill="red">Shiretoko</text>
-    <text x="830" y="330" font-size="16" font-family="Arial" fill="red">Oirase</text>
+    <text x="530" y="330" font-size="16" font-family="Arial" fill="red">Oirase</text>
 
   </g>
 </svg>
