@@ -92,10 +92,49 @@
             </div>
         </section>
 
+        <section>
+            <h2 class="pl-2 pr-2 pt-3 ml-3">Where to Travel Now: Seasonal Picks & Interactive Map</h2>
+            <div class="container map-container mb-4">
+                <div class="row">
+                    <div id="map" class="col-12 col-md-7 mb-2 mt-2">
+                        <!-- 地図のSVGがここに入る -->
+                    </div>
+                    <div id="region-info" class="col-12 col-md-5">
+                        <h3>Hokkaido Countryside Highlights</h3>
+                        <ul>
+                            <li><strong>Furano & Biei:</strong> Rolling hills, colorful flower fields, and scenic
+                                landscapes.
+                            </li>
+                            <li><a href="/src/activities/Shiretoko_Five_Lakes.html" class="pink-link"><strong>Shiretoko
+                                        Peninsula:</strong></a> UNESCO World Heritage wilderness, wildlife, and
+                                waterfalls.
+                            </li>
+                            <li><a href="/src/activities/Noboribetsu_Onsen_Town.html"
+                                    class="pink-link"><strong>Noboribetsu
+                                        Onsen:</strong></a> Famous hot spring town with dramatic “Hell Valley.”</li>
+                            <li><strong>Lake Toya:</strong> Caldera lake with beautiful views and fireworks in
+                                summer.
+                            </li>
+                            <li><strong>Otaru:</strong> Charming canal town with historic warehouses and fresh
+                                seafood.
+                            </li>
+                            <li><a href=" /src/activities/Asahiyama_Zoo.html" class="pink-link"><strong>Asahiyama
+                                        Zoo:</strong></a>
+                                Unique animal exhibits and winter penguin parade.</li>
+                            <li><strong>Festivals:</strong> Sapporo Snow Festival, Yosakoi Soran, and
+                                more—Hokkaido’s
+                                vibrant
+                                celebrations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="hokkaido-highlights" class="highlight-section pl-2 pr-2">
             <h2>Hokkaido Countryside Highlights</h2>
             <ul>
-                <li><strong>Furano & Biei:</strong> Rolling hills, colorful flower fields, and scenic landscapes.</li>
+                <li><strong>Furano & Biei:</strong> Rolling hills, colorful flower fields, and scenic landscapes.
+                </li>
                 <li><a href="/src/activities/Shiretoko_Five_Lakes.html" class="pink-link"><strong>Shiretoko
                             Peninsula:</strong></a> UNESCO World Heritage wilderness, wildlife, and waterfalls.
                 </li>
@@ -103,7 +142,8 @@
                             Onsen:</strong></a> Famous hot spring town with dramatic “Hell Valley.”</li>
                 <li><strong>Lake Toya:</strong> Caldera lake with beautiful views and fireworks in summer.</li>
                 <li><strong>Otaru:</strong> Charming canal town with historic warehouses and fresh seafood.</li>
-                <li><a href=" /src/activities/Asahiyama_Zoo.html" class="pink-link"><strong>Asahiyama Zoo:</strong></a>
+                <li><a href=" /src/activities/Asahiyama_Zoo.html" class="pink-link"><strong>Asahiyama
+                            Zoo:</strong></a>
                     Unique animal exhibits and winter penguin parade.</li>
                 <li><strong>Festivals:</strong> Sapporo Snow Festival, Yosakoi Soran, and more—Hokkaido’s vibrant
                     celebrations.</li>
@@ -127,14 +167,16 @@
             <h2>Why Visit Hokkaido’s Countryside?</h2>
             <p>
                 Escape the crowds and discover a different side of Japan. Hokkaido’s rural areas offer breathtaking
-                landscapes, unique traditions, and warm hospitality—perfect for travelers seeking authentic experiences
+                landscapes, unique traditions, and warm hospitality—perfect for travelers seeking authentic
+                experiences
                 beyond the city.
             </p>
         </section>
         <section class="highlight-section pl-2 pr-2">
             <h2>Explore by Vibe</h2>
             <p>
-                Whether you want adventure, relaxation, or cultural immersion, Hokkaido’s countryside has something for
+                Whether you want adventure, relaxation, or cultural immersion, Hokkaido’s countryside has something
+                for
                 every mood. Let your vibe guide your journey!
             </p>
             <div class="button-container">
@@ -149,7 +191,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/assets/js/activities.js"></script>
     <script src="./display_activities_in_hokkaido.js"></script>
-    <!-- <script src="/assets/js/japanMap.js"></script> -->
+    <script src="/assets/js/hokkaidoMap.js"></script>
 </body>
 <script>
     fetch('/common/header.html')
