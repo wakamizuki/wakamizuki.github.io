@@ -17,15 +17,15 @@
 
   /* どこかに hover すると全部変化 */
   .pink-link:hover text {
-    fill: #080003;
+    fill:#800000;
     text-decoration: underline;
     font-weight: bold;
   }
 
   .pink-link:hover circle,
   .pink-link:hover line {
-    stroke: #080003;
-    fill: #080003;
+    stroke: #800000;
+    fill: #800000;
   }
 </style>
 
