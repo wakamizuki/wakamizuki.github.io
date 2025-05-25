@@ -483,6 +483,10 @@ html {
         font-size: 1.2rem;
     }
 
+    h3 {
+        font-size: 1.2rem;
+    }
+
     .highlight-section p {
         font-size: 0.7rem;
     }
@@ -508,6 +512,11 @@ html {
 
     .seosonal-regions-list li {
         font-size: 0.7rem;
+    }
+
+    li {
+        font-size: 0.7rem;
+        /* リストアイテムのフォントサイズを小さく */
     }
 
     .other-regions-list li {

@@ -850,6 +850,15 @@ const activities = [
         region: "hokkaido",
         prefecture: "hokkaido"
     }
+    ,
+    {
+        title: "Lake Toya: Volcanic Beauty and Hot Springs",
+        description: "Lake Toya is a stunning caldera lake in Hokkaido, known for its crystal-clear waters, scenic islands, and surrounding hot spring resorts. Enjoy breathtaking views of Mount Usu, lakeside walks, and seasonal fireworks.",
+        image: "/assets/images/Lake_Toya_1.jpg",
+        link: "/src/activities/Lake_Toya.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
