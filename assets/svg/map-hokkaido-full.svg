@@ -80,6 +80,10 @@
   <line x1="20" y1="163" x2="85" y2="180" stroke="black" stroke-width="1" />
   <text x="0" y="160" font-size="9" fill="black">Sapporo</text>
 
+  <line x1="70" y1="130" x2="120" y2="140" stroke="black" stroke-width="1" />
+  <text x="50" y="125" font-size="9" fill="black">Asahikawa</text>
 
+  <line x1="70" y1="260" x2="120" y2="270" stroke="black" stroke-width="1" />
+  <text x="110" y="280" font-size="9" fill="black">Hakodate</text>
 
 </svg>
