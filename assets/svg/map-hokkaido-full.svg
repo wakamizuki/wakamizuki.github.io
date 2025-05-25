@@ -50,7 +50,7 @@
 </a> -->
 
 <!-- 宗谷岬 -->
-<a xlink:href="/src/activities/Shiretoko_Five_Lakes.html" target="_blank" class="pink-link">
+<a xlink:href="/src/activities/Cape_Soya.html" target="_blank" class="pink-link">
   <circle cx="100" cy="30" r="10" fill="#df0a0a" fill-opacity="0.1" />
   <line x1="100" y1="30" x2="129" y2="10"  stroke-width="2" />
   <text x="130" y="10" font-size="14" >Souya</text>

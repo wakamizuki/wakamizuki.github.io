@@ -841,6 +841,15 @@ const activities = [
         region: "shikoku",
         prefecture: "kochi"
     }
+    ,
+    {
+        title: "Cape Soya: Japan's Northernmost Point",
+        description: "Cape Soya, located in Hokkaido, is the northernmost point of Japan. It offers panoramic views of the Sea of Okhotsk and, on clear days, even the distant Russian island of Sakhalin. The cape features a symbolic monument, a lighthouse, and a windswept landscape, making it a popular destination for travelers seeking to reach the 'edge' of Japan.",
+        image: "/assets/images/Cape_Soya_1.jpg",
+        link: "/src/activities/Cape_Soya.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
