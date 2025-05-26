@@ -674,13 +674,25 @@
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Wakoto_Peninsula.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://explorejapanscountryside.com/src/activities/Lake_Kussharo.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/JR_Kushiro_Shitsugen_Station.html</loc>
+    <lastmod>2025-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://explorejapanscountryside.com/src/activities/Kushiro_Shitsugen_National_Park.html</loc>
+    <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
