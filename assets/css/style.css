@@ -387,6 +387,35 @@ html {
 
 }
 
+.breadcrumb {
+    background-color: rgb(244, 244, 244);
+    /* 白っぽくて半透明 */
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    /* border-radius: 0.25rem; */
+    color: #444;
+    backdrop-filter: blur(3px);
+    /* ぼかし効果（オプション） */
+}
+
+.breadcrumb-item a {
+    color: #236f36;
+    /* 控えめなグレー系（ピンクの邪魔をしない） */
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+    color: #014411;
+    /* 少し濃いグレーに変化 */
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #999;
+    padding: 0 0.5rem;
+}
+
 /* カスタムスピンアニメーション */
 @keyframes spin {
     100% {
@@ -523,4 +552,8 @@ html {
         font-size: 0.5rem;
     }
 
+    .breadcrumb {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }
 }
