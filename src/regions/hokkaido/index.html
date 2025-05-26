@@ -100,13 +100,41 @@
       }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://explorejapanscountryside.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hokkaido",
+          "item": "https://explorejapanscountryside.com/src/regions/hokkaido/index.html"
+        }
+      ]
+    }
+    </script>
+
 
 </head>
 
 <body>
     <div id="header-container"> </div>
     <div id="gradient-wrapper" class="gradient-wrapper pb-3">
-        <section class="highlight-section pl-2 pr-2">
+        <nav aria-label="breadcrumb" class="mb-0">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/src/regions/hokkaido/">Hokkaido</a></li>
+            </ol>
+        </nav>
+
+        <section class="highlight-section pl-2 pr-2 pt-0">
             <h1> Hokkaido Countryside – Travel Guide to Rural Japan</h1>
             <p class="text-muted" style="font-size: 0.9em;">Last updated: May 2025</p>
             <h2>Discover Rural Hokkaido: Nature, Culture, and Hot Springs</h2>
