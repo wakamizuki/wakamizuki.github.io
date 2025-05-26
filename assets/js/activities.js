@@ -895,7 +895,114 @@ const activities = [
         region: "hokkaido",
         prefecture: "hokkaido"
     }
-
+    ,
+    {
+        title: "Kushiro Marsh Observatory: Panoramic Wetland Views",
+        description: "Kushiro Marsh Observatory offers sweeping panoramic views of Kushiro Shitsugen National Park, Japan's largest wetland. The observatory features informative exhibits about the marsh's unique ecosystem and is a great starting point for walking trails and birdwatching.",
+        image: "/assets/images/Kushiro_Marsh_Observatory_1.jpg",
+        link: "/src/activities/Kushiro_Marsh_Observatory.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Hokuto Observation Area: Scenic Overlook of Kushiro Wetlands",
+        description: "The Hokuto Observation Area provides a stunning vantage point over the Kushiro wetlands, with expansive views of the marshlands and distant mountains. It's a peaceful spot for photography, nature observation, and enjoying Hokkaido's natural beauty.",
+        image: "/assets/images/Hokuto_Observation_Area_1.jpg",
+        link: "/src/activities/Hokuto_Observation_Area.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Onnenai Boardwalk: Explore the Wetlands",
+        description: "The Onnenai Boardwalk offers an immersive experience through the Kushiro Shitsugen wetlands, allowing visitors to walk above the marsh and observe unique wildlife and plant life up close.",
+        image: "/assets/images/Onnenai_Boardwalk_1.jpg",
+        link: "/src/activities/Onnenai_Boardwalk.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Onnenai Visitor Center: Gateway to Kushiro Wetlands",
+        description: "Onnenai Visitor Center serves as the starting point for exploring the Kushiro Shitsugen National Park, providing information, exhibits, and guidance for visitors interested in the area's natural wonders.",
+        image: "/assets/images/Onnenai_Visitor_Center_1.jpg",
+        link: "/src/activities/Onnenai_Visitor_Center.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Hosooka Observatory: Panoramic Views of Kushiro Wetlands",
+        description: "Hosooka Observatory offers breathtaking panoramic views of the vast Kushiro Shitsugen wetlands, with observation decks and walking trails perfect for birdwatching and photography.",
+        image: "/assets/images/Hosooka_Observatory_1.jpg",
+        link: "/src/activities/Hosooka_Observatory.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Lake Takkobu (達古武湖): Tranquil Lakeside Retreat",
+        description: "Lake Takkobu is a serene lake in the Kushiro Shitsugen area, known for its peaceful atmosphere, canoeing opportunities, and beautiful views of the surrounding wetlands.",
+        image: "/assets/images/Lake_Takkobu_1.jpg",
+        link: "/src/activities/Lake_Takkobu.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Yumegaoka Observatory: Panoramic Wetland Views",
+        description: "Yumegaoka Observatory offers sweeping panoramic views of the Kushiro Shitsugen wetlands, allowing visitors to appreciate the vast marshlands, winding rivers, and seasonal changes in Hokkaido's largest wetland area.",
+        image: "/assets/images/Yumegaoka_Observatory_1.jpg",
+        link: "/src/activities/Yumegaoka_Observatory.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Smelt Ice-fishing in Lake Toro",
+        description: "Experience the unique winter tradition of smelt ice-fishing on the frozen surface of Lake Toro in Hokkaido. Enjoy fishing in cozy tents and savoring freshly caught smelt in a beautiful snowy landscape.",
+        image: "/assets/images/Smelt_Ice-fishing_in_Lake_Toro_1.jpg",
+        link: "/src/activities/Smelt_Ice-fishing_in_Lake_Toro.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Lake Toro: Tranquil Wetland Lake",
+        description: "Lake Toro is a peaceful lake located within Kushiro Shitsugen National Park, surrounded by expansive wetlands and abundant wildlife. It's ideal for canoeing, birdwatching, and enjoying the serene natural beauty of eastern Hokkaido.",
+        image: "/assets/images/Lake_Toro_1.jpg",
+        link: "/src/activities/Lake_Toro.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Sarubo Observatory: Overlook of Five Lakes",
+        description: "Sarubo Observatory offers views of five lakes, including Tōro Lake, the largest in Kushiro Shitsugen, as well as Sarurun Lake, providing a panoramic perspective of the wetlands and surrounding nature.",
+        image: "/assets/images/Sarubo_Observatory_1.jpg",
+        link: "/src/activities/Sarubo_Observatory.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Kottaro Marsh Observatory: Hidden Gem of Kushiro Wetlands",
+        description: "Kottaro Marsh Observatory offers a tranquil vantage point over the Kushiro Shitsugen wetlands, with wooden walkways and observation decks perfect for birdwatching and enjoying the untouched natural scenery of Hokkaido.",
+        image: "/assets/images/Kottaro_Marsh_Observatory_1.jpg",
+        link: "/src/activities/Kottaro_Marsh_Observatory.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Kushiro Shitsugen Norokko Train: Scenic Wetland Railway",
+        description: "The Kushiro Shitsugen Norokko Train offers a leisurely ride through the vast Kushiro wetlands, providing panoramic views of marshlands, wildlife, and seasonal landscapes. It's a unique way to experience the natural beauty of Hokkaido's largest wetland.",
+        image: "/assets/images/Kushiro_Shitsugen_Norokko_Train_1.jpg",
+        link: "/src/activities/Kushiro_Shitsugen_Norokko_Train.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
