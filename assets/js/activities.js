@@ -1003,6 +1003,97 @@ const activities = [
         region: "hokkaido",
         prefecture: "hokkaido"
     }
+    ,
+    {
+        title: "Daisetsuzan National Park: Hokkaido's Grand Wilderness",
+        description: "Daisetsuzan National Park is the largest national park in Hokkaido, renowned for its rugged mountains, volcanic landscapes, alpine meadows, and diverse wildlife. It's a paradise for hikers, nature lovers, and those seeking breathtaking autumn foliage and hot springs.",
+        image: "/assets/images/Daisetsuzan_National_Park_1.jpg",
+        link: "/src/activities/Daisetsuzan_National_Park.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Asahidake Ropeway: Gateway to Hokkaido's Highest Peak",
+        description: "The Asahidake Ropeway offers a scenic ride up Mount Asahidake, the tallest mountain in Hokkaido. Enjoy panoramic views, alpine flowers, and access to hiking trails and volcanic landscapes in Daisetsuzan National Park.",
+        image: "/assets/images/Asahidake_Ropeway_1.jpg",
+        link: "/src/activities/Asahidake_Ropeway.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Asahidake Hot Spring: Relaxation at the Foot of the Peak",
+        description: "Asahidake Hot Spring (Asahidake Onsen) is a tranquil hot spring resort nestled at the base of Mount Asahidake. Unwind in natural mineral baths surrounded by pristine forests and enjoy the serene mountain atmosphere.",
+        image: "/assets/images/Asahidake_Hot_Spring_1.jpg",
+        link: "/src/activities/Asahidake_Hot_Spring.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Lake Sugatami-no-Ike: Mirror of the Peaks",
+        description: "Lake Sugatami-no-Ike is a small, crystal-clear pond near the summit of Mount Asahidake in Hokkaido. On calm days, the lake beautifully reflects the surrounding mountains and sky, creating a stunning mirror-like effect. It's a popular spot for hikers and photographers exploring Daisetsuzan National Park.",
+        image: "/assets/images/Lake_Sugatami-no-Ike_1.jpg",
+        link: "/src/activities/Lake_Sugatami-no-Ike.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Tenninkyo Gorge: Hokkaido's Hidden Scenic Valley",
+        description: "Tenninkyo Gorge is a picturesque valley in Hokkaido, renowned for its dramatic cliffs, lush forests, and beautiful waterfalls such as Hagoromo Falls. It's a tranquil destination for hiking, nature walks, and enjoying seasonal foliage.",
+        image: "/assets/images/Tenninkyo_Gorge_1.jpg",
+        link: "/src/activities/Tenninkyo_Gorge.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Tenninkyo Hot Spring: Tranquil Mountain Retreat",
+        description: "Tenninkyo Hot Spring is a peaceful onsen resort nestled in the scenic Tenninkyo Gorge of Hokkaido. Surrounded by lush forests and dramatic cliffs, visitors can relax in natural hot spring baths while enjoying the beauty of the valley.",
+        image: "/assets/images/Tenninkyo_Hot_Spring_1.jpg",
+        link: "/src/activities/Tenninkyo_Hot_Spring.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Daisetsuzan Sounkyo Kurodake Ropeway: Gateway to Alpine Adventure",
+        description: "The Daisetsuzan Sounkyo Kurodake Ropeway offers a scenic ascent from Sounkyo Gorge to the slopes of Mount Kurodake in Hokkaido. Enjoy panoramic views of rugged cliffs, alpine meadows, and seasonal foliage. It's the starting point for hiking, nature walks, and exploring the grandeur of Daisetsuzan National Park.",
+        image: "/assets/images/Daisetsuzan_Sounkyo_Kurodake_Ropeway_1.jpg",
+        link: "/src/activities/Daisetsuzan_Sounkyo_Kurodake_Ropeway.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Akadake Ginsendai: Gateway to the Daisetsuzan Mountains",
+        description: "Akadake Ginsendai is a popular trailhead in Hokkaido's Daisetsuzan National Park, renowned for its breathtaking alpine scenery, vibrant autumn foliage, and panoramic views of the surrounding peaks. It's a starting point for hikes to Mount Akadake and other mountains in the area.",
+        image: "/assets/images/Akadake_Ginsendai_1.jpg",
+        link: "/src/activities/Akadake_Ginsendai.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Ryusei and Ginga Falls: Twin Waterfalls of Hokkaido",
+        description: "Ryusei and Ginga Falls are two spectacular waterfalls located side by side in Sounkyo Gorge, Hokkaido. Known as the 'Male' and 'Female' falls, they cascade down dramatic cliffs and are especially beautiful during autumn foliage season.",
+        image: "/assets/images/Ryusei_and_Ginga_Falls_1.jpg",
+        link: "/src/activities/Ryusei_and_Ginga_Falls.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+    ,
+    {
+        title: "Mikuni Pass Observation Deck: Panoramic Mountain Views",
+        description: "Mikuni Pass Observation Deck offers breathtaking panoramic views of the surrounding mountains and valleys in Hokkaido. It's a popular spot for photography, especially during autumn when the landscape is ablaze with vibrant colors.",
+        image: "/assets/images/Mikuni_Pass_Observation_Deck_1.jpg",
+        link: "/src/activities/Mikuni_Pass_Observation_Deck.html",
+        region: "hokkaido",
+        prefecture: "hokkaido"
+    }
+
 ];
 // ブラウザでは window.activities にセット
 if (typeof window !== "undefined") {
