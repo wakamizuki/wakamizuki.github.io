@@ -12,7 +12,7 @@
   .red-link line {
     stroke: #df0a0a;
     transition: stroke 0.7s ease, fill 0.7s ease;
-    fill-opacity: 0.3;
+    fill-opacity: 0.2;
   }
 
   .red-link-strong circle{
@@ -28,8 +28,8 @@
 
   .red-link:hover circle,
   .red-link:hover line {
-    stroke: #800000;
-    fill: #800000;
+    stroke: #330000;
+    fill: #330000;
   }
 </style>
 
