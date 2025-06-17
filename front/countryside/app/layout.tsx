@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 };
 
-export default function RootLayout({
+export default function SharedLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
