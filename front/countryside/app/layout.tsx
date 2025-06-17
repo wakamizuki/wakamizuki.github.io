@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '[100% Countryside] Explore the Japanese Countryside – Villages, Nature & Rural Japan',
+  title: process.env.FRONT_TITLE,
   description: "Explore the beauty of the Japanese countryside – peaceful villages, lush mountains, and hidden hot springs across Japan. Your complete countryside Japan travel guide starts here.",
   manifest: '/site.webmanifest',
 };
