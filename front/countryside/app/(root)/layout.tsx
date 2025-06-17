@@ -8,7 +8,7 @@ export default function RootLayout({
   // ここにnavを記述していく
   return (
     <div>
-      <h1>Hello, World!</h1>
+      <Header />
       {children}
     </div>
   );
