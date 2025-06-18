@@ -6,7 +6,7 @@ export default function Header() {
       <div className="header__container w-full h-full flex justify-between">
         <a className="header__logo flex items-center gap-2" href="/">
           <Image className="w-10 h-10" alt="Japan Countryside Logo" src="/favicon.ico" width={40} height={40} />
-          <div className="header__logo-title text-white lg:text-4xl text-2xl font-bold">
+          <div className="header__logo-title text-white lg:text-4xl text-2xl/[1] font-bold">
             Explore Japan's<br className="md:hidden"></br> Countryside
           </div>
         </a>
