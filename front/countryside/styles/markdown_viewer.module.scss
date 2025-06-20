@@ -1,0 +1,50 @@
+.markdown_viewer {
+  & {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    color: #0e430f;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: revert;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: revert;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: revert;
+  }
+
+  h1, h2, h3 {
+    padding: 8px 0;
+  }
+
+  p {
+    padding-bottom: 4px;
+  }
+
+  hr {
+    height: 8px;
+    border-top-width: 2px;
+    color: oklch(96.7% 0.003 264.542);
+  }
+
+  a {
+    color: #df0a0a;
+    transition: color 0.7s ease;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #080003;
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+}
