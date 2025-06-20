@@ -1,9 +1,15 @@
+$color_border: #dee2e6;
+
 .markdown_viewer {
   & {
     width: 100%;
     height: auto;
     padding: 16px;
     color: #0e430f;
+  }
+
+  h1, h2, h3 {
+    padding: 24px 0 8px;
   }
 
   h1 {
@@ -21,12 +27,8 @@
     font-weight: revert;
   }
 
-  h1, h2, h3 {
-    padding: 8px 0;
-  }
-
   p {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
   }
 
   hr {
@@ -43,6 +45,38 @@
   a:hover {
     text-decoration: underline;
     color: #080003;
+  }
+
+  table {
+    margin: 4px 0;
+    border-collapse: collapse;
+    width: 100%;
+    color: #212529;
+  }
+
+  th, td {
+    border: 1px solid $color_border;
+  }
+
+  thead {
+    th {
+      color: #495057;
+      background-color: #e9ecef;
+      border-color: $color_border;
+      border-bottom-width: 2px;
+      border-bottom: 2px solid $color_border;
+      padding: 4px;
+    }
+  }
+
+  tbody {
+    tr:nth-of-type(odd) {
+      background-color: #eaf5ea;
+    }
+  }
+
+  td {
+    padding: 4px;
   }
 
   @media screen and (max-width: 768px) {

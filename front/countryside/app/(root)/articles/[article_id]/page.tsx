@@ -33,14 +33,21 @@ comfortable — a perfect first stop before heading deeper into the Kiso Valley.
 The easiest way to reach Matsumoto Castle is by train. Take the JR Chuo Line (Ltd.
 Express Azusa) from Shinjuku (Tokyo) or the JR Chuo Main Line from Nagoya to Matsumoto
 Station. The castle is about a 15-minute walk from the station.
+
+## How to Get to Matsumoto Castle from Major Cities
+
+| Departure City         | Route                                                                                               | Estimated Time     | Estimated Cost      |
+|------------------------|-----------------------------------------------------------------------------------------------------|--------------------|----------------------|
+| **Tokyo (Shinjuku)**   | JR Chuo Line (Ltd. Express Azusa) → Matsumoto Station → Walk to Castle                             | About 2.5–3 hours  | ¥6,000–¥7,000        |
+| Tokyo (Shinjuku)       | Highway Bus (Alpico or Keio Bus) from Busta Shinjuku → Matsumoto Bus Terminal → Walk to Castle     | About 3.5–4 hours  | ¥3,500–¥4,500        |
+| Nagoya                 | JR Chuo Main Line (Ltd. Express Shinano) → Matsumoto Station → Walk to Castle                      | About 2 hours      | ¥5,500–¥6,500        |
+| Osaka                  | Shinkansen to Nagoya → JR Chuo Main Line (Ltd. Express Shinano) → Matsumoto Station → Walk         | About 4 hours      | ¥11,000–¥13,000      |
 `;
 
 export default function ArticlePage() {
   return (
     <div>
-      <MarkdownViewer
-        markdown={markdown}
-      />
+      <MarkdownViewer markdown={markdown} />
     </div>
   );
 }
